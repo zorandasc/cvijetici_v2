@@ -1,15 +1,15 @@
 import React from "react"
 export default [
   {
-    icon: <p>FACE</p>,
+    icon: <div>FACE</div>,
     url: "https://facebook.com/?lang=en",
   },
   {
-    icon: <p>TWIT</p>,
+    icon: <div>TWIT</div>,
     url: "https://twitter.com/?lang=en",
   },
   {
-    icon: <p>SQUA</p>,
+    icon: <div>SQUA</div>,
     url: "https://www.squarespace.com/?lang=en",
   },
 ]

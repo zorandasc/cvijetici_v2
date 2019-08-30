@@ -26,10 +26,14 @@
 
 /*OVO DOLE JE NAKON PROSIRENJA*/
 @media screen and (min-width: 900px) {
+  .navbar {
+    padding: 0 2rem;
+  }
   .logo-btn {
     display: none;
   }
   .nav-center {
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
