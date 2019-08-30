@@ -23,6 +23,9 @@
   display: flex;
   justify-content: space-around;
 }
+.nav-social-links a {
+  margin: 1rem 0;
+}
 
 /*OVO DOLE JE NAKON PROSIRENJA*/
 @media screen and (min-width: 900px) {
