@@ -8,7 +8,6 @@ const navbar = () => {
   const [isOpen, setNav] = useState(false)
   const toggleNav = () => {
     setNav(() => !isOpen)
-    console.log(isOpen)
   }
 
   return (
@@ -16,8 +15,10 @@ const navbar = () => {
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
           <Link to="/">JEBENI LOGO</Link>
+          <button onClick={toggleNav} className={styles.logoBtn}>
+            <div className={styles.logoIcon}>|||</div>
+          </button>
         </div>
-        <button onClick={toggleNav}>|||</button>
         <ul className={styles.navLinks}>
           {links.map((item, index) => {
             return (
@@ -27,7 +28,7 @@ const navbar = () => {
             )
           })}
         </ul>
-        <div className={styles.socialLinks}>
+        <div className={styles.navSocialLinks}>
           {socialLinks.map((item, index) => {
             return (
               <a key={index} href={item.url}>

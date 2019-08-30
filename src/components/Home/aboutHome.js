@@ -16,7 +16,7 @@ const aboutHome = () => {
           <h4>who are we</h4>
           <p>
             "Our goals of overcoming everyday hurdles trough our blogs stories,
-            tasty and interesting recipes and lifetime experience."
+            interesting wedding arrangements and lifetime experience."
           </p>
           <button type="button">read more</button>
         </article>

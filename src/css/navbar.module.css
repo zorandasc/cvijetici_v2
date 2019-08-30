@@ -1,0 +1,52 @@
+.navbar {
+  background: greenyellow;
+}
+.nav-center {
+  background: lightblue;
+}
+
+.nav-header {
+  background: violet;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.3rem;
+  align-items: center;
+}
+
+.nav-links a {
+  padding: 1rem 1.3rem;
+  display: block;
+  text-transform: capitalize;
+}
+
+.nav-social-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*OVO DOLE JE NAKON PROSIRENJA*/
+@media screen and (min-width: 900px) {
+  .logo-btn {
+    display: none;
+  }
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .nav-links {
+    height: auto;
+    display: flex;
+  }
+  .nav-social-links {
+    display: flex;
+    line-height: 0;
+  }
+
+  .nav-social-links a {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+  }
+}
