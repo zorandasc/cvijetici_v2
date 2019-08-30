@@ -2,9 +2,9 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
-import About from "../components/Home/about"
+import About from "../components/Home/aboutHome"
 import FeauterdWork from "../components/Home/featuredWork"
-import ReacentBlog from "../components/Home/reacentBlog"
+import RecentBlog from "../components/Home/recentBlog"
 
 const IndexPage = () => (
   <Layout>
@@ -12,7 +12,7 @@ const IndexPage = () => (
     <StayledHero></StayledHero>
     <About></About>
     <FeauterdWork></FeauterdWork>
-    <ReacentBlog></ReacentBlog>
+    <RecentBlog></RecentBlog>
   </Layout>
 )
 
