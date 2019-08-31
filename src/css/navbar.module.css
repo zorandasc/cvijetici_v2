@@ -1,22 +1,53 @@
-.navbar {
-  background: greenyellow;
-}
-.nav-center {
-  background: lightblue;
-}
-
 .nav-header {
-  background: violet;
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.3rem;
   align-items: center;
 }
 
+.logo-btn {
+  transition: var(--mainTransition);
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.logo-btn:hover {
+  cursor: pointer;
+  color: var(--primaryColor);
+}
+
+.logo-icon {
+  font-size: 1.5rem;
+}
+
+.nav-links,
+.nav-social-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+}
+
+.show-nav {
+  height: 280px;
+}
+.show-social {
+  height: 70px;
+}
+
 .nav-links a {
-  padding: 1rem 1.3rem;
+  color: var(--mainBlack);
+  padding: 1rem 1.5rem;
   display: block;
   text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: var(--primaryColor);
+  transform: translateX(8px);
 }
 
 .nav-social-links {
@@ -24,11 +55,19 @@
   justify-content: space-around;
 }
 .nav-social-links a {
+  color: var(--primaryColor);
   margin: 1rem 0;
+  font-size: 1.2rem;
+  transition: var(--mainTransition);
+}
+
+.nav-social-links a:hover {
+  color: var(--mainBlack);
+  transform: translateY(-5px);
 }
 
 /*OVO DOLE JE NAKON PROSIRENJA*/
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 990px) {
   .navbar {
     padding: 0 2rem;
   }
@@ -48,12 +87,12 @@
     display: flex;
   }
   .nav-social-links {
+    height: auto;
     display: flex;
-    line-height: 0;
   }
 
   .nav-social-links a {
-    margin: 0 0.5rem;
+    margin: 1rem 0.5rem;
     font-size: 1.2rem;
   }
 }

@@ -3,6 +3,7 @@ import styles from "../css/navbar.module.css"
 import links from "../constants/links"
 import socialLinks from "../constants/socialLinks"
 import { Link } from "gatsby"
+import { FaAlignRight } from "react-icons/fa"
 
 const navbar = () => {
   const [isOpen, setNav] = useState(false)
@@ -16,10 +17,16 @@ const navbar = () => {
         <div className={styles.navHeader}>
           <Link to="/">JEBENI LOGO</Link>
           <button onClick={toggleNav} className={styles.logoBtn}>
-            <div className={styles.logoIcon}>|||</div>
+            <FaAlignRight className={styles.logoIcon}></FaAlignRight>
           </button>
         </div>
-        <ul className={styles.navLinks}>
+        <ul
+          className={
+            isOpen
+              ? `${styles.navLinks} ${styles.showNav}`
+              : `${styles.navLinks}`
+          }
+        >
           {links.map((item, index) => {
             return (
               <Link key={index} to={item.path}>
@@ -28,7 +35,13 @@ const navbar = () => {
             )
           })}
         </ul>
-        <div className={styles.navSocialLinks}>
+        <div
+          className={
+            isOpen
+              ? `${styles.navSocialLinks} ${styles.showSocial}`
+              : `${styles.navSocialLinks}`
+          }
+        >
           {socialLinks.map((item, index) => {
             return (
               <a key={index} href={item.url}>

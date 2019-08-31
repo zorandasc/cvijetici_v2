@@ -16,7 +16,7 @@ const footer = () => {
           )
         })}
       </div>
-      <div className={styles.social}>
+      <div className={styles.icons}>
         {socialLinks.map((item, index) => {
           return (
             <a key={index} href={item.url}>
@@ -25,7 +25,10 @@ const footer = () => {
           )
         })}
       </div>
-      <div className={styles.copyright}></div>
+      <div className={styles.copyright}>
+        copyright &copy; cvijetici {new Date().getFullYear()} all rights
+        reserved
+      </div>
     </div>
   )
 }
