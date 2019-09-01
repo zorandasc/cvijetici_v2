@@ -7,16 +7,19 @@ import FeauterdWork from "../components/Home/featuredWork"
 import RecentBlog from "../components/Home/recentBlog"
 import Banner from "../components/banner"
 import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
-const IndexPage = () => (
+export default ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <StayledHero>
+    <StayledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Banner
         title="faithful yes"
         info="Explore and discover awsome world of weddings"
       >
-        <Link to="/gallery">gallery</Link>
+        <Link to="/gallery" className="btn-white">
+          gallery
+        </Link>
       </Banner>
     </StayledHero>
     <About></About>
@@ -25,4 +28,14 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export const query = graphql`
+  query {
+    defaultBcg: file(relativePath: { eq: "black.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`

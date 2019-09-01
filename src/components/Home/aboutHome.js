@@ -15,7 +15,7 @@ const aboutHome = () => {
         <article className={styles.aboutInfo}>
           <h4>who are we</h4>
           <p>
-            "Our goals of overcoming everyday hurdles trough our blogs stories,
+            "Our goals of overcoming wedding hurdles trough our blogs stories,
             interesting wedding arrangements and lifetime experience."
           </p>
           <button type="button">read more</button>
