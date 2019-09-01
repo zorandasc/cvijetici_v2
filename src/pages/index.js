@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
 import About from "../components/Home/aboutHome"
-import FeauterdWork from "../components/Home/featuredWork"
+import workCategory from "../components/Home/workCategory"
 import RecentBlog from "../components/Home/recentBlog"
 import Banner from "../components/banner"
 import { Link } from "gatsby"
@@ -30,7 +30,7 @@ export default ({ data }) => (
 
 export const query = graphql`
   query {
-    defaultBcg: file(relativePath: { eq: "black.jpg" }) {
+    defaultBcg: file(relativePath: { eq: "beautiful.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
