@@ -3,8 +3,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
 import About from "../components/Home/aboutHome"
-import workCategory from "../components/Home/workCategory"
-import RecentBlog from "../components/Home/recentBlog"
+import WorkCategory from "../components/Home/workCategory"
+
 import Banner from "../components/banner"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
@@ -14,17 +14,16 @@ export default ({ data }) => (
     <SEO title="Home" />
     <StayledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Banner
-        title="faithful yes"
-        info="Explore and discover awsome world of weddings"
+        title="svadbeni cvet"
+        info="istraži i pronađi naš čarobni svadbeni svet"
       >
         <Link to="/gallery" className="btn-white">
-          gallery
+          galerija
         </Link>
       </Banner>
     </StayledHero>
     <About></About>
-    <FeauterdWork></FeauterdWork>
-    <RecentBlog></RecentBlog>
+    <WorkCategory></WorkCategory>
   </Layout>
 )
 

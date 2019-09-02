@@ -6,7 +6,7 @@
   --primaryColor: #b8860b;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
-  --mainBlack: #222;
+  --mainBlack: #262626;
   --mainGrey: #ececec;
   --darkGrey: #afafaf;
   --mainSpacing: 4px;
@@ -67,7 +67,7 @@ a {
   cursor: pointer;
 }
 .btn-white:hover {
-  background: var(--primaryColor);
+  background: var(--mainYellow);
 }
 .btn-primary {
   background: var(--primaryColor);

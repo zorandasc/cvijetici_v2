@@ -1,22 +1,19 @@
 export default [
   {
     path: "/",
-    label: "home",
+    label: "kuća",
   },
   {
     path: "/about",
-    label: "about",
+    label: "o nama",
   },
   {
     path: "/gallery",
-    label: "gallery",
+    label: "galerija",
   },
-  {
-    path: "/blog",
-    label: "blog",
-  },
+
   {
     path: "/contact",
-    label: "contact",
+    label: "kontakt",
   },
 ]

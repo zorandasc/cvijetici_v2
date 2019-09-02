@@ -8,7 +8,7 @@ const aboutHome = () => {
   const { aboutImage } = useStaticQuery(getAbout)
   return (
     <section className={styles.about}>
-      <Title title="about" subtitle="us"></Title>
+      <Title title="nešto" subtitle="o nama"></Title>
       <div className={styles.aboutCenter}>
         <article className={styles.aboutImg}>
           <div className={styles.imgContainer}>
@@ -19,10 +19,10 @@ const aboutHome = () => {
           </div>
         </article>
         <article className={styles.aboutInfo}>
-          <h4>who are we</h4>
+          <h4>tko smo mi</h4>
           <p>
-            "Our goals is helping you in overcoming wedding hurdles trough our
-            interesting wedding arrangements and lifetime experience ..."
+            "Naš cilj je pomoći vama u prevazilaženju svadbenih poteškoća preko
+            naših interesantnih svadbenih artikala ..."
           </p>
           <Link className="btn-primary" to="/about">
             read more
