@@ -37,7 +37,7 @@ export default aboutHome
 
 const getAbout = graphql`
   query aboutImage {
-    aboutImage: file(relativePath: { eq: "black.jpg" }) {
+    aboutImage: file(relativePath: { eq: "band.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
