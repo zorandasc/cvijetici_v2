@@ -15,7 +15,7 @@ const title = ({ title, subtitle, className }) => {
 export default styled(title)`
   text-transform: uppercase;
   margin-bottom: 2rem;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   h4 {
     text-align: center;
     letter-spacing: 6px;
