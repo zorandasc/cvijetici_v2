@@ -3,7 +3,7 @@
 
 :root {
   --mainYellow: #d2aa5c;
-  --primaryColor: #b8860b;
+  --primaryColor: #d2aa5c;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #262626;
@@ -67,7 +67,7 @@ a {
   cursor: pointer;
 }
 .btn-white:hover {
-  background: var(--mainYellow);
+  background: var(--primaryColor);
 }
 .btn-primary {
   background: var(--primaryColor);
