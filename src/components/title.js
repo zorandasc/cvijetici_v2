@@ -20,6 +20,7 @@ export default styled(title)`
     text-align: center;
     letter-spacing: 6px;
     color: var(--primaryColor);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
   }
   .title {
     color: var(--mainBlack);

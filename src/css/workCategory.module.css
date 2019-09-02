@@ -1,7 +1,7 @@
 .works {
-  background: var(--mainGrey);
   padding: 4rem 0;
   text-align: center;
+  background: transparent;
 }
 .center {
   width: 80vw;

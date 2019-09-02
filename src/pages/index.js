@@ -4,10 +4,11 @@ import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
 import About from "../components/Home/aboutHome"
 import WorkCategory from "../components/Home/workCategory"
-
 import Banner from "../components/banner"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
+
+import SectionBcg from "../components/sectionBcg"
 
 export default ({ data }) => (
   <Layout>
@@ -22,14 +23,24 @@ export default ({ data }) => (
         </Link>
       </Banner>
     </StayledHero>
+
     <About></About>
-    <WorkCategory></WorkCategory>
+    <SectionBcg home="true" img={data.aboutBcg.childImageSharp.fluid}>
+      <WorkCategory></WorkCategory>
+    </SectionBcg>
   </Layout>
 )
 
 export const query = graphql`
   query {
     defaultBcg: file(relativePath: { eq: "beautiful.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    aboutBcg: file(relativePath: { eq: "patern.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
