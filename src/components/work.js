@@ -15,8 +15,8 @@ const work = ({ work }) => {
           className={styles.img}
           alt="wedding category"
         ></Image>
-        <Link className={styles.link} to="/">
-          explore
+        <Link className={styles.link} to={`/gallery/${slug}`}>
+          istraži
         </Link>
       </div>
       <div className={styles.footer}>
