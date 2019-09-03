@@ -19,7 +19,7 @@ const aboutHome = () => {
           </div>
         </article>
         <article className={styles.aboutInfo}>
-          <h4>tko smo mi</h4>
+          <h4>ko smo mi</h4>
           <p>
             "Naš cilj je pomoći vama u prevazilaženju svadbenih poteškoća preko
             naših interesantnih svadbenih artikala ..."

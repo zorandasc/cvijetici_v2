@@ -29,7 +29,7 @@
 }
 
 .show-nav {
-  height: 280px;
+  height: 250px;
 }
 .show-social {
   height: 70px;
@@ -57,16 +57,12 @@
 }
 .nav-social-links a {
   transition: var(--mainTransition);
-  background: var(--mainBlack);
   color: var(--primaryColor);
   margin: 1rem;
-  width: 1.25rem;
-  height: 1.4rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .nav-social-links a:hover {
-  background: var(--primaryColor);
   color: var(--mainBlack);
   transform: translateY(-5px);
 }
@@ -83,7 +79,6 @@
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 0 auto;
   }
 
@@ -98,6 +93,5 @@
 
   .nav-social-links a {
     margin: 1rem 0.7rem;
-    font-size: 1.2rem;
   }
 }
