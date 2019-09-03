@@ -25,7 +25,7 @@ const aboutHome = () => {
             naših interesantnih svadbenih artikala ..."
           </p>
           <Link className="btn-primary" to="/about">
-            read more
+            pročitaj više
           </Link>
         </article>
       </div>
