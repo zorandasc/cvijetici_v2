@@ -1,0 +1,43 @@
+.contact {
+  padding: 4rem 0;
+}
+
+.center {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+label {
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.formControl,
+.submit {
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px groove var(--darkGrey);
+}
+
+.submit {
+  background-color: var(--mainBlack);
+  color: var(--primaryColor);
+  text-transform: uppercase;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+}
+
+@media screen and (min-width: 992px) {
+  .center {
+    width: 50vw;
+    margin: 0 auto;
+  }
+}

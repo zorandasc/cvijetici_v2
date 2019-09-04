@@ -8,7 +8,7 @@ import { graphql } from "gatsby"
 const contact = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Contact"></SEO>
+      <SEO title="Kontakt"></SEO>
       <StayledHero img={data.contactBcg.childImageSharp.fluid}></StayledHero>
       <Contact></Contact>
     </Layout>
