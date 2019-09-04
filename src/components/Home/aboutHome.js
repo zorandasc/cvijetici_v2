@@ -44,5 +44,12 @@ const getAbout = graphql`
         }
       }
     }
+    about: file(relativePath: { eq: "about.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
