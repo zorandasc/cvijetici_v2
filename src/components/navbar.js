@@ -4,7 +4,7 @@ import links from "../constants/links"
 import socialLinks from "../constants/socialLinks"
 import { Link } from "gatsby"
 import { FaAlignRight } from "react-icons/fa"
-import logo from "../images/optimised.svg"
+import logo from "../images/optimised.gif"
 
 const navbar = () => {
   const [isOpen, setNav] = useState(false)
