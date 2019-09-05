@@ -4,6 +4,7 @@ import links from "../constants/links"
 import socialLinks from "../constants/socialLinks"
 import { Link } from "gatsby"
 import { FaAlignRight } from "react-icons/fa"
+import logo from "../images/optimised.svg"
 
 const navbar = () => {
   const [isOpen, setNav] = useState(false)
@@ -15,7 +16,9 @@ const navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <Link to="/">JEBENI LOGO</Link>
+          <Link to="/">
+            <img src={logo} alt="svadbeni cvet"></img>
+          </Link>
           <button onClick={toggleNav} className={styles.logoBtn}>
             <FaAlignRight className={styles.logoIcon}></FaAlignRight>
           </button>
