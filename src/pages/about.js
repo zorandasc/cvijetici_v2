@@ -25,10 +25,7 @@ const about = ({ data }) => {
           </article>
           <article className={styles.aboutInfo}>
             <h4>ko smo mi</h4>
-            <p>
-              "Naš cilj je pomoći vama u prevazilaženju svadbenih poteškoća
-              preko naših interesantnih svadbenih artikala ..."
-            </p>
+            <p>"Mi smo ta ekipa ..."</p>
           </article>
         </div>
       </section>
