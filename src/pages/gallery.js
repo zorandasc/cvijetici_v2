@@ -3,17 +3,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
 import { graphql } from "gatsby"
-import Title from "../components/title"
-import styles from "../css/gallery.module.css"
+import Gallerys from "../components/Gallery/gallerys"
 
 const gallery = ({ data }) => {
   return (
     <Layout>
       <SEO title="Gallery"></SEO>
       <StayledHero img={data.roses.childImageSharp.fluid}></StayledHero>
-      <section>
-        <Title title="naša" subtitle="galerija"></Title>
-      </section>
+      <Gallerys></Gallerys>
     </Layout>
   )
 }

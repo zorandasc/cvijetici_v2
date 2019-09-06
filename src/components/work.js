@@ -4,7 +4,7 @@ import Image from "gatsby-image"
 import { Link } from "gatsby"
 
 const work = ({ work }) => {
-  const { slug, category, images } = work
+  const { slug, prefiks, category, images } = work
   let mainImage = images[0].fluid
 
   return (
@@ -20,7 +20,9 @@ const work = ({ work }) => {
         </Link>
       </div>
       <div className={styles.footer}>
-        <h4>{category}</h4>
+        <h4>
+          {prefiks} {category}
+        </h4>
       </div>
     </article>
   )

@@ -6,11 +6,12 @@ import Work from "../work"
 
 const getWorks = graphql`
   query {
-    workCategory: allContentfulWork {
+    workCategory: allContentfulWork(filter: { featured: { eq: true } }) {
       edges {
         node {
           contentful_id
           slug
+          prefiks
           category
           images {
             fluid {
@@ -28,14 +29,14 @@ const workCategory = () => {
   const works = response.workCategory.edges
   return (
     <section className={styles.works}>
-      <Title title="naši" subtitle="artikli"></Title>
+      <Title title="odabrani" subtitle="artikli"></Title>
       <div className={styles.center}>
         {works.map(({ node }) => {
           return <Work key={node.contentful_id} work={node}></Work>
         })}
       </div>
       <Link className="btn-primary" to="/gallery">
-        galerija
+        više
       </Link>
     </section>
   )

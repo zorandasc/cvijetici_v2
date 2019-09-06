@@ -7,7 +7,6 @@ import WorkCategory from "../components/Home/workCategory"
 import Banner from "../components/banner"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
-
 import SectionBcg from "../components/sectionBcg"
 
 export default ({ data }) => (

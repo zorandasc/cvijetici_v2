@@ -29,8 +29,8 @@
   opacity: 0;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
-  color: var(--mainBlack);
-  border: 2px solid var(--mainBlack);
+  color: var(--mainWhite);
+  border: 2px solid var(--mainWhite);
   padding: 0.5rem 0.7rem;
   transition: var(--mainTransition);
   display: inline-block;

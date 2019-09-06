@@ -5,15 +5,17 @@ import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
 import styles from "../css/template.module.css"
 import Img from "gatsby-image"
+import Title from "../components/title"
 
 const workTemplate = ({ data }) => {
-  const { category, images } = data.work
+  const { prefiks, category, images } = data.work
   const [mainImage, ...workImages] = images
   return (
     <Layout>
       <SEO title={category}></SEO>
       <StayledHero img={mainImage.fluid}></StayledHero>
       <section className={styles.template}>
+        <Title title={prefiks} subtitle={category}></Title>
         <div className={styles.center}>
           <div className={styles.images}>
             {workImages.map((item, index) => {
@@ -36,6 +38,7 @@ const workTemplate = ({ data }) => {
 export const query = graphql`
   query($slug: String!) {
     work: contentfulWork(slug: { eq: $slug }) {
+      prefiks
       category
       images {
         fluid {
