@@ -5,7 +5,7 @@ import styles from "../css/contact.module.css"
 const contact = () => {
   return (
     <section className={styles.contact}>
-      <Title title="pošaljite nam" subtitle="poruku"></Title>
+      <Title title="pišite" subtitle="nam"></Title>
       <div className={styles.center}>
         <form action="#" method="POST" className={styles.form}>
           <div>

@@ -1,5 +1,5 @@
 .about {
-  padding: 4rem 0;
+  padding: 1rem 0;
 }
 
 .about-center {
@@ -39,6 +39,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about {
+    padding: 4rem 0;
+  }
   .about-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
