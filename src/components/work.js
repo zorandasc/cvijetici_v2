@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "../css/work.module.css"
 import Image from "gatsby-image"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const work = ({ work }) => {
   const { slug, prefiks, category, images } = work
@@ -15,9 +15,9 @@ const work = ({ work }) => {
           className={styles.img}
           alt="wedding category"
         ></Image>
-        <Link className={styles.link} to={`/gallery/${slug}`}>
+        <AniLink fade className={styles.link} to={`/gallery/${slug}`}>
           istraži
-        </Link>
+        </AniLink>
       </div>
       <div className={styles.footer}>
         <h4>

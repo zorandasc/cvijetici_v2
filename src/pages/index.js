@@ -5,7 +5,7 @@ import StayledHero from "../components/stayledHero"
 import About from "../components/Home/aboutHome"
 import WorkCategory from "../components/Home/workCategory"
 import Banner from "../components/banner"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql } from "gatsby"
 import SectionBcg from "../components/sectionBcg"
 
@@ -17,9 +17,9 @@ export default ({ data }) => (
         title="svadbeni cvet"
         info="Pridruži nam se i istraži čarobni svet svadbenih rukom pravljenih artikala"
       >
-        <Link to="/gallery" className="btn-white">
+        <AniLink fade to="/gallery" className="btn-white">
           galerija
-        </Link>
+        </AniLink>
       </Banner>
     </StayledHero>
 

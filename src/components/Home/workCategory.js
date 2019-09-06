@@ -1,6 +1,7 @@
 import React from "react"
 import Title from "../title"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../../css/workCategory.module.css"
 import Work from "../work"
 
@@ -35,9 +36,9 @@ const workCategory = () => {
           return <Work key={node.contentful_id} work={node}></Work>
         })}
       </div>
-      <Link className="btn-primary" to="/gallery">
+      <AniLink fade className="btn-primary" to="/gallery">
         više
-      </Link>
+      </AniLink>
     </section>
   )
 }

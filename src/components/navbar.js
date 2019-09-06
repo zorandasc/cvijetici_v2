@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import styles from "../css/navbar.module.css"
 import links from "../constants/links"
 import socialLinks from "../constants/socialLinks"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { FaAlignRight } from "react-icons/fa"
 import logo from "../images/optimised.gif"
 
@@ -16,9 +16,9 @@ const navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <Link to="/">
+          <AniLink fade to="/">
             <img src={logo} alt="svadbeni cvet"></img>
-          </Link>
+          </AniLink>
           <button onClick={toggleNav} className={styles.logoBtn}>
             <FaAlignRight className={styles.logoIcon}></FaAlignRight>
           </button>
@@ -32,9 +32,9 @@ const navbar = () => {
         >
           {links.map((item, index) => {
             return (
-              <Link key={index} to={item.path}>
+              <AniLink fade key={index} to={item.path}>
                 {item.label}
-              </Link>
+              </AniLink>
             )
           })}
         </ul>

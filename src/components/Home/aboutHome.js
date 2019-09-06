@@ -1,7 +1,8 @@
 import React from "react"
 import Title from "../title"
 import styles from "../../css/aboutHome.module.css"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const aboutHome = () => {
@@ -24,9 +25,9 @@ const aboutHome = () => {
             "Naš cilj je pomoći vama u prevazilaženju svadbenih poteškoća preko
             naših interesantnih svadbenih artikala ..."
           </p>
-          <Link className="btn-primary" to="/about">
+          <AniLink fade className="btn-primary" to="/about">
             pročitaj više
-          </Link>
+          </AniLink>
         </article>
       </div>
     </section>
