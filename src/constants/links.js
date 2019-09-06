@@ -1,7 +1,7 @@
 export default [
   {
     path: "/",
-    label: "kuća",
+    label: "početna",
   },
   {
     path: "/about",

@@ -15,7 +15,7 @@ const contact = () => {
               name="name"
               id="name"
               className={styles.formControl}
-              placeholder="Marko Polo"
+              placeholder="Vaše ime"
             ></input>
           </div>
           <div>

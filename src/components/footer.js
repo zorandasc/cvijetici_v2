@@ -26,7 +26,7 @@ const footer = () => {
         })}
       </div>
       <div className={styles.copyright}>
-        copyright &copy; cvijetici {new Date().getFullYear()} all rights
+        copyright &copy; Svadbeni cvet {new Date().getFullYear()} all rights
         reserved
       </div>
     </div>
