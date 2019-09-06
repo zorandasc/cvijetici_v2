@@ -8,7 +8,7 @@ import Gallerys from "../components/Gallery/gallerys"
 const gallery = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Gallery"></SEO>
+      <SEO title="Svadbena Galerija"></SEO>
       <StayledHero img={data.roses.childImageSharp.fluid}></StayledHero>
       <Gallerys></Gallerys>
     </Layout>

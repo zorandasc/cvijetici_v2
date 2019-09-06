@@ -10,7 +10,7 @@ import Img from "gatsby-image"
 const about = ({ data }) => {
   return (
     <Layout>
-      <SEO title="About"></SEO>
+      <SEO title="O nama"></SEO>
       <StayledHero img={data.aboutBcg.childImageSharp.fluid}></StayledHero>
       <section className={styles.about}>
         <Title title="naša" subtitle="misija"></Title>
