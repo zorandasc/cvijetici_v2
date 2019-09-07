@@ -32,8 +32,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Svadbeni Cvet`,
+        short_name: `Svadbeni Cvet`,
         start_url: `/`,
         background_color: `#262626`,
         theme_color: `#d2aa5c`,
