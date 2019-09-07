@@ -47,7 +47,13 @@ const navbar = () => {
         >
           {socialLinks.map((item, index) => {
             return (
-              <a key={index} href={item.url}>
+              <a
+                key={index}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="socials links"
+              >
                 {item.icon}
               </a>
             )
