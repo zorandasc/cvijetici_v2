@@ -17,7 +17,7 @@ const gallery = ({ data }) => {
 
 export const query = graphql`
   query {
-    roses: file(relativePath: { eq: "roses.jpg" }) {
+    roses: file(relativePath: { eq: "contact.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp

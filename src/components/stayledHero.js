@@ -14,7 +14,7 @@ export default styled(stayledHero)`
   min-height: ${props => (props.home ? "calc(90vh)" : "60vh")};
   background: ${props =>
     props.home
-      ? "linear-gradient(rgba(210,170,92,0.5), rgba(0,0,0,1))"
+      ? "linear-gradient(rgba(210,170,92,1), rgba(0,0,0,0.5 ),rgba(0,0,0,0 ))"
       : "none"};
   background-position: center;
   background-attachment: fixed;
