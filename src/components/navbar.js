@@ -19,7 +19,12 @@ const navbar = () => {
           <AniLink fade to="/">
             <img src={logo} alt="svadbeni cvet"></img>
           </AniLink>
-          <button onClick={toggleNav} className={styles.logoBtn}>
+          <button
+            aria-label="hamburger menu"
+            type="button"
+            onClick={toggleNav}
+            className={styles.logoBtn}
+          >
             <FaAlignRight className={styles.logoIcon}></FaAlignRight>
           </button>
         </div>
