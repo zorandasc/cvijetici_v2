@@ -8,10 +8,11 @@ module.exports = {
     description: `Započnite svoje svadbeno putovanje sa našim čarobnim i rukom pravljenim svadbenim artiklima`,
     author: `@zorandsc`,
     image: `/src/images/marriage.jpg`,
-    siteUrl: `https://svadbenicvet.netlify.com/`,
+    siteUrl: `https://svadbenicvet.netlify.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,6 +26,14 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://svadbenicvet.netlify.com",
+        sitemap: "https://svadbenicvet.netlify.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     `gatsby-transformer-sharp`,
