@@ -7,6 +7,8 @@ module.exports = {
     title: `Svadbeni Cvet`,
     description: `Započnite svoje svadbeno putovanje sa našim čarobnim i rukom pravljenim svadbenim artiklima`,
     author: `@zorandsc`,
+    image: `/src/images/marriage.jpg`,
+    siteUrl: `https://svadbenicvet.netlify.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -18,7 +18,8 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
-            author
+            siteUrl
+            image
           }
         }
       }
@@ -26,7 +27,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-
+  const { siteUrl, image } = site.siteMetadata
   return (
     <Helmet
       htmlAttributes={{
@@ -48,8 +49,24 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:url`,
+          content: siteUrl,
+        },
+        {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: image,
+        },
+        {
+          property: `og:image:width`,
+          content: `400`,
+        },
+        {
+          property: `og:image:height`,
+          content: `300`,
         },
         {
           name: `twitter:card`,
