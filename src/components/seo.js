@@ -27,7 +27,10 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const { siteUrl, image } = site.siteMetadata
+  const metaTitle = site.siteMetadata.title
+  const siteUrl = site.siteMetadata.siteUrl
+  const image = `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`
+
   return (
     <Helmet
       htmlAttributes={{
@@ -42,7 +45,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           property: `og:description`,
@@ -58,7 +61,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: image,
+          content: { image },
         },
         {
           property: `og:image:width`,
