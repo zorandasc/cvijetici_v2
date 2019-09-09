@@ -7,7 +7,7 @@ module.exports = {
     title: `Svadbeni Cvet`,
     description: `Započnite svoje svadbeno putovanje sa našim svadbenim artiklima`,
     author: `@zorandsc`,
-    image: `/src/images/marriage.jpg`,
+    image: `marriage.jpg`,
     siteUrl: `https://svadbenicvet.netlify.com`,
   },
   plugins: [
