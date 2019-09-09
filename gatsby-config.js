@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Svadbeni Cvet`,
-    description: `Započnite svoje svadbeno putovanje sa našim čarobnim i rukom pravljenim svadbenim artiklima`,
+    description: `Započnite svoje svadbeno putovanje sa našim svadbenim artiklima`,
     author: `@zorandsc`,
     image: `/src/images/marriage.jpg`,
     siteUrl: `https://svadbenicvet.netlify.com`,
