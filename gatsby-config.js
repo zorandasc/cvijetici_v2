@@ -5,10 +5,10 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Svadbeni Cvet`,
-    description: `Započnite svoje svadbeno putovanje sa našim čarobnim i rukom pravljenim svadbenim artiklima`,
+    description: `Započnite svoje svadbeno putovanje sa našim svadbenim artiklima`,
     author: `@zorandsc`,
-    image: `/src/images/marriage.jpg`,
-    siteUrl: `https://svadbenicvet.netlify.com`,
+    image: `/marriage.jpg`,
+    siteUrl: `https://svadbenicvet.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,8 +31,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://svadbenicvet.netlify.com",
-        sitemap: "https://svadbenicvet.netlify.com/sitemap.xml",
+        host: "https://svadbenicvet.com",
+        sitemap: "https://svadbenicvet.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },

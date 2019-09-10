@@ -29,7 +29,7 @@
 }
 
 .show-nav {
-  height: 250px;
+  height: 270px;
 }
 .show-social {
   height: 70px;
@@ -53,13 +53,14 @@
 
 .nav-social-links {
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 .nav-social-links a {
   transition: var(--mainTransition);
   color: var(--primaryColor);
   margin: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.9rem;
 }
 
 .nav-social-links a:hover {
@@ -93,5 +94,6 @@
 
   .nav-social-links a {
     margin: 1rem 0.7rem;
+    font-size: 1.3rem;
   }
 }
