@@ -49,7 +49,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 3rem;
-    align-items: baseline;
+    align-items: flex-start;
     margin-top: 5rem;
   }
 
