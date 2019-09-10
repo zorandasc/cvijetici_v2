@@ -29,7 +29,7 @@
 }
 
 .show-nav {
-  height: 250px;
+  height: 270px;
 }
 .show-social {
   height: 70px;
@@ -93,6 +93,6 @@
 
   .nav-social-links a {
     margin: 1rem 0.7rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
