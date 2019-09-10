@@ -59,7 +59,7 @@
   transition: var(--mainTransition);
   color: var(--primaryColor);
   margin: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.9rem;
 }
 
 .nav-social-links a:hover {
@@ -93,5 +93,6 @@
 
   .nav-social-links a {
     margin: 1rem 0.7rem;
+    font-size: 1.5rem;
   }
 }
