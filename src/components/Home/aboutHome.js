@@ -22,8 +22,10 @@ const aboutHome = () => {
         <article className={styles.aboutInfo}>
           <h4>ko smo mi</h4>
           <p>
-            "Naš cilj je pomoći vama u prevazilaženju svadbenih poteškoća preko
-            naših interesantnih svadbenih artikala ..."
+            Mi smo tim koji je u želji da iskaže svoju kreativnost otpočeo sa
+            izradom svadbenih dekoracija.<br></br> Sada iza nas stoji
+            višegodišnji rad sa velikim brojem uspešno pripremljenih cvetića za
+            venčanja ...
           </p>
           <AniLink fade className="btn-primary" to="/about">
             pročitaj više

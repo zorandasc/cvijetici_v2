@@ -49,8 +49,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 3rem;
-    align-items: center;
-    margin-top: 3rem;
+    align-items: baseline;
+    margin-top: 5rem;
   }
 
   .about-img,
