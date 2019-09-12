@@ -19,7 +19,7 @@ const about = ({ data }) => {
             <h4>ko smo mi</h4>
             <p>
               Mi smo tim koji je u želji da iskaže svoju kreativnost otpočeo sa
-              izradom svadbenih dekoracija.
+              izradom <strong>svadbenih dekoracija</strong>.
             </p>
             <p>
               Sada iza nas stoji višegodišnji rad sa velikim brojem uspešno
@@ -42,7 +42,12 @@ const about = ({ data }) => {
             </p>
             <p>
               Prepustite se mašti i kontaktirajte nas da zajedno kreiramo
-              dekoracije za Vaše savršeno venčanje.
+              dekoracije za Vaše savršeno <strong>venčanje</strong>.
+            </p>
+            <p>
+              Poručenu robu šaljemo brzom poštom na teritoriju cele Srbije.
+              Takođe, robu šaljemo i u inostranstvo. Ostavljamo Vam i mogućnost
+              ličnog preuzimanja.
             </p>
           </article>
           <article className={styles.aboutImg}>
