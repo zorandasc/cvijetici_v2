@@ -46,7 +46,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 3rem;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 5rem;
   }
 

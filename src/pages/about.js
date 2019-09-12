@@ -31,6 +31,24 @@ const about = ({ data }) => {
               Sa nama možete ostvariti sve svoje želje. Vaši cvetići mogu biti
               personalizovani, elegantni, upečatljivi, raskošni, otmeni...
             </p>
+          </article>
+          <article className={styles.aboutImg}>
+            <div className={styles.imgContainer}>
+              <Img
+                fluid={data.about.childImageSharp.fluid}
+                alt="about picture"
+              ></Img>
+            </div>
+          </article>
+          <article className={styles.aboutImg}>
+            <div className={styles.imgContainer}>
+              <Img
+                fluid={data.crkva.childImageSharp.fluid}
+                alt="about picture"
+              ></Img>
+            </div>
+          </article>
+          <article className={styles.aboutInfo}>
             <p>
               Ako želite tradicionalnu svadbu, tu su naši cvetići sa ruzmarinom,
               a ipak ako ste za nešto moderno u ponudi imao veliki broj
@@ -50,14 +68,6 @@ const about = ({ data }) => {
               mogućnost ličnog preuzimanja.
             </p>
           </article>
-          <article className={styles.aboutImg}>
-            <div className={styles.imgContainer}>
-              <Img
-                fluid={data.about.childImageSharp.fluid}
-                alt="about picture"
-              ></Img>
-            </div>
-          </article>
         </div>
       </section>
     </Layout>
@@ -74,6 +84,13 @@ export const query = graphql`
       }
     }
     about: file(relativePath: { eq: "about.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    crkva: file(relativePath: { eq: "crkva.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
