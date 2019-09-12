@@ -45,9 +45,9 @@ const about = ({ data }) => {
               dekoracije za Vaše savršeno <strong>venčanje</strong>.
             </p>
             <p>
-              Poručenu robu šaljemo brzom poštom na teritoriju cele Srbije.
-              Takođe, robu šaljemo i u inostranstvo. Ostavljamo Vam i mogućnost
-              ličnog preuzimanja.
+              Poručenu robu šaljemo brzom poštom na teritoriji cele Srbije.
+              Takođe, robu šaljemo i na teritoriji balkana. Ostavljamo Vam i
+              mogućnost ličnog preuzimanja.
             </p>
           </article>
           <article className={styles.aboutImg}>
