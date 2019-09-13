@@ -23,9 +23,9 @@ const aboutHome = () => {
           <h4>ko smo mi</h4>
           <p>
             Mi smo tim koji je u želji da iskaže svoju kreativnost otpočeo sa
-            izradom svadbenih dekoracija.<br></br> Sada iza nas stoji
-            višegodišnji rad sa velikim brojem uspešno pripremljenih cvetića za
-            venčanja ...
+            izradom <strong>svadbenih dekoracija</strong>.<br></br> Sada iza nas
+            stoji višegodišnji rad sa velikim brojem uspešno pripremljenih{" "}
+            <strong>cvetića za venčanja</strong>,...
           </p>
           <AniLink fade className="btn-primary" to="/about">
             pročitaj više
