@@ -40,14 +40,7 @@ const about = ({ data }) => {
               ></Img>
             </div>
           </article>
-          <article className={styles.aboutImg}>
-            <div className={styles.imgContainer}>
-              <Img
-                fluid={data.crkva.childImageSharp.fluid}
-                alt="about picture"
-              ></Img>
-            </div>
-          </article>
+
           <article className={styles.aboutInfo}>
             <p>
               Ako želite tradicionalnu svadbu, tu su naši cvetići sa ruzmarinom,
@@ -62,6 +55,16 @@ const about = ({ data }) => {
               Prepustite se mašti i kontaktirajte nas da zajedno kreiramo
               dekoracije za Vaše savršeno <strong>venčanje</strong>.
             </p>
+          </article>
+          <article className={`${styles.aboutImg} ${styles.item1}`}>
+            <div className={styles.imgContainer}>
+              <Img
+                fluid={data.crkva.childImageSharp.fluid}
+                alt="about picture"
+              ></Img>
+            </div>
+          </article>
+          <article className={`${styles.aboutInfo} ${styles.item2}`}>
             <p>
               Naručenu robu šaljemo brzom poštom na teritoriji cele Srbije.
               Takođe, robu šaljemo i na teritoriji Balkana. Ostavljamo Vam i
