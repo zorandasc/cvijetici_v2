@@ -10,15 +10,6 @@ import Img from "gatsby-image"
 import Title from "../components/title"
 import { Dialog } from "@reach/dialog"
 
-const PreviewButton = styled.div`
-  cursor: pointer;
-  position: relative;
-  background: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
-`
-
 const workTemplate = ({ data }) => {
   const [{ showLightbox, currentImage }, setLightbox] = useState({
     showLightbox: false,
@@ -37,7 +28,8 @@ const workTemplate = ({ data }) => {
           <div className={styles.images}>
             {workImages.map((item, index) => {
               return (
-                <PreviewButton
+                <div
+                  className={styles.previewButton}
                   onClick={() =>
                     setLightbox({
                       showLightbox: true,
@@ -51,7 +43,7 @@ const workTemplate = ({ data }) => {
                     alt="svadbeni artikal"
                     className={styles.image}
                   ></Img>
-                </PreviewButton>
+                </div>
               )
             })}
           </div>
