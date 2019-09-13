@@ -23,9 +23,9 @@ const about = ({ data }) => {
             </p>
             <p>
               Sada iza nas stoji višegodišnji rad sa velikim brojem uspešno
-              pripremljenih cvetića za venčanja, poklona za goste, bidermajera,
-              kutija za koverte i drugih unikatnih i ručno izrađenih detalja za
-              venčanja.
+              pripremljenih <strong>cvetića za venčanja</strong>, poklona za
+              goste, bidermajera, kutija za koverte i drugih unikatnih i ručno
+              izrađenih detalja za venčanja.
             </p>
             <p>
               Sa nama možete ostvariti sve svoje želje. Vaši cvetići mogu biti
@@ -43,9 +43,9 @@ const about = ({ data }) => {
 
           <article className={styles.aboutInfo}>
             <p>
-              Ako želite tradicionalnu svadbu, tu su naši cvetići sa ruzmarinom,
-              a ipak ako ste za nešto moderno u ponudi imao veliki broj
-              personalizovanih cvetića.
+              Ako želite tradicionalnu <strong>svadbu</strong>, tu su naši
+              cvetići sa ruzmarinom, a ipak ako ste za nešto moderno u ponudi
+              imao veliki broj personalizovanih cvetića.
             </p>
             <p>
               U našoj galeriji ćete svakako moći da vidite prezentaciju naših
