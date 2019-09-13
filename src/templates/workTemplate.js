@@ -10,6 +10,19 @@ import Img from "gatsby-image"
 import Title from "../components/title"
 import { Dialog } from "@reach/dialog"
 
+const CustomDialog = styled(Dialog)`
+  button {
+    margin-top: 1rem;
+    background: var(--primaryColor);
+    color: var(--mainBlack);
+    transition: var(--mainTransition);
+  }
+  button:hover {
+    background: var(--mainBlack);
+    color: var(--primaryColor);
+  }
+`
+
 const workTemplate = ({ data }) => {
   const [{ showLightbox, currentImage }, setLightbox] = useState({
     showLightbox: false,
@@ -29,6 +42,7 @@ const workTemplate = ({ data }) => {
             {workImages.map((item, index) => {
               return (
                 <div
+                  key={index}
                   className={styles.previewButton}
                   onClick={() =>
                     setLightbox({
@@ -38,7 +52,6 @@ const workTemplate = ({ data }) => {
                   }
                 >
                   <Img
-                    key={index}
                     fluid={item.fluid}
                     alt="svadbeni artikal"
                     className={styles.image}
@@ -48,7 +61,7 @@ const workTemplate = ({ data }) => {
             })}
           </div>
           {showLightbox && (
-            <Dialog>
+            <CustomDialog>
               <Img fluid={currentImage.fluid} />
               <button
                 type="button"
@@ -62,7 +75,7 @@ const workTemplate = ({ data }) => {
               >
                 Zatvori
               </button>
-            </Dialog>
+            </CustomDialog>
           )}
         </div>
       </section>

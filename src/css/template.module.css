@@ -1,7 +1,7 @@
 [data-reach-dialog-overlay] {
   z-index: 1000;
-  /* OVO JE DA BI DIALOG BIO IZNAD SLIKA*/
   /* OVAJ ATRIBUTE SELECTOR JE NADJEN U @REACH/DIALOG/CSS*/
+  /* OVO JE DA BI DIALOG BIO IZNAD SLIKA*/
 }
 
 .template {
@@ -21,6 +21,7 @@
 }
 
 .previewButton {
+  /*OVO DA BI NA MALIM EKRANIMA IZBACILI CLICK*/
   pointer-events: none;
   position: relative;
   background: transparent;
