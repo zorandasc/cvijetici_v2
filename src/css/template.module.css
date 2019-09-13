@@ -22,6 +22,7 @@
 
 .image {
   box-shadow: var(--darkShadow);
+  /*OVO DOLE DODANO NAKON DODAVANJA PreviewButton position: relative;*/
   position: absolute;
   top: 0;
   left: 0;

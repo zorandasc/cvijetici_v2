@@ -11,6 +11,7 @@ import Title from "../components/title"
 import { Dialog } from "@reach/dialog"
 
 const PreviewButton = styled.div`
+  cursor: pointer;
   position: relative;
   background: transparent;
   border: none;
@@ -59,6 +60,7 @@ const workTemplate = ({ data }) => {
               <Img fluid={currentImage.fluid} />
               <button
                 type="button"
+                className="btn-primary"
                 onClick={() =>
                   setLightbox({
                     showLightbox: false,
@@ -66,7 +68,7 @@ const workTemplate = ({ data }) => {
                   })
                 }
               >
-                Close
+                Zatvori
               </button>
             </Dialog>
           )}
