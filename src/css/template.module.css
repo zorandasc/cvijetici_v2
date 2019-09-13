@@ -1,3 +1,9 @@
+[data-reach-dialog-overlay] {
+  z-index: 1000;
+  /* OVO JE DA BI DIALOG BIO IZNAD SLIKA*/
+  /* OVAJ ATRIBUTE SELECTOR JE NADJEN U @REACH/DIALOG/CSS*/
+}
+
 .template {
   padding: 4rem 0;
 }
@@ -16,6 +22,11 @@
 
 .image {
   box-shadow: var(--darkShadow);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 1200px) {
