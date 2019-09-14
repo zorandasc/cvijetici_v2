@@ -28,7 +28,7 @@ const contact = () => {
             <input
               required
               type="text"
-              name="email"
+              name="_replyto"
               id="email"
               className={styles.formControl}
               placeholder="Vaš email@email.com"
