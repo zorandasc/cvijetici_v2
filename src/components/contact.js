@@ -7,10 +7,15 @@ const contact = () => {
     <section className={styles.contact}>
       <Title title="pišite" subtitle="nam"></Title>
       <div className={styles.center}>
-        <form action="#" method="POST" className={styles.form}>
+        <form
+          action="https://formspree.io/dekoracijasvadbenicvet@gmail.com"
+          method="POST"
+          className={styles.form}
+        >
           <div>
             <label htmlFor="name">Ime</label>
             <input
+              required
               type="text"
               name="name"
               id="name"
@@ -21,6 +26,7 @@ const contact = () => {
           <div>
             <label htmlFor="email">email</label>
             <input
+              required
               type="text"
               name="email"
               id="email"
@@ -31,6 +37,7 @@ const contact = () => {
           <div>
             <label htmlFor="message">Poruka</label>
             <textarea
+              required
               name="message"
               id="message"
               rows="10"
