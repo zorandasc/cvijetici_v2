@@ -31,7 +31,7 @@ const contact = () => {
               name="email"
               id="email"
               className={styles.formControl}
-              placeholder="email@email.com"
+              placeholder="Vaš email@email.com"
             ></input>
           </div>
           <div>
