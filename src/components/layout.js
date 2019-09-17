@@ -22,12 +22,7 @@ const layout = ({ children }) => {
     <main>
       <Navbar show={hideOnScroll}></Navbar>
       {children}
-      <div id="fb-root"></div>
-      <div
-        class="fb-customerchat"
-        attribution="setup_tool"
-        page_id="1471747599599619"
-      ></div>
+
       <Footer></Footer>
     </main>
   )

@@ -27,6 +27,8 @@ export default ({ data }) => (
     <SectionBcg home="true" img={data.aboutBcg.childImageSharp.fluid}>
       <WorkCategory></WorkCategory>
     </SectionBcg>
+    <div id="fb-root"></div>
+    <div class="fb-customerchat" page_id="1471747599599619"></div>
   </Layout>
 )
 
