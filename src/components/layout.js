@@ -21,7 +21,7 @@ const layout = ({ children }) => {
   return (
     <main>
       <div id="fb-root"></div>
-      <div class="fb-customerchat" page_id="1471747599599619"></div>
+      <div className="fb-customerchat" page_id="1471747599599619"></div>
       <Navbar show={hideOnScroll}></Navbar>
       {children}
       <Footer></Footer>
