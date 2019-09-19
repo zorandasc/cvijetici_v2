@@ -28,14 +28,14 @@ const contact = () => {
             ></input>
           </div>
           <div>
-            <label htmlFor="kontakt">Vaš kontakt</label>
+            <label htmlFor="email">Vaš kontakt</label>
             <input
               required
               type="text"
-              name="kontakt"
-              id="kontakt"
+              name="email"
+              id="email"
               className={styles.formControl}
-              placeholder="Tel/mob, email, instagram, facebook"
+              placeholder="Vaš email"
             ></input>
           </div>
           <div>
