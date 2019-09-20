@@ -1,0 +1,18 @@
+.icon {
+  transition: var(--mainTransition);
+}
+.icon:hover {
+  color: #d2aa5c;
+}
+
+.facebook-icon {
+  color: #3b579d;
+}
+
+.instagram-icon {
+  color: #833ab4;
+}
+
+.pinterest-icon {
+  color: #e60023;
+}

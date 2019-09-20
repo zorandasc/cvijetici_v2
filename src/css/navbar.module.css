@@ -58,13 +58,11 @@
 }
 .nav-social-links a {
   transition: var(--mainTransition);
-  color: var(--primaryColor);
   margin: 1rem;
   font-size: 1.9rem;
 }
 
 .nav-social-links a:hover {
-  color: var(--mainBlack);
   transform: translateY(-5px);
 }
 
