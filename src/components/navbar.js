@@ -29,7 +29,7 @@ const navbar = ({ className }) => {
             <FaAlignRight className={styles.logoIcon}></FaAlignRight>
           </button>
         </div>
-        <ul
+        <div
           className={
             isOpen
               ? `${styles.navLinks} ${styles.showNav}`
@@ -43,7 +43,7 @@ const navbar = ({ className }) => {
               </AniLink>
             )
           })}
-        </ul>
+        </div>
         <div
           className={
             isOpen
