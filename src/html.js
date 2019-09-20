@@ -25,12 +25,7 @@ export default function HTML(props) {
         />
         {props.postBodyComponents}
         <div id="fb-root"></div>
-        <div
-          className="fb-customerchat"
-          page_id="1471747599599619"
-          logged_in_greeting="Pozdrav! Pošaljite nam poruku."
-          logged_out_greeting="Pozdrav! Pošaljite nam poruku."
-        ></div>
+        <div className="fb-customerchat" page_id="1471747599599619"></div>
       </body>
     </html>
   )
