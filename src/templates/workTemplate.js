@@ -31,9 +31,10 @@ const workTemplate = ({ data }) => {
 
   const { prefiks, category, images } = data.work
   const [mainImage, ...workImages] = images
+
   return (
     <Layout>
-      <SEO title={category}></SEO>
+      <SEO title={`${prefiks} ${category}`}></SEO>
       <StayledHero img={mainImage.fluid}></StayledHero>
       <section className={styles.template}>
         <Title title={prefiks} subtitle={category}></Title>
