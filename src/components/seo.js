@@ -30,7 +30,7 @@ function SEO({ description, lang, meta, title }) {
   const metaTitle = site.siteMetadata.title
   const siteUrl = site.siteMetadata.siteUrl
   const image = `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`
-  console.log("TITLE OD SEO", title)
+
   return (
     <Helmet
       htmlAttributes={{
