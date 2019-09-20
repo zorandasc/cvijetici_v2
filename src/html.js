@@ -24,8 +24,6 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        <div id="fb-root"></div>
-        <div className="fb-customerchat" page_id="1471747599599619"></div>
       </body>
     </html>
   )
