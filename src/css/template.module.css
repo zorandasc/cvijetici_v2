@@ -42,6 +42,17 @@
   height: 100%;
 }
 
+.broj {
+  position: absolute;
+  left: 0;
+  top: 90%;
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+  padding: 0.4rem 0.5rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
 @media screen and (min-width: 1100px) {
   .previewButton {
     cursor: pointer;

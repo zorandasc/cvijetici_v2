@@ -29,7 +29,7 @@ const workTemplate = ({ data }) => {
     currentImage: null,
   })
 
-  const { prefiks, category, images } = data.work
+  const { prefiks, category, main, images } = data.work
   const [mainImage, ...workImages] = images
 
   return (
@@ -57,6 +57,7 @@ const workTemplate = ({ data }) => {
                     alt="svadbeni artikal"
                     className={styles.image}
                   ></Img>
+                  <h6 className={styles.broj}>{`${main}${index}`}</h6>
                 </div>
               )
             })}
@@ -89,6 +90,7 @@ export const query = graphql`
     work: contentfulWork(slug: { eq: $slug }) {
       prefiks
       category
+      main
       images {
         fluid {
           ...GatsbyContentfulFluid
