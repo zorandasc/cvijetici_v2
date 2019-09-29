@@ -4,7 +4,7 @@ import links from "../constants/links"
 import socialLinks from "../constants/socialLinks"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { FaAlignRight } from "react-icons/fa"
-import logo from "../images/2.svg"
+import logo from "../images/3.svg"
 import styled from "styled-components"
 
 const navbar = ({ className }) => {
