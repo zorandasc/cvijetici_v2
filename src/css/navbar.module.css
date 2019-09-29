@@ -43,12 +43,14 @@
   letter-spacing: var(--mainSpacing);
   transition: var(--mainTransition);
   font-weight: bold;
+  box-shadow: var(--lightShadow);
 }
 
 .nav-links a:hover {
   color: var(--primaryColor);
-  background: var(--mainBlack);
+
   transform: translateX(8px);
+  box-shadow: var(--darkShadow);
 }
 
 .nav-social-links {
@@ -82,6 +84,7 @@
   }
 
   .nav-links {
+    overflow: visible;
     height: auto;
     display: flex;
     align-items: center;
