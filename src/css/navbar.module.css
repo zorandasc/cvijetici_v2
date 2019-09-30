@@ -43,7 +43,6 @@
   letter-spacing: var(--mainSpacing);
   transition: var(--mainTransition);
   font-weight: bold;
-  box-shadow: var(--lightShadow);
 }
 
 .nav-links a:hover {
