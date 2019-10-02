@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Svadbeni Cvet`,
-    description: `Započnite svoje svadbeno putovanje sa našim svadbenim artiklima`,
+    description: `Započnite svoje svadbeno putovanje sa našim svadbenim cvetićima, bidermajerima, ukrasnim kutijama za koverte i burme, ofingerima i drugim svadbenim ukrasima i dekoracijama.`,
     author: `@zorandsc`,
     image: `/marriage.jpg`,
     siteUrl: `https://svadbenicvet.com`,
