@@ -15,7 +15,7 @@ export default ({ data }) => (
     <StayledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Banner
         title="svadbeni cvet"
-        info="Pridruži nam se i istraži čarobni svet svadbenih rukom pravljenih dekoracija u ukrasa"
+        info="Pridruži nam se i istraži čarobni svet svadbenih rukom pravljenih dekoracija i ukrasa"
       >
         <AniLink fade to="/gallery" className="btn-white">
           galerija
