@@ -12,6 +12,12 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://www.svadbenicvet.com`,
+      },
+    },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
