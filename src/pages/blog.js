@@ -1,18 +1,19 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import StayledHero from "../components/stayledHero"
 import { graphql } from "gatsby"
-import Gallerys from "../components/Gallery/gallerys"
+import StayledHero from "../components/stayledHero"
+import Blogs from "../components/Blogs/blogs"
+
 import SectionBcg from "../components/sectionBcg"
 
-const gallery = ({ data }) => {
+const blog = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Svadbena Galerija"></SEO>
-      <StayledHero img={data.roses.childImageSharp.fluid}></StayledHero>
-      <SectionBcg img={data.paternBcg.childImageSharp.fluid}>
-        <Gallerys></Gallerys>
+      <SEO title="Blog"></SEO>
+      <StayledHero img={data.blog.childImageSharp.fluid}></StayledHero>
+      <SectionBcg img={data.rosBcg.childImageSharp.fluid}>
+        <Blogs></Blogs>
       </SectionBcg>
     </Layout>
   )
@@ -20,14 +21,14 @@ const gallery = ({ data }) => {
 
 export const query = graphql`
   query {
-    roses: file(relativePath: { eq: "contact.jpg" }) {
+    blog: file(relativePath: { eq: "bouq.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    paternBcg: file(relativePath: { eq: "patern.jpg" }) {
+    rosBcg: file(relativePath: { eq: "ros.png" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
@@ -37,4 +38,4 @@ export const query = graphql`
   }
 `
 
-export default gallery
+export default blog

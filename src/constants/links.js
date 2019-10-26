@@ -11,6 +11,10 @@ export default [
     path: "/gallery",
     label: "galerija",
   },
+  {
+    path: "/blog",
+    label: "blog",
+  },
 
   {
     path: "/contact",

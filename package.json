@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^13.4.0",
     "@n8tb1t/use-scroll-position": "^1.0.35",
     "@reach/dialog": "^0.2.9",
     "babel-plugin-styled-components": "^1.10.6",

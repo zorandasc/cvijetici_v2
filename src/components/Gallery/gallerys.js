@@ -1,5 +1,5 @@
 import React from "react"
-import GalleryList from "../Gallery/galleryList"
+import GalleryList from "./galleryList"
 import { useStaticQuery, graphql } from "gatsby"
 
 const getWorks = graphql`
@@ -19,24 +19,12 @@ const getWorks = graphql`
         }
       }
     }
-    paternBcg: file(relativePath: { eq: "patern.jpg" }) {
-      childImageSharp {
-        fluid(quality: 90, maxWidth: 4160) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
   }
 `
 
 const gallerys = () => {
-  const { workCategories, paternBcg } = useStaticQuery(getWorks)
-  return (
-    <GalleryList
-      workCategories={workCategories}
-      paternBcg={paternBcg}
-    ></GalleryList>
-  )
+  const { workCategories } = useStaticQuery(getWorks)
+  return <GalleryList workCategories={workCategories}></GalleryList>
 }
 
 export default gallerys
