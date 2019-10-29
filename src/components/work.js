@@ -20,9 +20,9 @@ const work = ({ work }) => {
         </AniLink>
       </div>
       <div className={styles.footer}>
-        <h4>
+        <h2>
           {prefiks} {category}
-        </h4>
+        </h2>
       </div>
     </article>
   )

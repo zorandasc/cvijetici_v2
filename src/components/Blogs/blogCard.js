@@ -21,9 +21,9 @@ const blogCard = ({ work }) => {
 
       <div className={styles.footer}>
         <h2>{title}</h2>
-        <h6>
+        <h4>
           <span>by Lidija</span>
-        </h6>
+        </h4>
         <p>{snipet}</p>
       </div>
     </article>

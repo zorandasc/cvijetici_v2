@@ -30,7 +30,7 @@ const workCategory = () => {
   const works = response.workCategory.edges
   return (
     <section className={styles.works}>
-      <Title title="odabrani" subtitle="artikli"></Title>
+      <Title title="Odabrani" subtitle="Artikli"></Title>
       <div className={styles.center}>
         {works.map(({ node }) => {
           return <Work key={node.contentful_id} work={node}></Work>

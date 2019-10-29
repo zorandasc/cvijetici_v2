@@ -54,8 +54,8 @@
   text-align: center;
 }
 
-.footer h4 {
-  font-family: "Playfair Display", serif;
+.footer h2 {
+  font-size: 1.5rem;
   text-transform: capitalize;
   margin-bottom: 0;
 }

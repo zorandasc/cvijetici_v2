@@ -14,7 +14,7 @@
 
 .about-info h4 {
   font-size: 1.7rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .about-img {

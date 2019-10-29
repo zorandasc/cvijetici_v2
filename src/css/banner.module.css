@@ -1,22 +1,19 @@
 .banner {
-  margin: 4rem 0;
-  font-family: "Playfair Display", serif;
+  margin: 4rem auto;
   text-align: center;
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
 }
 
 .banner h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 3.3rem;
-  text-transform: uppercase;
+  font-size: 4rem;
+  text-transform: capitalize;
   padding: 0 1rem;
   margin-bottom: 1rem;
-  letter-spacing: 6px;
+  letter-spacing: 16px;
 }
 
 .banner p {
-  font-family: "Playfair Display", serif;
   width: 85%;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -24,7 +21,7 @@
 
 @media screen and (min-width: 768px) {
   .banner h1 {
-    font-size: 4.5rem;
+    text-transform: uppercase;
   }
   .banner p {
     width: 70%;

@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes|Poppins&display=swap");
 
 :root {
   --mainYellow: #d2aa5c;
@@ -23,7 +21,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Arial", sans-serif;
   color: var(--mainBlack);
   background: var(--mainWhite);
   font-size: 1rem;
@@ -36,20 +34,21 @@ main {
   min-height: 100vh;
 }
 
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Great Vibes", cursive;
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
 
 p {
+  font-family: "Poppins", "Arial", sans-serif;
   margin-bottom: 1.3rem;
+  letter-spacing: var(--mainSpacing);
 }
 
 a {
