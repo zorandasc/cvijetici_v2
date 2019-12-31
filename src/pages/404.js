@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>NE POSTOJI</h1>
+    <h1>STRANICA NE POSTOJI</h1>
     <p>
       Žao nam je upavo ste pokušali rutu koja ne postoji, pokušajte ponovo ili
       se vratirte unatrag.{" "}
