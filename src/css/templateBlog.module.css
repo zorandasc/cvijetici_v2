@@ -14,8 +14,8 @@
 }
 .center {
   background: var(--mainWhite);
-  width: 90vw;
-  padding: 2rem;
+  width: 95vw;
+  padding: 1rem;
   margin: 0 auto;
 }
 
@@ -43,6 +43,13 @@
   padding: 0.1rem 0.5rem;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .center {
+    width: 90vw;
+    padding: 2rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
