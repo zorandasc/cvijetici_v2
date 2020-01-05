@@ -11,7 +11,7 @@
 }
 
 .img-container {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   position: relative;
   background: linear-gradient(#d2aa5c, #262626 0.7);
   transition: var(--mainTransition);
