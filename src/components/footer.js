@@ -2,6 +2,7 @@ import React from "react"
 import styles from "../css/footer.module.css"
 import links from "../constants/links"
 import socialLinks from "../constants/socialLinks"
+import policyLinks from "../constants/policyLinks"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const footer = () => {
@@ -11,6 +12,15 @@ const footer = () => {
         {links.map((item, index) => {
           return (
             <AniLink fade key={index} to={item.path}>
+              {item.label}
+            </AniLink>
+          )
+        })}
+      </div>
+      <div className={styles.links}>
+        {policyLinks.map((item, index) => {
+          return (
+            <AniLink fade key={index} to={item.path} className={styles.policy}>
               {item.label}
             </AniLink>
           )
