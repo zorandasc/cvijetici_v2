@@ -8,12 +8,12 @@
 
 .links {
   margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 .links a {
   display: inline-block;
   text-decoration: none;
-  text-transform: uppercase;
   color: var(--primaryColor);
   margin: 0.5rem 1rem;
   letter-spacing: var(--mainSpacing);
@@ -25,7 +25,7 @@
 }
 
 .policy {
-  font-size: smaller;
+  text-transform: capitalize;
 }
 
 .icons a {
