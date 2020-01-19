@@ -18,7 +18,7 @@ export default [
         className={`${styles.icon} ${styles.pinterestIcon}`}
       ></FaPinterestSquare>
     ),
-    url: "https://pinterest.com/?lang=en",
+    url: "https://www.pinterest.com/SvadbeniCvet/",
   },
   {
     icon: (

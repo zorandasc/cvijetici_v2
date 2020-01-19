@@ -7,10 +7,47 @@
   margin: 0 auto;
 }
 
-label {
-  text-transform: capitalize;
-  display: block;
-  margin-bottom: 0.5rem;
+.kontaktNacin {
+  font-weight: bold;
+}
+.labeleIkona {
+  display: none;
+  justify-content: space-around;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+.icons a {
+  transition: var(--mainTransition);
+  display: inline-block;
+  color: var(--primaryColor);
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-size: 2.9rem;
+}
+
+.icons a:hover {
+  color: var(--mainWhite);
+}
+
+.nasEmail {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+.emailIcona {
+  transition: var(--mainTransition);
+  display: inline-block;
+  color: var(--primaryColor);
+  margin-top: 0;
+  font-size: 2.9rem;
+}
+.emailAdresa {
+  background-color: var(--mainGrey);
+  letter-spacing: 1px;
 }
 
 .formControl,
@@ -23,6 +60,8 @@ label {
 }
 
 .submit {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   background-color: var(--mainBlack);
   color: var(--primaryColor);
   text-transform: uppercase;
@@ -33,6 +72,14 @@ label {
 .submit:hover {
   background: var(--primaryColor);
   color: var(--mainBlack);
+}
+@media screen and (min-width: 600px) {
+  .labeleIkona {
+    display: flex;
+  }
+  .emailAdresa {
+    letter-spacing: var(--mainSpacing);
+  }
 }
 
 @media screen and (min-width: 992px) {

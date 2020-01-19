@@ -45,7 +45,8 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 
-p {
+p,
+label {
   font-family: "Poppins", "Arial", sans-serif;
   margin-bottom: 1.3rem;
   letter-spacing: var(--mainSpacing);

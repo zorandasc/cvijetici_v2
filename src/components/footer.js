@@ -34,7 +34,7 @@ const footer = () => {
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="socials links"
+              aria-label="social link"
             >
               {item.icon}
             </a>

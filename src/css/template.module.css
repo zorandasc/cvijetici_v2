@@ -43,6 +43,7 @@
 }
 
 .broj {
+  font-family: "Arial", sans-serif;
   position: absolute;
   left: 0;
   top: 90%;
