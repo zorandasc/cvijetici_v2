@@ -17,6 +17,13 @@ export default function HTML(props) {
           content="5dfec0d2e21f6834fc7ea6747003a61b"
         />
         {props.headComponents}
+
+        {/* GOOGLE ADS */}
+        <script
+          data-ad-client="ca-pub-3724050527592480"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
@@ -31,11 +38,6 @@ export default function HTML(props) {
         {props.postBodyComponents}
 
         {/* GOOGLE ADS */}
-
-        <script
-          async
-          src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: "(window.adsbygoogle = window.adsbygoogle || []).push({});",
