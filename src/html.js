@@ -11,6 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        {/* PINTEREST  */}
         <meta
           name="p:domain_verify"
           content="5dfec0d2e21f6834fc7ea6747003a61b"
@@ -29,6 +30,8 @@ export default function HTML(props) {
         />
         {props.postBodyComponents}
 
+        {/* GOOGLE ADS */}
+
         <script
           async
           src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
@@ -38,6 +41,8 @@ export default function HTML(props) {
             __html: "(window.adsbygoogle = window.adsbygoogle || []).push({});",
           }}
         ></script>
+        {/* ------------ */}
+        {/* COOKIE HUB */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-149097573-1"
@@ -46,13 +51,9 @@ export default function HTML(props) {
         <script
           dangerouslySetInnerHTML={{
             __html: `var gtagId = 'UA-149097573-1';
-
               window['ga-disable-' + gtagId] = true;
-
               window.dataLayer = window.dataLayer || [];
-
               function gtag(){dataLayer.push(arguments);}
-
               gtag('js', new Date());
               `,
           }}
@@ -62,73 +63,42 @@ export default function HTML(props) {
         <script
           dangerouslySetInnerHTML={{
             __html: `window.addEventListener("load", function() {
-
-window.cookieconsent.initialise({
-
-	onInitialise: function(status) {
-
-		if (this.hasConsented('required')) {
-
-		}
-
-		if (this.hasConsented('analytics')) {
-
-			window['ga-disable-UA-149097573-1'] = false;
-
-			gtag('config', gtagId);
-
-		}
-
-		if (this.hasConsented('marketing')) {
-
-		}
-
-	},
-
-	onAllow: function(category) {
-
-		if (category == 'required') {
-
-		}
-
-		if (category == 'analytics') {
-
-			window['ga-disable-UA-149097573-1'] = false;
-
-			gtag('config', gtagId);
-
-		}
-
-		if (category == 'marketing') {
-
-		}
-
-	},
-
-	onRevoke: function(category) {
-
-		if (category == 'required') {
-
-		}
-
-		if (category == 'analytics') {
-
-			window['ga-disable-UA-149097573-1'] = true;
-
-		}
-
-		if (category == 'marketing') {
-
-		}
-
-	}
-
-})
-
-});
-`,
+                  window.cookieconsent.initialise({
+                    onInitialise: function(status) {
+                      if (this.hasConsented('required')) {
+                      }
+                      if (this.hasConsented('analytics')) {
+                        window['ga-disable-UA-149097573-1'] = false;
+                        gtag('config', gtagId);
+                      }
+                      if (this.hasConsented('marketing')) {
+                      }
+                    },
+                    onAllow: function(category) {
+                      if (category == 'required') {
+                      }
+                      if (category == 'analytics') {
+                        window['ga-disable-UA-149097573-1'] = false;
+                        gtag('config', gtagId);
+                      }
+                      if (category == 'marketing') {
+                      }
+                    },
+                    onRevoke: function(category) {
+                      if (category == 'required') {
+                      }
+                      if (category == 'analytics') {
+                        window['ga-disable-UA-149097573-1'] = true;
+                      }
+                      if (category == 'marketing') {
+                      }
+                    }
+                  })
+                });
+              `,
           }}
         ></script>
+        {/* ------------ */}
       </body>
     </html>
   )
