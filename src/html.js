@@ -37,13 +37,6 @@ export default function HTML(props) {
         />
         {props.postBodyComponents}
 
-        {/* GOOGLE ADS */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: "(window.adsbygoogle = window.adsbygoogle || []).push({});",
-          }}
-        ></script>
-        {/* ------------ */}
         {/* COOKIE HUB */}
         <script
           async

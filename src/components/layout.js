@@ -3,7 +3,6 @@ import Navbar from "./navbar"
 import Footer from "./footer"
 import "./layout.css"
 import { useScrollPosition } from "@n8tb1t/use-scroll-position"
-import GoogleAd from "../components/googleAd.js"
 
 const layout = ({ children }) => {
   const [hideOnScroll, setHideOnScroll] = useState(true)
@@ -21,7 +20,6 @@ const layout = ({ children }) => {
 
   return (
     <main>
-      <GoogleAd client="ca-pub-3724050527592480" slot=""></GoogleAd>
       <Navbar show={hideOnScroll}></Navbar>
       {children}
       <Footer></Footer>
