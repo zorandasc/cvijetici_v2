@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const getWorks = graphql`
   query {
-    workCategories: allContentfulWork {
+    workCategories: allContentfulWork(sort: { order: ASC, fields: category }) {
       edges {
         node {
           contentful_id

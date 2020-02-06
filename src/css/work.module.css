@@ -50,6 +50,8 @@
   opacity: 0.8;
 }
 .footer {
+  /*OVO  PORAVNA FOOTER*/
+  min-height: 6.5rem;
   padding: 1rem 0.5rem;
   text-align: center;
 }
