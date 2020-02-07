@@ -9,6 +9,8 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import Title from "../components/title"
 import { Dialog } from "@reach/dialog"
+import BacgroundImage from "gatsby-background-image"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const CustomDialog = styled(Dialog)`
   button {
@@ -29,7 +31,13 @@ const workTemplate = ({ data }) => {
     currentImage: null,
   })
 
-  const { prefiks, category, main, images } = data.work
+  const {
+    prefiks,
+    category,
+    main,
+    opis: { json },
+    images,
+  } = data.work
   const [mainImage, ...workImages] = images
 
   return (
@@ -38,6 +46,16 @@ const workTemplate = ({ data }) => {
       <StayledHero img={mainImage.fluid}></StayledHero>
       <section className={styles.template}>
         <Title title={prefiks} subtitle={category}></Title>
+
+        <BacgroundImage
+          fluid={data.poz.childImageSharp.fluid}
+          className={styles.opis}
+        >
+          <div className={styles.transbox}>
+            <p>{documentToReactComponents(json)}</p>
+          </div>
+        </BacgroundImage>
+
         <div className={styles.center}>
           <div className={styles.images}>
             {workImages.map((item, index) => {
@@ -87,6 +105,14 @@ const workTemplate = ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
+    poz: file(relativePath: { eq: "167.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
     work: contentfulWork(slug: { eq: $slug }) {
       prefiks
       category
@@ -95,6 +121,9 @@ export const query = graphql`
         fluid {
           ...GatsbyContentfulFluid
         }
+      }
+      opis {
+        json
       }
     }
   }
