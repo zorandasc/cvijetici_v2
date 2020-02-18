@@ -9,7 +9,6 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import Title from "../components/title"
 import { Dialog } from "@reach/dialog"
-import BacgroundImage from "gatsby-background-image"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const CustomDialog = styled(Dialog)`
@@ -47,14 +46,14 @@ const workTemplate = ({ data }) => {
       <section className={styles.template}>
         <Title title={prefiks} subtitle={category}></Title>
 
-        <BacgroundImage
-          fluid={data.poz.childImageSharp.fluid}
-          className={styles.opis}
-        >
-          <div className={styles.transbox}>
-            <p>{documentToReactComponents(json)}</p>
+        <header>
+          <h2 className={styles.ribbon}>
+            <span className={styles.ribbonContent}>{category}</span>
+          </h2>
+          <div className={styles.underpage}>
+            {documentToReactComponents(json)}
           </div>
-        </BacgroundImage>
+        </header>
 
         <div className={styles.center}>
           <div className={styles.images}>

@@ -8,25 +8,6 @@
   padding: 4rem 0;
 }
 
-.opis {
-  width: 80%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 2rem;
-  margin: 2rem auto 4rem auto;
-  box-shadow: var(--darkShadow);
-}
-
-.transbox {
-  border: 2px groove var(--primaryColor);
-  text-align: center;
-  padding: 0.5rem;
-  padding-top: 1.5rem;
-
-  background-color: rgba(247, 247, 247, 0.9);
-  color: var(--mainBlack);
-}
-
 .center {
   width: 70vw;
   margin: 0 auto;
@@ -73,19 +54,85 @@
   border-bottom-right-radius: 1rem;
 }
 
+.ribbon {
+  background: var(--primaryColor);
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.5);
+  line-height: 1;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.25em 0;
+  position: relative;
+  width: 85%;
+}
+.ribbon:before,
+.ribbon:after {
+  border: 1.5em solid var(--primaryColor);
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1em;
+  z-index: -1;
+}
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.ribbon-content {
+  border-top: 0.0625em dashed hsl(30, 90%, 44%);
+  border-bottom: 0.0625em dashed hsl(30, 90%, 44%);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.08),
+    inset 0px -1px 1px rgba(255, 255, 255, 0.08),
+    0px -1px 1px rgba(255, 255, 255, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.08);
+  display: block;
+  padding: 0.6875em 0;
+}
+.ribbon-content:before,
+.ribbon-content:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-style: solid;
+  border-color: hsl(30, 80%, 40%) transparent transparent transparent;
+  bottom: -1em;
+}
+.ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+.ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+.underpage {
+  box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  background: var(--mainGrey);
+  margin: 0 auto;
+  padding: 6em 1.5em 0.5em;
+  position: relative;
+  top: -5em;
+  width: 65%;
+  z-index: -1;
+}
+
+@media screen and (min-width: 900px) {
+  .ribbon {
+    width: 75%;
+  }
+}
+
 @media screen and (min-width: 1100px) {
   .previewButton {
     cursor: pointer;
     pointer-events: visible;
-  }
-  .opis {
-    width: 60%;
-    padding: 1rem;
-    margin: 2rem auto 4rem auto;
-  }
-
-  .transbox {
-    margin: 1rem;
   }
 }
 
