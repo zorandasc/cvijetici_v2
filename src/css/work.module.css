@@ -4,6 +4,7 @@
   background: var(--primaryColor);
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
+  position: relative;
 }
 
 .work:hover {
@@ -49,15 +50,41 @@
 .img-container:hover .link {
   opacity: 0.8;
 }
-.footer {
-  /*OVO  PORAVNA FOOTER*/
-  min-height: 6.5rem;
-  padding: 1rem 0.5rem;
-  text-align: center;
+.ribbon4 {
+  position: absolute;
+  top: 17rem;
+  width: 18rem;
+  height: 6rem;
+  padding: 10px 10px;
+  background: var(--primaryColor);
+  box-shadow: var(--darkShadow);
+  border-bottom-right-radius: 3rem;
+}
+.ribbon4:before,
+.ribbon4:after {
+  content: "";
+  position: absolute;
+}
+.ribbon4:before {
+  width: 7px;
+  height: 100%;
+  top: 0;
+  left: -6.5px;
+  padding: 0 0 7px;
+  background: inherit;
+  border-radius: 5px 0 0 5px;
+}
+.ribbon4:after {
+  width: 5px;
+  height: 5px;
+  bottom: -5px;
+  left: -4.5px;
+  background: hsl(30, 80%, 40%);
+  border-radius: 5px 0 0 5px;
 }
 
-.footer h2 {
-  font-size: 1.5rem;
-  text-transform: capitalize;
-  margin-bottom: 0;
+@media screen and (min-width: 900px) {
+  .ribbon4 {
+    top: 22rem;
+  }
 }

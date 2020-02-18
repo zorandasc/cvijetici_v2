@@ -7,8 +7,9 @@
   width: 80vw;
   margin: 3rem auto;
   display: grid;
+  /*.. then all rows will be equal height.*/
+  grid-auto-rows: 1fr;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }

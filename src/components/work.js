@@ -19,11 +19,9 @@ const work = ({ work }) => {
           istraži
         </AniLink>
       </div>
-      <div className={styles.footer}>
-        <h2>
-          {prefiks} {category}
-        </h2>
-      </div>
+      <h2 className={styles.ribbon4}>
+        {prefiks} {category}
+      </h2>
     </article>
   )
 }
