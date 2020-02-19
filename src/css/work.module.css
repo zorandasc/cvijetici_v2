@@ -52,7 +52,7 @@
 }
 .ribbon4 {
   position: absolute;
-  top: 13rem;
+  top: 70%;
   width: 14rem;
   height: 6rem;
   padding: 10px 10px;
@@ -83,9 +83,8 @@
   border-radius: 5px 0 0 5px;
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 900px) {
   .ribbon4 {
-    top: 17rem;
     width: 17rem;
   }
 }
