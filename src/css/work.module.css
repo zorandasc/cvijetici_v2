@@ -52,8 +52,8 @@
 }
 .ribbon4 {
   position: absolute;
-  top: 17rem;
-  width: 18rem;
+  top: 13rem;
+  width: 14rem;
   height: 6rem;
   padding: 10px 10px;
   background: var(--primaryColor);
@@ -83,8 +83,9 @@
   border-radius: 5px 0 0 5px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 980px) {
   .ribbon4 {
-    top: 22rem;
+    top: 17rem;
+    width: 17rem;
   }
 }
