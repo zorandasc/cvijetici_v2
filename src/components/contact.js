@@ -16,6 +16,7 @@ const contact = () => {
           <p>Facebook</p>
           <p>Pinterest</p>
           <p>Instagram</p>
+          <p>YouTube</p>
         </div>
         <div className={styles.icons}>
           {socialLinks.map((item, index) => {

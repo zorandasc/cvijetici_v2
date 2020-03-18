@@ -1,5 +1,11 @@
 import React from "react"
-import { FaFacebook, FaPinterestSquare, FaInstagram } from "react-icons/fa"
+import {
+  FaFacebook,
+  FaPinterestSquare,
+  FaInstagram,
+  FaYoutube,
+  FaYoutubeSquare,
+} from "react-icons/fa"
 import styles from "../css/social.module.css"
 
 export default [
@@ -27,5 +33,14 @@ export default [
       ></FaInstagram>
     ),
     url: "https://www.instagram.com/cvetici__za__svadbu/?igshid=1bs2j1shz10z",
+  },
+  {
+    icon: (
+      <FaYoutubeSquare
+        className={`${styles.icon} ${styles.youtubeIcon}`}
+      ></FaYoutubeSquare>
+    ),
+    url:
+      "https://www.youtube.com/channel/UC86annL_cXXyT4AeKOv2N4A?view_as=subscriber",
   },
 ]
