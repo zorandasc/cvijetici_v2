@@ -3,7 +3,6 @@ import {
   FaFacebook,
   FaPinterestSquare,
   FaInstagram,
-  FaYoutube,
   FaYoutubeSquare,
 } from "react-icons/fa"
 import styles from "../css/social.module.css"
