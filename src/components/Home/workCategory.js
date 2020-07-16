@@ -25,7 +25,7 @@ const getWorks = graphql`
   }
 `
 
-const workCategory = () => {
+const WorkCategory = () => {
   const response = useStaticQuery(getWorks)
   const works = response.workCategory.edges
   return (
@@ -43,4 +43,4 @@ const workCategory = () => {
   )
 }
 
-export default workCategory
+export default WorkCategory

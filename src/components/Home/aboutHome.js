@@ -5,7 +5,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const aboutHome = () => {
+const AboutHome = () => {
   const { aboutImage } = useStaticQuery(getAbout)
   return (
     <section className={styles.about}>
@@ -36,7 +36,7 @@ const aboutHome = () => {
   )
 }
 
-export default aboutHome
+export default AboutHome
 
 const getAbout = graphql`
   query aboutImage {

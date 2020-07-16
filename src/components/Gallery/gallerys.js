@@ -22,9 +22,9 @@ const getWorks = graphql`
   }
 `
 
-const gallerys = () => {
+const Gallerys = () => {
   const { workCategories } = useStaticQuery(getWorks)
   return <GalleryList workCategories={workCategories}></GalleryList>
 }
 
-export default gallerys
+export default Gallerys

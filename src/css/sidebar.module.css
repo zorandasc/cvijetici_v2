@@ -1,0 +1,85 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--mainWhite);
+  transition: var(--mainTransition);
+  z-index: 2;
+  opacity: 1;
+}
+
+.closeSidebar {
+  opacity: 0;
+  z-index: 0;
+  transform: translateX(-100%);
+}
+
+.closeBtn {
+  transition: var(--mainTransition);
+  background: transparent;
+  border: none;
+  outline-color: var(--primaryColor);
+  cursor: pointer;
+}
+.closeBtn:hover,
+.closeBtn:focus {
+  color: var(--primaryColor);
+}
+
+.closeIcon {
+  font-size: 2rem;
+}
+
+.header {
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.movingHeader {
+  padding: 1rem 2rem;
+}
+.linksContainer {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.link {
+  text-align: center;
+  color: var(--mainBlack);
+  padding: 1rem 1.5rem;
+  display: block;
+  width: 100%;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+  font-weight: bold;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--primaryColor);
+  transform: translateX(8px);
+  box-shadow: var(--darkShadow);
+}
+
+.socialLinks {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.socialIcon {
+  transition: var(--mainTransition);
+  margin-top: 0.5rem;
+  font-size: 2rem;
+}
+.socialIcon:hover,
+.socialIcon:focus {
+  transform: translateY(-5px);
+}

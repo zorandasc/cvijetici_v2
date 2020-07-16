@@ -22,9 +22,9 @@ const getBlogs = graphql`
   }
 `
 
-const blogs = () => {
+const Blogs = () => {
   const { blogCategories } = useStaticQuery(getBlogs)
   return <BlogList blogCategories={blogCategories}></BlogList>
 }
 
-export default blogs
+export default Blogs

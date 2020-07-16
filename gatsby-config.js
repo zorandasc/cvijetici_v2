@@ -35,6 +35,19 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Great+Vibes`,
+          },
+          {
+            family: `Poppins`,
+          },
+        ],
+      },
+    },
+    {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://svadbenicvet.com",

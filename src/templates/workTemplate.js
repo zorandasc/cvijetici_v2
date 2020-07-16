@@ -24,7 +24,7 @@ const CustomDialog = styled(Dialog)`
   }
 `
 
-const workTemplate = ({ data }) => {
+const WorkTemplate = ({ data }) => {
   const [{ showLightbox, currentImage }, setLightbox] = useState({
     showLightbox: false,
     currentImage: null,
@@ -68,6 +68,14 @@ const workTemplate = ({ data }) => {
                       currentImage: item,
                     })
                   }
+                  onKeyDown={() =>
+                    setLightbox({
+                      showLightbox: true,
+                      currentImage: item,
+                    })
+                  }
+                  role="button"
+                  tabIndex="0"
                 >
                   <Img
                     fluid={item.fluid}
@@ -128,4 +136,4 @@ export const query = graphql`
   }
 `
 
-export default workTemplate
+export default WorkTemplate

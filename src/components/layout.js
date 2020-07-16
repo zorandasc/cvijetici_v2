@@ -1,30 +1,17 @@
-import React, { useState } from "react"
+import React from "react"
 import Navbar from "./navbar"
 import Footer from "./footer"
-import "./layout.css"
-import { useScrollPosition } from "@n8tb1t/use-scroll-position"
+import Sidebar from "./sidebar"
 
-const layout = ({ children }) => {
-  const [hideOnScroll, setHideOnScroll] = useState(true)
-
-  useScrollPosition(
-    ({ prevPos, currPos }) => {
-      const isShow = currPos.y > prevPos.y
-      if (isShow !== hideOnScroll) setHideOnScroll(isShow)
-    },
-    [hideOnScroll],
-    false,
-    false,
-    300
-  )
-
+const Layout = ({ children }) => {
   return (
     <main>
-      <Navbar show={hideOnScroll}></Navbar>
+      <Navbar></Navbar>
+      <Sidebar></Sidebar>
       {children}
       <Footer></Footer>
     </main>
   )
 }
 
-export default layout
+export default Layout
