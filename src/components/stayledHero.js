@@ -4,7 +4,13 @@ import BacgroundImage from "gatsby-background-image"
 
 const stayledHero = ({ home, img, children, className }) => {
   return (
-    <BacgroundImage home={home} fluid={img} className={className}>
+    <BacgroundImage
+      fadeIn={false}
+      loading="eager"
+      home={home}
+      fluid={img}
+      className={className}
+    >
       {children}
     </BacgroundImage>
   )
