@@ -57,13 +57,14 @@
   letter-spacing: var(--mainSpacing);
   transition: var(--mainTransition);
   font-weight: bold;
-  box-shadow: var(--darkShadow);
+  box-shadow: var(--lightShadow);
 }
 
 .link:hover,
 .link:focus {
   color: var(--primaryColor);
   transform: translateX(8px);
+  box-shadow: var(--darkShadow);
 }
 
 .socialLinks {
