@@ -16,7 +16,7 @@ const about = ({ data }) => {
         <Title title="naša" subtitle="misija"></Title>
         <div className={styles.aboutCenter}>
           <article className={styles.aboutInfo}>
-            <h4>ko smo mi</h4>
+            <h3>ko smo mi</h3>
             <p>
               Mi smo tim koji je u želji da iskaže svoju kreativnost otpočeo sa
               izradom <strong>svadbenih dekoracija</strong>.

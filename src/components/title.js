@@ -4,10 +4,10 @@ import styled from "styled-components"
 const title = ({ title, subtitle, className }) => {
   return (
     <div className={className}>
-      <h3>
+      <h2>
         <span className="title">{title}</span>
         <span>{subtitle}</span>
-      </h3>
+      </h2>
     </div>
   )
 }
@@ -17,7 +17,7 @@ export default styled(title)`
   margin-top: 2rem;
   margin-bottom: 5rem;
   font-size: 2.3rem;
-  h3 {
+  h2 {
     text-align: center;
     letter-spacing: 6px;
     color: var(--primaryColor);

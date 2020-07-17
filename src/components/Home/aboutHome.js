@@ -20,7 +20,7 @@ const AboutHome = () => {
           </div>
         </article>
         <article className={styles.aboutInfo}>
-          <h4>ko smo mi</h4>
+          <h3>ko smo mi</h3>
           <p>
             Mi smo tim koji je u želji da iskaže svoju kreativnost otpočeo sa
             izradom <strong>svadbenih dekoracija</strong>.<br></br> Sada iza nas

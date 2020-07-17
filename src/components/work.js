@@ -19,9 +19,9 @@ const work = ({ work }) => {
           istraži
         </AniLink>
       </div>
-      <h2 className={styles.ribbon4}>
+      <h3 className={styles.ribbon4}>
         {prefiks} {category}
-      </h2>
+      </h3>
     </article>
   )
 }

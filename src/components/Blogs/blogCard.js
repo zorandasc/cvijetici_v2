@@ -20,7 +20,7 @@ const blogCard = ({ work }) => {
       </div>
 
       <div className={styles.footer}>
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <h4>
           <span>by Lidija</span>
         </h4>
