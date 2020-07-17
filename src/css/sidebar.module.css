@@ -33,10 +33,11 @@
 }
 
 .header {
-  padding: 2rem;
-  padding-top: 0.5rem;
+  padding: 0.5rem 2rem 0 2rem;
   display: flex;
   justify-content: space-between;
+  border-bottom: 0.2rem solid var(--primaryColor);
+  box-shadow: var(--darkShadow);
 }
 
 .linksContainer {
@@ -44,10 +45,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 .link {
-  text-align: center;
+  text-align: left;
   color: var(--mainBlack);
   padding: 1rem 1.5rem;
   display: block;
@@ -56,21 +57,20 @@
   letter-spacing: var(--mainSpacing);
   transition: var(--mainTransition);
   font-weight: bold;
+  box-shadow: var(--darkShadow);
 }
 
 .link:hover,
 .link:focus {
   color: var(--primaryColor);
   transform: translateX(8px);
-  box-shadow: var(--darkShadow);
 }
 
 .socialLinks {
   margin-top: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-  gap: 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .socialIcon {
