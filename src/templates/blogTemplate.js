@@ -7,14 +7,15 @@ import SEO from "../components/seo"
 import StyledHero from "../components/stayledHero"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import RichImage from "../components/rixhImage"
+import { getFluidGatsbyImage } from "../tools/getFluidGatsbyImage"
 
 export const query = graphql`
   query getPost($slug: String!) {
     post: contentfulBlog(slug: { eq: $slug }) {
       title
-      images {
+      heroImage {
         fluid {
-          ...GatsbyContentfulFluid
+          ...GatsbyContentfulFluid_withWebp
         }
       }
       text {
@@ -27,15 +28,23 @@ export const query = graphql`
 const BlogTemplate = ({ data }) => {
   const {
     title,
-    images,
+    heroImage,
     text: { json },
   } = data.post
-  const mainImage = images[0]
 
   const options = {
     renderNode: {
       "embedded-asset-block": node => {
-        return <RichImage contentfulId={node.data.target.sys.id}></RichImage>
+        if (node.data.target) {
+          const { file, title } = node.data.target.fields
+
+          const image = {
+            file: file["en-US"],
+          }
+
+          const fluidProps = getFluidGatsbyImage(image, {})
+          return <RichImage fluid={fluidProps} title={title["en-US"]} />
+        }
       },
     },
   }
@@ -43,7 +52,7 @@ const BlogTemplate = ({ data }) => {
   return (
     <Layout>
       <SEO title={title}></SEO>
-      <StyledHero img={mainImage.fluid}></StyledHero>
+      <StyledHero img={heroImage.fluid}></StyledHero>
       <section className={styles.template}>
         <div className={styles.center}>
           <h1 className={styles.title}>{title}</h1>
