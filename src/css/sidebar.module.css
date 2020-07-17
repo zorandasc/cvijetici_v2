@@ -29,23 +29,22 @@
 }
 
 .closeIcon {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .header {
   padding: 2rem;
+  padding-top: 0.5rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
-.movingHeader {
-  padding: 1rem 2rem;
-}
+
 .linksContainer {
-  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 .link {
   text-align: center;
@@ -68,16 +67,16 @@
 
 .socialLinks {
   margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 2rem;
 }
 
 .socialIcon {
   transition: var(--mainTransition);
   margin-top: 0.5rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .socialIcon:hover,
 .socialIcon:focus {

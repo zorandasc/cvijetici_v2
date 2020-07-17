@@ -1,4 +1,6 @@
 .navbar {
+  position: fixed;
+  width: 100%;
   height: 6rem;
   padding: 1rem 2rem;
   display: flex;
@@ -6,15 +8,6 @@
   background: var(--mainWhite);
   z-index: 1;
   transition: all 0.5s;
-  border-bottom: 0.2rem solid var(--primaryColor);
-  box-shadow: var(--darkShadow);
-}
-.navbarFixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3rem;
   border-bottom: 0.2rem solid var(--primaryColor);
   box-shadow: var(--darkShadow);
 }
@@ -39,10 +32,6 @@
   line-height: 0;
 }
 
-.navbarFixed .logo {
-  visibility: hidden;
-}
-
 .toggleBtn {
   transition: var(--mainTransition);
   background: transparent;
@@ -57,7 +46,7 @@
 }
 
 .toggleIcon {
-  font-size: 2rem;
+  font-size: 3em;
 }
 
 .links,
@@ -77,10 +66,6 @@
   transition: var(--mainTransition);
   margin-left: 1.5rem;
   padding: 1em;
-}
-
-.navbarFixed .navLink {
-  padding: 0.5em;
 }
 
 .navLink:hover,

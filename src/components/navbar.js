@@ -8,15 +8,9 @@ import { FaAlignRight } from "react-icons/fa"
 import logo from "../images/logo.svg"
 
 const Navbar = () => {
-  const { width, height, handleOpenSidebar } = React.useContext(AppContext)
+  const { width, handleOpenSidebar } = React.useContext(AppContext)
   return (
-    <nav
-      className={
-        height < 80
-          ? `${styles.navbar}`
-          : `${styles.navbar} ${styles.navbarFixed}`
-      }
-    >
+    <nav className={styles.navbar}>
       {width > 990 ? (
         <div className={styles.center}>
           <AniLink fade to="/" className={styles.logo}>
