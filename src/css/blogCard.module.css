@@ -13,7 +13,7 @@
 .img-container {
   flex: 0 1 auto;
   position: relative;
-  background: linear-gradient(#d2aa5c, #262626 0.7);
+  background: var(--mainBlack);
   transition: var(--mainTransition);
 }
 .img {
@@ -46,23 +46,22 @@
   opacity: 0.8;
 }
 .footer {
-  color: var(--offWhite);
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
-  padding: 1rem 0.5rem;
+  color: var(--mainBlack);
+  padding: 0.5rem;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .footer h3 {
-  font-size: 30px;
+  font-size: 2.5rem;
   text-transform: capitalize;
   margin-bottom: 10px;
 }
 
 .footer h4 {
-  color: var(--mainGrey);
   text-transform: capitalize;
 }
 
 .footer p {
-  padding: 0.5rem 0;
+  padding-top: 0.5rem;
 }

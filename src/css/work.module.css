@@ -1,7 +1,6 @@
 .work {
   display: flex;
   flex-direction: column;
-  background: var(--primaryColor);
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
   position: relative;
@@ -14,8 +13,8 @@
 .img-container {
   flex: 1 1 auto;
   position: relative;
-  background: linear-gradient(rgba(210, 170, 92, 0.5), rgba(0, 0, 0, 1));
   transition: var(--mainTransition);
+  background: var(--mainBlack);
 }
 .img {
   height: 100%;
@@ -51,7 +50,7 @@
   opacity: 0.8;
 }
 .ribbon4 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   position: absolute;
   top: 70%;
   width: 14rem;
@@ -87,5 +86,6 @@
 @media screen and (min-width: 900px) {
   .ribbon4 {
     width: 17rem;
+    font-size: 1.8rem;
   }
 }
