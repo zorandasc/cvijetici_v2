@@ -25,6 +25,7 @@ export default styled(title)`
   }
   .title {
     color: var(--mainBlack);
+    text-shadow: none;
   }
   span {
     display: block;
