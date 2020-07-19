@@ -9,16 +9,17 @@ import links from "../constants/links"
 import socialLinks from "../constants/socialLinks"
 
 const Sidebar = () => {
-  const { isSidebarOpen, handleCloseSidebar } = React.useContext(AppContext)
+  const { width, isSidebarOpen, handleCloseSidebar } = React.useContext(
+    AppContext
+  )
+
+  const sidebarFunc = isSidebarOpen
+    ? `${styles.sidebar}`
+    : `${styles.sidebar} ${styles.closeSidebar} `
 
   return (
-    <div
-      className={
-        isSidebarOpen
-          ? `${styles.sidebar}`
-          : `${styles.sidebar} ${styles.closeSidebar} `
-      }
-    >
+    /*OVO JE DA SE OMOGUCI TABOVANJE NA DESKTOP RACUNARIMA*/
+    <div className={width < 1110 ? sidebarFunc : styles.displayNone}>
       <header className={styles.header}>
         <AniLink fade to="/" className={styles.logo}>
           <img src={logo} alt="svadbeni cvet"></img>

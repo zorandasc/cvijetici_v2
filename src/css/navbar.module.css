@@ -76,8 +76,8 @@
 
 .socialIcon {
   transition: var(--mainTransition);
-  margin-left: 1rem;
-  font-size: 1.5rem;
+  margin-left: 2rem;
+  font-size: 1.8rem;
 }
 
 .socialIcon:hover,

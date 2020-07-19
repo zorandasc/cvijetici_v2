@@ -11,7 +11,7 @@ const Navbar = () => {
   const { width, handleOpenSidebar } = React.useContext(AppContext)
   return (
     <nav className={styles.navbar}>
-      {width > 990 ? (
+      {width > 1100 ? (
         <div className={styles.center}>
           <AniLink fade to="/" className={styles.logo}>
             <img src={logo} alt="svadbeni cvet"></img>
