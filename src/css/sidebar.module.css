@@ -16,10 +16,6 @@
   transform: translateX(-100%);
 }
 
-.displayNone {
-  display: none;
-}
-
 .closeBtn {
   transition: var(--mainTransition);
   background: transparent;
