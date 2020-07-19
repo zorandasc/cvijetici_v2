@@ -1,15 +1,17 @@
 import "@reach/dialog/styles.css"
 import React, { useState } from "react"
 import { graphql } from "gatsby"
+import styled from "styled-components"
+import Img from "gatsby-image"
+import { Dialog } from "@reach/dialog"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
 import styles from "../css/template.module.css"
-import styled from "styled-components"
-import Img from "gatsby-image"
 import Title from "../components/title"
-import { Dialog } from "@reach/dialog"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import ScrollButton from "../components/ScrollButton"
 
 const CustomDialog = styled(Dialog)`
   button {
@@ -42,11 +44,13 @@ const WorkTemplate = ({ data }) => {
   return (
     <Layout>
       <SEO title={`${prefiks} ${category}`}></SEO>
+
       <StayledHero img={mainImage.fluid}></StayledHero>
       <section className={styles.template}>
         <Title title={prefiks} subtitle={category}></Title>
 
-        <header>
+        <header id="header">
+          <ScrollButton></ScrollButton>
           <h2 className={styles.ribbon}>
             <span className={styles.ribbonContent}>{category}</span>
           </h2>

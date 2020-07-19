@@ -8,6 +8,7 @@ import StyledHero from "../components/stayledHero"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import RichImage from "../components/rixhImage"
 import { getFluidGatsbyImage } from "../tools/getFluidGatsbyImage"
+import ScrollButton from "../components/ScrollButton"
 
 export const query = graphql`
   query getPost($slug: String!) {
@@ -53,7 +54,8 @@ const BlogTemplate = ({ data }) => {
     <Layout>
       <SEO title={title}></SEO>
       <StyledHero img={heroImage.fluid}></StyledHero>
-      <section className={styles.template}>
+      <section id="header" className={styles.template}>
+        <ScrollButton></ScrollButton>
         <div className={styles.center}>
           <h1 className={styles.title}>{title}</h1>
           <div className={styles.underline}></div>
