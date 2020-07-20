@@ -9,11 +9,14 @@ import links from "../constants/links"
 import socialLinks from "../constants/socialLinks"
 
 const Sidebar = () => {
-  const { isSidebarOpen, handleCloseSidebar } = React.useContext(AppContext)
+  const { width, isSidebarOpen, handleCloseSidebar } = React.useContext(
+    AppContext
+  )
 
   return (
-    /*OVO JE DA SE OMOGUCI TABOVANJE NA DESKTOP RACUNARIMA*/
     <div
+      /* OVAJ STYLE JE ZA TABOVANJE NA OTVORENOM DESKTOPU */
+      style={{ display: width > 1100 ? "none" : "block" }}
       className={
         isSidebarOpen
           ? `${styles.sidebar}`
