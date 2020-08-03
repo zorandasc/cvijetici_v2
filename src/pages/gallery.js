@@ -22,14 +22,14 @@ export const query = graphql`
   query {
     roses: file(relativePath: { eq: "contact.jpg" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 4160) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     paternBcg: file(relativePath: { eq: "patern.jpg" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 4160) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

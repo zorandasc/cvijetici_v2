@@ -11,9 +11,9 @@ const getWorks = graphql`
           slug
           prefiks
           category
-          images {
+          heroImage {
             fluid {
-              ...GatsbyContentfulFluid
+              ...GatsbyContentfulFluid_withWebp
             }
           }
         }

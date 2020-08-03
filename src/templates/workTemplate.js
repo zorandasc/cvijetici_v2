@@ -116,21 +116,13 @@ const WorkTemplate = ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    poz: file(relativePath: { eq: "167.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
     work: contentfulWork(slug: { eq: $slug }) {
       prefiks
       category
       main
       images {
         fluid {
-          ...GatsbyContentfulFluid
+          ...GatsbyContentfulFluid_withWebp
         }
       }
       opis {

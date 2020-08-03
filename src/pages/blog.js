@@ -37,14 +37,14 @@ export const query = graphql`
   query {
     blog: file(relativePath: { eq: "bouq.jpg" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 4160) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     rosBcg: file(relativePath: { eq: "ros.png" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 4160) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

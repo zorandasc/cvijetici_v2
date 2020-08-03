@@ -3,7 +3,7 @@ import Title from "../title"
 import { useStaticQuery, graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../../css/workCategory.module.css"
-import Work from "../work"
+import Work from "../Gallery/work"
 
 const getWorks = graphql`
   query {
@@ -14,9 +14,9 @@ const getWorks = graphql`
           slug
           prefiks
           category
-          images {
+          heroImage {
             fluid {
-              ...GatsbyContentfulFluid
+              ...GatsbyContentfulFluid_withWebp
             }
           }
         }

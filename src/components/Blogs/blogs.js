@@ -11,9 +11,9 @@ const getBlogs = graphql`
           slug
           title
           snipet
-          images {
+          heroImage {
             fluid {
-              ...GatsbyContentfulFluid
+              ...GatsbyContentfulFluid_withWebp
             }
           }
         }

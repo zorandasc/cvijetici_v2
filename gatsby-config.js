@@ -26,6 +26,8 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-preload-link-crossorigin`,
+    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-source-contentful`,
       options: {

@@ -1,11 +1,11 @@
 import React from "react"
-import styles from "../css/work.module.css"
+import styles from "../../css/work.module.css"
 import Image from "gatsby-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const work = ({ work }) => {
-  const { slug, prefiks, category, images } = work
-  let mainImage = images[0].fluid
+  const { slug, prefiks, category, heroImage } = work
+  let mainImage = heroImage.fluid
 
   return (
     <article className={styles.work}>

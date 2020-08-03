@@ -4,8 +4,8 @@ import Image from "gatsby-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const blogCard = ({ work }) => {
-  const { slug, title, snipet, images } = work
-  let mainImage = images[0].fluid
+  const { slug, title, snipet, heroImage } = work
+  let mainImage = heroImage.fluid
   return (
     <article className={styles.work}>
       <div className={styles.imgContainer}>

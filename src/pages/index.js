@@ -34,14 +34,14 @@ export const query = graphql`
   query {
     defaultBcg: file(relativePath: { eq: "marriage.jpg" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 4160) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
     aboutBcg: file(relativePath: { eq: "patern.jpg" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 4160) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

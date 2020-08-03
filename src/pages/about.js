@@ -81,22 +81,22 @@ export const query = graphql`
   query {
     aboutBcg: file(relativePath: { eq: "band.jpg" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 4160) {
+        fluid {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     about: file(relativePath: { eq: "about.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     crkva: file(relativePath: { eq: "crkva.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Title from "../title"
-import Work from "../work"
+import Work from "./work"
 import styles from "../../css/workCategory.module.css"
 
 export default class galleryList extends Component {
