@@ -1,83 +1,66 @@
 .sidebar {
   position: fixed;
-  top: 0;
+  top: 6rem;
   left: 0;
   right: 0;
   height: 100vh;
-  background: var(--mainWhite);
-  transition: var(--mainTransition);
+  background: var(--mainBlack);
   z-index: 2;
   opacity: 1;
+  clip-path: circle(150% at top left);
+  transition: clip-path ease-in-out 500ms;
 }
 
 .closeSidebar {
-  opacity: 0;
-  z-index: 0;
-  transform: translateX(-100%);
-}
-
-.closeBtn {
-  transition: var(--mainTransition);
-  background: transparent;
-  border: none;
-  outline-color: var(--primaryColor);
-  cursor: pointer;
-}
-.closeBtn:hover,
-.closeBtn:focus {
-  color: var(--primaryColor);
-}
-
-.closeIcon {
-  font-size: 3rem;
-}
-
-.header {
-  padding: 0.5rem 2rem 0 2rem;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 0.2rem solid var(--primaryColor);
-  box-shadow: var(--darkShadow);
+  clip-path: circle(0px at top left);
+  transition: clip-path ease-in-out 500ms;
 }
 
 .linksContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
+
+.linksContainer ul {
+  width: 100%;
+}
+
 .link {
   text-align: left;
-  color: var(--mainBlack);
-  padding: 1rem 1.5rem;
-  display: block;
-  width: 100%;
+  color: var(--primaryColor);
+  padding: 1em 1em;
+  display: flex;
+  align-items: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
-  transition: var(--mainTransition);
-  font-weight: bold;
-  box-shadow: var(--lightShadow);
+  border-bottom: 1px solid var(--primaryColor);
 }
 
 .link:hover,
 .link:focus {
-  color: var(--primaryColor);
-  transform: translateX(8px);
-  box-shadow: var(--darkShadow);
+  color: var(--mainBlack);
+  background: var(--primaryColor);
+}
+
+.linksIcon {
+  display: inline-block;
+  font-size: 1.4em;
+  margin-right: 1em;
+  text-align: right;
+  width: 1em;
 }
 
 .socialLinks {
-  margin-top: 1rem;
+  margin: 1rem 0;
   display: flex;
   width: 100%;
   justify-content: space-around;
+  align-items: center;
 }
 
 .socialIcon {
   transition: var(--mainTransition);
-  margin-top: 0.5rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  display: flex;
 }
 .socialIcon:hover,
 .socialIcon:focus {

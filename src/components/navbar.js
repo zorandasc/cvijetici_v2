@@ -4,11 +4,16 @@ import { AppContext } from "../context"
 import links from "../constants/links"
 import socialLinks from "../constants/socialLinks"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { FaAlignRight } from "react-icons/fa"
+import { FaAlignRight, FaTimes } from "react-icons/fa"
 import logo from "../images/logo.svg"
 
 const Navbar = () => {
-  const { width, handleOpenSidebar } = React.useContext(AppContext)
+  const {
+    width,
+    handleOpenSidebar,
+    handleCloseSidebar,
+    isSidebarOpen,
+  } = React.useContext(AppContext)
   return (
     <nav className={styles.navbar}>
       {width > 1100 ? (
@@ -49,14 +54,25 @@ const Navbar = () => {
           <AniLink fade to="/" className={styles.logo}>
             <img src={logo} alt="svadbeni cvet"></img>
           </AniLink>
-          <button
-            aria-label="hamburger menu"
-            type="button"
-            onClick={handleOpenSidebar}
-            className={styles.toggleBtn}
-          >
-            <FaAlignRight className={styles.toggleIcon}></FaAlignRight>
-          </button>
+          {isSidebarOpen ? (
+            <button
+              aria-label="close icon"
+              type="button"
+              onClick={handleCloseSidebar}
+              className={styles.closeBtn}
+            >
+              <FaTimes className={styles.closeIcon}></FaTimes>
+            </button>
+          ) : (
+            <button
+              aria-label="hamburger menu"
+              type="button"
+              onClick={handleOpenSidebar}
+              className={styles.toggleBtn}
+            >
+              <FaAlignRight className={styles.toggleIcon}></FaAlignRight>
+            </button>
+          )}
         </div>
       )}
     </nav>

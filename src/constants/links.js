@@ -1,23 +1,38 @@
+import React from "react"
+
+import {
+  FaHome,
+  FaInfoCircle,
+  FaMagic,
+  FaPenNib,
+  FaEnvelope,
+} from "react-icons/fa"
+
 export default [
   {
     path: "/",
     label: "početna",
+    icon: <FaHome></FaHome>,
   },
   {
     path: "/about",
     label: "o nama",
+    icon: <FaInfoCircle></FaInfoCircle>,
   },
   {
     path: "/gallery",
     label: "galerija",
+    icon: <FaMagic></FaMagic>,
   },
   {
     path: "/blog",
     label: "blog",
+    icon: <FaPenNib></FaPenNib>,
   },
 
   {
     path: "/contact",
     label: "kontakt",
+    icon: <FaEnvelope></FaEnvelope>,
   },
 ]

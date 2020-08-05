@@ -1,8 +1,5 @@
 import React from "react"
-import { FaTimes } from "react-icons/fa"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-
-import logo from "../images/logo.svg"
 import { AppContext } from "../context/context"
 import styles from "../css/sidebar.module.css"
 import links from "../constants/links"
@@ -23,33 +20,25 @@ const Sidebar = () => {
           : `${styles.sidebar} ${styles.closeSidebar} `
       }
     >
-      <header className={styles.header}>
-        <AniLink fade to="/" className={styles.logo}>
-          <img src={logo} alt="svadbeni cvet"></img>
-        </AniLink>
-        <button
-          aria-label="close icon"
-          type="button"
-          onClick={handleCloseSidebar}
-          className={styles.closeBtn}
-        >
-          <FaTimes className={styles.closeIcon}></FaTimes>
-        </button>
-      </header>
-      <section className={styles.linksContainer}>
-        {links.map((item, index) => {
-          return (
-            <AniLink
-              key={index}
-              to={item.path}
-              className={styles.link}
-              onClick={handleCloseSidebar}
-            >
-              {item.label}
-            </AniLink>
-          )
-        })}
-      </section>
+      <nav className={styles.linksContainer}>
+        <ul>
+          {links.map((item, index) => {
+            return (
+              <li>
+                <AniLink
+                  key={index}
+                  to={item.path}
+                  className={styles.link}
+                  onClick={handleCloseSidebar}
+                >
+                  <i className={styles.linksIcon}>{item.icon}</i>
+                  {item.label}
+                </AniLink>
+              </li>
+            )
+          })}
+        </ul>
+      </nav>
       <div className={styles.socialLinks}>
         {socialLinks.map((item, index) => {
           return (
