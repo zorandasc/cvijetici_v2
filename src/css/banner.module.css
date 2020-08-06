@@ -1,5 +1,5 @@
 .banner {
-  margin: 4rem auto;
+  margin: 2rem auto;
   text-align: center;
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
@@ -10,7 +10,7 @@
   text-transform: capitalize;
   padding: 0 1rem;
   margin-bottom: 1rem;
-  letter-spacing: 16px;
+  letter-spacing: 12px;
 }
 
 .banner p {
@@ -19,11 +19,21 @@
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 400px) {
+  .banner h1 {
+    letter-spacing: 16px;
+  }
+  .banner {
+    margin: 4rem auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .banner h1 {
     text-transform: uppercase;
   }
   .banner p {
     width: 70%;
+    margin-bottom: 4rem;
   }
 }
