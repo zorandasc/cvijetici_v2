@@ -17,7 +17,7 @@ export default ({ data }) => (
         title="svadbeni cvet"
         info="Pridruži nam se i istraži čarobni svet svadbenih rukom pravljenih dekoracija i ukrasa"
       >
-        <AniLink fade to="/gallery" className="btn-primary">
+        <AniLink fade to="/gallery" className="btn-hero">
           galerija
         </AniLink>
       </Banner>

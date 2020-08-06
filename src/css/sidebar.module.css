@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   height: 100vh;
-  background: var(--mainBlack);
+  background: var(--mainWhite);
   z-index: 2;
   opacity: 1;
   clip-path: circle(150% at top left);
@@ -27,13 +27,13 @@
 
 .link {
   text-align: left;
-  color: var(--primaryColor);
+  color: var(--mainBlack);
   padding: 1em 1em;
   display: flex;
   align-items: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
-  border-bottom: 1px solid var(--primaryColor);
+  border-bottom: 1px solid var(--mainBlack);
   transition: var(--mainTransition);
 }
 

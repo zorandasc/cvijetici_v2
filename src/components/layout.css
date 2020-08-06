@@ -63,7 +63,8 @@ a {
 }
 
 .btn-white,
-.btn-primary {
+.btn-primary,
+.btn-hero {
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
@@ -78,12 +79,24 @@ a {
   background: var(--primaryColor);
 }
 .btn-primary {
-  background: var(--primaryColor);
-  color: var(--mainWhite);
+  background: var(--mainBlack);
+  color: var(--primaryColor);
   border: 2px solid var(--primaryColor);
 }
 .btn-primary:hover,
 .btn-primary:focus {
   background: transparent;
   color: var(--primaryColor);
+}
+
+.btn-hero {
+  background: transparent;
+  color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+}
+
+.btn-hero:hover,
+.btn-hero:focus {
+  background: var(--primaryColor);
+  color: var(--mainBlack);
 }
