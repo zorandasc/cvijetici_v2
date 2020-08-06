@@ -32,7 +32,8 @@
   line-height: 0;
 }
 
-.toggleBtn {
+.toggleBtn,
+.closeBtn {
   transition: var(--mainTransition);
   background: transparent;
   border: none;
@@ -41,28 +42,15 @@
 }
 
 .toggleBtn:hover,
-.toggleBtn:focus {
-  color: var(--primaryColor);
-}
-
-.toggleIcon {
-  font-size: 3em;
-}
-
-.closeBtn {
-  transition: var(--mainTransition);
-  background: transparent;
-  border: none;
-  outline-color: var(--primaryColor);
-  cursor: pointer;
-}
+.toggleBtn:focus,
 .closeBtn:hover,
 .closeBtn:focus {
   color: var(--primaryColor);
 }
 
+.toggleIcon,
 .closeIcon {
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 .links,
