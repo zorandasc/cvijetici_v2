@@ -32,27 +32,6 @@
   line-height: 0;
 }
 
-.toggleBtn,
-.closeBtn {
-  transition: var(--mainTransition);
-  background: transparent;
-  border: none;
-  outline-color: var(--primaryColor);
-  cursor: pointer;
-}
-
-.toggleBtn:hover,
-.toggleBtn:focus,
-.closeBtn:hover,
-.closeBtn:focus {
-  color: var(--primaryColor);
-}
-
-.toggleIcon,
-.closeIcon {
-  font-size: 3em;
-}
-
 .links,
 .socialLinks {
   display: flex;

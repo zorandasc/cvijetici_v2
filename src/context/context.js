@@ -15,6 +15,10 @@ const AppProvider = ({ children }) => {
     setSidebar(false)
   }
 
+  const handleToggle = () => {
+    setSidebar(!isSidebarOpen)
+  }
+
   React.useEffect(() => {
     if (window) {
       setWidth(window.innerWidth)
@@ -42,6 +46,7 @@ const AppProvider = ({ children }) => {
         height,
         handleCloseSidebar,
         handleOpenSidebar,
+        handleToggle,
         isSidebarOpen,
       }}
     >

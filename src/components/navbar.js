@@ -1,19 +1,16 @@
 import React from "react"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 import styles from "../css/navbar.module.css"
 import { AppContext } from "../context"
 import links from "../constants/links"
 import socialLinks from "../constants/socialLinks"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { FaAlignRight, FaTimes } from "react-icons/fa"
 import logo from "../images/logo.svg"
+import ToggleButton from "./ToggleButtonCss"
+//import ToggleButtonIcon from "./ToggleButtonIcon"
 
 const Navbar = () => {
-  const {
-    width,
-    handleOpenSidebar,
-    handleCloseSidebar,
-    isSidebarOpen,
-  } = React.useContext(AppContext)
+  const { width, handleToggle, isSidebarOpen } = React.useContext(AppContext)
   return (
     <nav className={styles.navbar}>
       {width > 1100 ? (
@@ -21,6 +18,7 @@ const Navbar = () => {
           <AniLink fade to="/" className={styles.logo}>
             <img src={logo} alt="svadbeni cvet"></img>
           </AniLink>
+
           <ul className={styles.links}>
             {links.map((item, index) => {
               return (
@@ -54,25 +52,11 @@ const Navbar = () => {
           <AniLink fade to="/" className={styles.logo}>
             <img src={logo} alt="svadbeni cvet"></img>
           </AniLink>
-          {isSidebarOpen ? (
-            <button
-              aria-label="close icon"
-              type="button"
-              onClick={handleCloseSidebar}
-              className={styles.closeBtn}
-            >
-              <FaTimes className={styles.closeIcon}></FaTimes>
-            </button>
-          ) : (
-            <button
-              aria-label="hamburger menu"
-              type="button"
-              onClick={handleOpenSidebar}
-              className={styles.toggleBtn}
-            >
-              <FaAlignRight className={styles.toggleIcon}></FaAlignRight>
-            </button>
-          )}
+
+          <ToggleButton
+            handleToggle={handleToggle}
+            isSidebarOpen={isSidebarOpen}
+          ></ToggleButton>
         </div>
       )}
     </nav>
