@@ -3,16 +3,14 @@ import styled from "styled-components"
 
 const ToggleButton = ({ className, isSidebarOpen, handleToggle }) => {
   return (
-    <div
-      role="button"
+    <button
+      aria-label="open close menu"
       className={className}
       isSidebarOpen={isSidebarOpen}
       onClick={handleToggle}
-      onKeyDown={handleToggle}
-      tabIndex="0"
     >
       <div className="hamburger"></div>
-    </div>
+    </button>
   )
 }
 
@@ -20,6 +18,8 @@ export default styled(ToggleButton)`
   padding: 1em;
   cursor: pointer;
   outline: none;
+  border: none;
+  background: transparent;
   .hamburger,
   .hamburger::before,
   .hamburger::after {
@@ -27,7 +27,7 @@ export default styled(ToggleButton)`
     display: block;
     background-color: var(--mainBlack);
     height: 5px;
-    width: 1.75em;
+    width: 2em;
     border-radius: 3px;
     transition: all ease-in-out 500ms;
   }

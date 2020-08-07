@@ -6,8 +6,7 @@
   display: flex;
   align-items: center;
   background: var(--mainWhite);
-  z-index: 3;
-  transition: all 0.5s;
+  z-index: 10;
   border-bottom: 0.2rem solid var(--primaryColor);
   box-shadow: var(--darkShadow);
 }
