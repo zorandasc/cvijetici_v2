@@ -18,7 +18,7 @@ const stayledHero = ({ home, img, children, className }) => {
 
 export default styled(stayledHero)`
   padding-top: 110px;
-  min-height: ${props => (props.home ? "100vh" : "65vh")};
+  min-height: ${props => (props.home ? "100vh" : "60vh")};
   background: ${props =>
     props.home ? "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8 ))" : "none"};
   background-position: center;
@@ -29,6 +29,11 @@ export default styled(stayledHero)`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 400px) {
+    min-height: ${props => (props.home ? "100vh" : "65vh")};
+  }
+
   @media screen and (min-width: 576px) {
     min-height: ${props => (props.home ? "100vh" : "75vh")};
   }
