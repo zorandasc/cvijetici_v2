@@ -5,12 +5,12 @@ import Sidebar from "./sidebar"
 
 const Layout = ({ children }) => {
   return (
-    <main>
+    <>
       <Navbar></Navbar>
       <Sidebar></Sidebar>
-      {children}
+      <main>{children}</main>
       <Footer></Footer>
-    </main>
+    </>
   )
 }
 

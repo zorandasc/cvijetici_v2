@@ -13,7 +13,7 @@
 
 .closeSidebar {
   clip-path: circle(0px at top left);
-  transition: clip-path ease-in-out 500ms;
+  transition: clip-path ease-in-out 300ms;
 }
 
 .linksContainer {

@@ -26,6 +26,7 @@ const Sidebar = () => {
             return (
               <li>
                 <AniLink
+                  fade
                   key={index}
                   to={item.path}
                   className={styles.link}
