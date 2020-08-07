@@ -14,7 +14,6 @@ const title = ({ title, subtitle, className }) => {
 
 export default styled(title)`
   text-transform: capitalize;
-  margin-top: 2rem;
   margin-bottom: 5rem;
   font-size: 2.3rem;
   h2 {

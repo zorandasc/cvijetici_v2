@@ -1,12 +1,12 @@
 .banner {
-  margin: 2rem auto;
+  margin: 1rem auto;
   text-align: center;
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
 }
 
 .banner h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: capitalize;
   padding: 0 1rem;
   margin-bottom: 1rem;
@@ -20,7 +20,11 @@
 }
 
 @media screen and (min-width: 400px) {
+  .banner {
+    margin: 2rem auto;
+  }
   .banner h1 {
+    font-size: 4rem;
     letter-spacing: 16px;
   }
   .banner {
