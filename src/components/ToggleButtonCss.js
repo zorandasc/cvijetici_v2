@@ -27,7 +27,7 @@ export default styled(ToggleButton)`
     display: block;
     background-color: var(--mainBlack);
     height: 5px;
-    width: 2em;
+    width: 3em;
     border-radius: 3px;
     transition: all ease-in-out 500ms;
   }
@@ -37,12 +37,12 @@ export default styled(ToggleButton)`
   }
 
   .hamburger::before {
-    transform: translateY(-9px);
+    transform: translateY(-10px);
     opacity: ${props => (props.isSidebarOpen ? "0" : "1")};
   }
 
   .hamburger::after {
-    transform: translateY(4px);
+    transform: translateY(5px);
     transform: ${props =>
       props.isSidebarOpen ? "translateY(-5px) rotate(-90deg)" : ""};
   }

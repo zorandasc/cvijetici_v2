@@ -20,7 +20,7 @@ export default styled(stayledHero)`
   padding-top: 110px;
   min-height: ${props => (props.home ? "100vh" : "60vh")};
   background: ${props =>
-    props.home ? "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8 ))" : "none"};
+    props.home ? "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7 ))" : "none"};
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
