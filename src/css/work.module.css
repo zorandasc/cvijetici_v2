@@ -33,17 +33,12 @@
   opacity: 0;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
-  color: var(--mainWhite);
-  border: 2px solid var(--mainWhite);
+  background: var(--mainBlack);
+  color: var(--primaryColor);
+  border: 2px solid var(--mainBlack);
   padding: 0.5rem 0.7rem;
   transition: var(--mainTransition);
   display: inline-block;
-}
-
-.link:hover {
-  background: var(--mainBlack);
-  color: var(--primaryColor);
-  border-color: var(--mainBlack);
 }
 
 .img-container:hover .link {
@@ -51,6 +46,7 @@
 }
 .ribbon4 {
   font-size: 1.5rem;
+  color: var(--mainBlack);
   position: absolute;
   top: 70%;
   width: 14rem;

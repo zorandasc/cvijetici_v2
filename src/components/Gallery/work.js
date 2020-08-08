@@ -8,21 +8,19 @@ const work = ({ work }) => {
   let mainImage = heroImage.fluid
 
   return (
-    <article className={styles.work}>
+    <AniLink fade className={styles.work} to={`/gallery/${slug}`}>
       <div className={styles.imgContainer}>
         <Image
           fluid={mainImage}
           className={styles.img}
           alt="wedding category"
         ></Image>
-        <AniLink fade className={styles.link} to={`/gallery/${slug}`}>
-          istraži
-        </AniLink>
+        <span className={styles.link}>istraži</span>
       </div>
       <h3 className={styles.ribbon4}>
         {prefiks} {category}
       </h3>
-    </article>
+    </AniLink>
   )
 }
 

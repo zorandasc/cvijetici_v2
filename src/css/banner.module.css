@@ -3,6 +3,7 @@
   text-align: center;
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
+  z-index: 2;
 }
 
 .banner h1 {

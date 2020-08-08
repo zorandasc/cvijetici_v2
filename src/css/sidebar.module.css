@@ -5,7 +5,7 @@
   right: 0;
   height: 100vh;
   background: var(--mainWhite);
-  z-index: 2;
+  z-index: 3;
   opacity: 1;
   clip-path: circle(150% at top left);
   transition: clip-path ease-in-out 500ms;
