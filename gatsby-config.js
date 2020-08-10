@@ -33,7 +33,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    //`gatsby-plugin-preload-link-crossorigin`,
     `gatsby-plugin-preact`,
     {
       resolve: `gatsby-source-contentful`,
@@ -43,19 +42,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Great+Vibes`,
-          },
-          {
-            family: `Poppins`,
-          },
-        ],
-      },
-    },
+
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
