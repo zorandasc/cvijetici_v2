@@ -14,14 +14,6 @@
   flex-wrap: wrap;
   margin-bottom: 3rem;
 }
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
 
 .socialItem {
   display: inline-flex;
@@ -32,8 +24,6 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  background: #405de6;
-  box-shadow: var(--box-shadow);
   position: relative;
   font-size: 21px;
   flex-shrink: 0;
@@ -42,36 +32,6 @@
 
 .socialItem:hover {
   transform: scale(1.2);
-}
-
-.facebook {
-  background: linear-gradient(45deg, #3b5998, #0078d7);
-  box-shadow: 0px 4px 30px rgba(43, 98, 169, 0.5);
-}
-.pinterst {
-  background: linear-gradient(45deg, #d5135a, #f05924);
-  box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.6);
-}
-.youtube {
-  background: linear-gradient(45deg, #ff0000, #970505);
-  box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.6);
-}
-
-.instagram {
-  background: linear-gradient(
-    45deg,
-    #405de6,
-    #5851db,
-    #833ab4,
-    #c13584,
-    #e1306c,
-    #fd1d1d
-  );
-  box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
-}
-
-.socialItem .iconFont {
-  display: inline-flex;
 }
 
 @media screen and (min-width: 992px) {

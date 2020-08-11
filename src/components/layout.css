@@ -95,3 +95,29 @@ a {
   background: transparent;
   color: var(--primaryColor);
 }
+
+.facebook {
+  background: linear-gradient(45deg, #3b5998, #0078d7);
+  box-shadow: 0px 4px 30px rgba(43, 98, 169, 0.5);
+}
+.pinterest {
+  background: linear-gradient(45deg, #d5135a, #f05924);
+  box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.6);
+}
+.youtube {
+  background: linear-gradient(45deg, #ff0000, #970505);
+  box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.6);
+}
+
+.instagram {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
+}
