@@ -8,7 +8,7 @@ import SectionBcg from "../components/sectionBcg"
 import styled from "styled-components"
 
 const Moja = styled.a`
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-style: italic;
   color: var(--mainBlack);
 `

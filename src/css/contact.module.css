@@ -7,79 +7,71 @@
   margin: 0 auto;
 }
 
-.kontaktNacin {
-  font-weight: bold;
-}
-.labeleIkona {
-  display: none;
-  justify-content: space-around;
-}
 .icons {
   display: flex;
-  justify-content: space-around;
-}
-.icons a {
-  transition: var(--mainTransition);
-  display: inline-block;
-  color: var(--primaryColor);
-  margin-top: 0;
-  margin-bottom: 3rem;
-  font-size: 2.9rem;
-}
-
-.icons a:hover {
-  color: var(--mainWhite);
-}
-
-.nasEmail {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin-bottom: 3rem;
 }
-.emailIcona {
-  transition: var(--mainTransition);
+.icon {
   display: inline-block;
-  color: var(--primaryColor);
-  margin-top: 0;
-  font-size: 2.9rem;
-}
-.emailAdresa {
-  background-color: var(--mainGrey);
-  letter-spacing: 1px;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
-.formControl,
-.submit {
-  width: 100%;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem 0.7rem;
-  border: 1px groove var(--darkGrey);
-}
-
-.submit {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  background-color: var(--mainBlack);
-  color: var(--primaryColor);
-  text-transform: uppercase;
+.socialItem {
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #405de6;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  font-size: 21px;
+  flex-shrink: 0;
   transition: var(--mainTransition);
-  cursor: pointer;
 }
 
-.submit:hover {
-  background: var(--primaryColor);
-  color: var(--mainBlack);
+.socialItem:hover {
+  transform: scale(1.2);
 }
-@media screen and (min-width: 600px) {
-  .labeleIkona {
-    display: flex;
-  }
-  .emailAdresa {
-    letter-spacing: var(--mainSpacing);
-  }
+
+.facebook {
+  background: linear-gradient(45deg, #3b5998, #0078d7);
+  box-shadow: 0px 4px 30px rgba(43, 98, 169, 0.5);
+}
+.pinterst {
+  background: linear-gradient(45deg, #d5135a, #f05924);
+  box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.6);
+}
+.youtube {
+  background: linear-gradient(45deg, #ff0000, #970505);
+  box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.6);
+}
+
+.instagram {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
+}
+
+.socialItem .iconFont {
+  display: inline-flex;
 }
 
 @media screen and (min-width: 992px) {

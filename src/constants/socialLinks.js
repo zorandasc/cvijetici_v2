@@ -1,10 +1,5 @@
 import React from "react"
-import {
-  FaFacebook,
-  FaPinterestSquare,
-  FaInstagram,
-  FaYoutubeSquare,
-} from "react-icons/fa"
+import { FaFacebook, FaPinterest, FaInstagram, FaYoutube } from "react-icons/fa"
 import styles from "../css/social.module.css"
 
 export default [
@@ -19,9 +14,9 @@ export default [
   },
   {
     icon: (
-      <FaPinterestSquare
+      <FaPinterest
         className={`${styles.icon} ${styles.pinterestIcon}`}
-      ></FaPinterestSquare>
+      ></FaPinterest>
     ),
     url: "https://www.pinterest.com/SvadbeniCvet/",
   },
@@ -35,9 +30,7 @@ export default [
   },
   {
     icon: (
-      <FaYoutubeSquare
-        className={`${styles.icon} ${styles.youtubeIcon}`}
-      ></FaYoutubeSquare>
+      <FaYoutube className={`${styles.icon} ${styles.youtubeIcon}`}></FaYoutube>
     ),
     url:
       "https://www.youtube.com/channel/UC86annL_cXXyT4AeKOv2N4A?view_as=subscriber",

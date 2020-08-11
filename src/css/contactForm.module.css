@@ -1,0 +1,25 @@
+.formControl,
+.submit {
+  background-color: var(--primaryColor);
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px groove var(--darkGrey);
+  box-shadow: var(--box-shadow);
+}
+
+.submit {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: var(--mainBlack);
+  color: var(--primaryColor);
+  text-transform: uppercase;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+}

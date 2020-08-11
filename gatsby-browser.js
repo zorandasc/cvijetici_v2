@@ -5,13 +5,13 @@
  */
 // You can delete this file if you're not using it
 
-require("typeface-poppins")
-require("typeface-great-vibes")
-
 import React from "react"
 import { AppProvider } from "./src/context"
 
 import "./src/components/layout.css"
+
+require("typeface-poppins")
+require("typeface-great-vibes")
 
 export const wrapRootElement = ({ element }) => {
   return <AppProvider>{element}</AppProvider>

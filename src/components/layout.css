@@ -10,6 +10,7 @@
   --mainTransition: all 0.3s ease-in;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -84,13 +85,13 @@ a {
 }
 
 .btn-hero {
-  background: transparent;
-  color: var(--primaryColor);
+  background: var(--primaryColor);
+  color: var(--mainBlack);
   border: 2px solid var(--primaryColor);
 }
 
 .btn-hero:hover,
 .btn-hero:focus {
-  background: var(--primaryColor);
-  color: var(--mainBlack);
+  background: transparent;
+  color: var(--primaryColor);
 }
