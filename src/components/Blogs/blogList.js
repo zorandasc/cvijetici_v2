@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Title from "../title"
-import BlogCard from "./blogCard"
-import styles from "../../css/workCategory.module.css"
+import Card from "./Card"
+import styles from "../../css/blogCategory.module.css"
 
 export default class blogList extends Component {
   state = {
@@ -18,11 +18,11 @@ export default class blogList extends Component {
 
   render() {
     return (
-      <section className={styles.works}>
+      <section className={styles.blogs}>
         <Title title="blog" subtitle="postovi"></Title>
         <div className={styles.center}>
           {this.state.sortedBlogs.map(({ node }) => {
-            return <BlogCard key={node.contentful_id} work={node}></BlogCard>
+            return <Card key={node.contentful_id} item={node}></Card>
           })}
         </div>
       </section>

@@ -3,7 +3,7 @@ import Title from "../title"
 import { useStaticQuery, graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../../css/workCategory.module.css"
-import Work from "../Gallery/work"
+import GalleryCard from "../Gallery/GalleryCard"
 
 const getWorks = graphql`
   query {
@@ -33,7 +33,9 @@ const WorkCategory = () => {
       <Title title="Odabrani" subtitle="Artikli"></Title>
       <div className={styles.center}>
         {works.map(({ node }) => {
-          return <Work key={node.contentful_id} work={node}></Work>
+          return (
+            <GalleryCard key={node.contentful_id} work={node}></GalleryCard>
+          )
         })}
       </div>
       <AniLink fade className="btn-primary" to="/gallery">

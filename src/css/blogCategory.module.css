@@ -1,0 +1,17 @@
+.blogs {
+  padding: 1rem 0 4rem 0;
+  text-align: center;
+  background: transparent;
+}
+
+.center {
+  padding: 40px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 576px) {
+  .blogs {
+    padding: 4rem 0;
+  }
+}

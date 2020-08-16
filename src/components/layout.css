@@ -11,6 +11,8 @@
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
   --box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.5);
+  --titleFontFamily: "Great Vibes", cursive;
+  --textFontFamily: "Poppins", "Arial", sans-serif;
 }
 
 * {
@@ -39,14 +41,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Great Vibes", cursive;
+  font-family: var(--titleFontFamily);
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
 
 p,
 label {
-  font-family: "Poppins", "Arial", sans-serif;
+  font-family: var(--textFontFamily);
   margin-bottom: 1.3rem;
   letter-spacing: var(--mainSpacing);
 }

@@ -1,9 +1,9 @@
 import React from "react"
-import styles from "../../css/work.module.css"
+import styles from "../../css/galleryCard.module.css"
 import Image from "gatsby-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-const work = ({ work }) => {
+const GalleryCard = ({ work }) => {
   const { slug, prefiks, category, heroImage } = work
   let mainImage = heroImage.fluid
 
@@ -24,4 +24,4 @@ const work = ({ work }) => {
   )
 }
 
-export default work
+export default GalleryCard

@@ -5,23 +5,24 @@
   bottom: 20px;
   right: 15px;
   background: var(--primaryColor);
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 100;
+  z-index: 2;
   opacity: 0;
   transform: translateY(-900%);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
   transition: all 500ms ease-in-out;
 }
 
 .scrollArrow {
   color: var(--mainBlack);
   cursor: pointer;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 .active {

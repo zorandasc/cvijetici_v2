@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Title from "../title"
-import Work from "./work"
+import GalleryCard from "./GalleryCard"
 import styles from "../../css/workCategory.module.css"
 
 export default class galleryList extends Component {
@@ -22,7 +22,9 @@ export default class galleryList extends Component {
         <Title title="svadbena" subtitle="galerija"></Title>
         <div className={styles.center}>
           {this.state.sortedWorks.map(({ node }) => {
-            return <Work key={node.contentful_id} work={node}></Work>
+            return (
+              <GalleryCard key={node.contentful_id} work={node}></GalleryCard>
+            )
           })}
         </div>
       </section>
