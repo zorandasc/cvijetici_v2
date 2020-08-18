@@ -5,6 +5,15 @@
   color: #d2aa5c;
 }
 
+.bigIcon {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
 .facebook-icon {
   color: #3b579d;
 }

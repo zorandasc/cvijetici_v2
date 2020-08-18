@@ -1,24 +1,25 @@
 import React, { useState, useEffect, useRef } from "react"
 import GatbyImage from "gatsby-image"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { navigate } from "gatsby"
 
 import { AppContext } from "../../context"
 import styles from "../../css/card.module.css"
 import { FaAngleDoubleRight } from "react-icons/fa"
 
 const Card = ({ item }) => {
-  const { slug, title, snipet, heroImage } = item
-  const context = React.useContext(AppContext)
+  const { width: pageWidth } = React.useContext(AppContext)
   const [width, setWidth] = useState(0)
   const [height, setHieght] = useState(0)
   const [mouseX, setMouseX] = useState(0)
   const [mouseY, setMouseY] = useState(0)
-  const [mouseLeaveDelay, setMuseLeaveDelay] = useState(null)
+  const [mouseLeaveDelay, setMuseLeaveDelay] = useState(0)
 
   const [cardTransform, setCardTransform] = useState(null)
   const [bgTransform, setBgTransform] = useState(null)
 
   const card = useRef(null)
+
+  const { slug, title, snipet, heroImage } = item
 
   useEffect(() => {
     setWidth(card.current.offsetWidth)
@@ -28,7 +29,10 @@ const Card = ({ item }) => {
   useEffect(() => {
     const rX = (mouseX / width) * 30
     const rY = (mouseY / height) * -30
-    const cardTrans = { transform: `rotateY(${rX}deg) rotateX(${rY}deg)` }
+    const cardTrans = {
+      transform: `rotateY(${rX}deg) rotateX(${rY}deg)`,
+      cursor: `pointer`,
+    }
 
     const tX = (mouseX / width) * -40
     const tY = (mouseY / height) * -40
@@ -55,62 +59,45 @@ const Card = ({ item }) => {
       }, 1000)
     )
   }
-  console.log(context.width)
+
+  const handleCardClick = () => {
+    navigate(`/blog/${slug}`)
+  }
+
+  const onDesktop = pageWidth > 1100
   return (
-    <>
-      {context.width > 1000 ? (
-        /*FOR DESKTOP HOVER WITH MOUSE THAN CLICK ON WHOLE CARD*/
-        <AniLink to={`/blog/${slug}`} className={styles.link}>
-          <div
-            className={styles.cardWrap}
-            onMouseMove={handleMouseMove}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            ref={card}
-            role="button"
-            tabIndex="0"
+    <div
+      className={styles.cardWrap}
+      onMouseMove={onDesktop ? handleMouseMove : null}
+      onMouseEnter={onDesktop ? handleMouseEnter : null}
+      onMouseLeave={onDesktop ? handleMouseLeave : null}
+      onClick={onDesktop ? handleCardClick : null}
+      onKeyDown={onDesktop ? handleCardClick : null}
+      ref={card}
+      role="button"
+      tabIndex="0"
+    >
+      <div className={styles.card} style={cardTransform}>
+        <GatbyImage
+          className={styles.cardBg}
+          style={bgTransform}
+          fluid={heroImage.fluid}
+        ></GatbyImage>
+
+        <div className={styles.cardInfo}>
+          <h1 className={styles.title}>{title}</h1>
+
+          <p
+            className={styles.content}
+            onClick={onDesktop ? null : handleCardClick}
+            onKeyDown={onDesktop ? null : handleCardClick}
           >
-            <div className={styles.card} style={cardTransform}>
-              <GatbyImage
-                className={styles.cardBg}
-                style={bgTransform}
-                fluid={heroImage.fluid}
-              ></GatbyImage>
-
-              <div className={styles.cardInfo}>
-                <h1 className={styles.title}>{title}</h1>
-
-                <p className={styles.content}>{snipet}</p>
-              </div>
-            </div>
-          </div>
-        </AniLink>
-      ) : (
-        /*FOR MOBILE HOVER ON FIRST TOUCH THAN CLICK ON TEXT FOR NEXT*/
-
-        <div className={styles.cardWrap}>
-          <div className={styles.card} style={cardTransform}>
-            <GatbyImage
-              className={styles.cardBg}
-              style={bgTransform}
-              fluid={heroImage.fluid}
-            ></GatbyImage>
-
-            <div className={styles.cardInfo}>
-              <h1 className={styles.title}>{title}</h1>
-              <AniLink to={`/blog/${slug}`} className={styles.link}>
-                <p className={styles.content}>
-                  {snipet}
-                  <FaAngleDoubleRight
-                    className={styles.arrow}
-                  ></FaAngleDoubleRight>
-                </p>
-              </AniLink>
-            </div>
-          </div>
+            {snipet}
+            <FaAngleDoubleRight className={styles.arrow}></FaAngleDoubleRight>
+          </p>
         </div>
-      )}
-    </>
+      </div>
+    </div>
   )
 }
 
