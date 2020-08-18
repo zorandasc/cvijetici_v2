@@ -7,13 +7,25 @@
   background: var(--mainWhite);
   z-index: 3;
   opacity: 1;
+  /*
   clip-path: circle(150% at top left);
   transition: clip-path ease-in-out 500ms;
+*/
+  border-right: 0.2rem solid var(--primaryColor);
+  width: 90%;
+  will-change: transform;
+  transform: translateX(0%);
+  transition: transform 300ms linear;
+  box-shadow: var(--darkShadow);
 }
 
 .closeSidebar {
+  transform: translateX(-100%);
+  transition: transform 300ms linear;
+  /*  
   clip-path: circle(0px at top left);
   transition: clip-path ease-in-out 300ms;
+*/
 }
 
 .linksContainer {
@@ -33,7 +45,7 @@
   align-items: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
-  border-bottom: 1px solid var(--mainBlack);
+  border-bottom: 1px solid var(--darkGrey);
   transition: var(--mainTransition);
 }
 
