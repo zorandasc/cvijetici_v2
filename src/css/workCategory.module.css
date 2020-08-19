@@ -9,10 +9,9 @@
   margin: 3rem auto;
   display: grid;
   /*.. then all rows will be equal height.*/
-
   grid-auto-rows: 1fr;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }
@@ -21,9 +20,8 @@
   .works {
     padding: 4rem 0;
   }
-
   .center {
-    grid-template-columns: repeat(auti-fill, minmax(368.66px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -31,5 +29,6 @@
   .center {
     width: 100%;
     max-width: 1170px;
+    grid-template-columns: repeat(auto-fill, minmax(368.66px, 1fr));
   }
 }
