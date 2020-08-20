@@ -41,10 +41,15 @@
   grid-row-gap: 5px;
 }
 
-.link {
+.topLink {
   width: 95%;
   margin: 0 auto;
-  height: calc((100vh - 6rem) / 4);
+  height: calc((100vh - 6rem) / 3);
+}
+
+.link {
+  width: 100%;
+  height: 100%;
   text-align: center;
   color: var(--mainBlack);
   /*padding: 1em 1em;*/
@@ -61,34 +66,34 @@
 
 .link:hover,
 .link:focus {
-  /*
   color: var(--mainBlack);
   background: var(--primaryColor);
-  */
   box-shadow: var(--darkShadow);
 }
 
 .linksIcon {
-  font-size: 1.4em;
+  font-size: 2.4em;
   width: 1em;
 }
 
 .socialLinks {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  justify-content: space-around;
-  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  height: calc((100vh - 6rem) / 3);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-items: center;
+  gap: 2px;
+  padding-bottom: 1rem;
 }
 
 .socialIcon {
+  display: block;
+  width: 90%;
+  padding: 0;
+  margin: 0;
   transition: var(--mainTransition);
-  font-size: 3rem;
-  margin: 0.5rem;
-  display: flex;
 }
 .socialIcon:hover,
 .socialIcon:focus {
