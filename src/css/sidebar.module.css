@@ -81,19 +81,21 @@
 
 .socialLinks {
   width: 95%;
-  margin: 0 auto;
+  margin: 0.4rem auto;
   height: calc((100vh - 6rem) / 4);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-content: center;
   justify-items: center;
   gap: 5px;
-  padding: 1rem;
+  padding: 1rem 0.2rem;
 }
 
 .socialIcon {
   display: block;
-  width: 90%;
+  width: 100%;
+  max-width: 5rem;
+  height: 100%;
   padding: 0;
   margin: 0;
   transition: var(--mainTransition);
