@@ -75,7 +75,7 @@
 
 .socialLinks {
   position: absolute;
-  top: 47%;
+  top: 45%;
   left: 50%;
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +86,7 @@
 
 .socialIcon {
   transition: var(--mainTransition);
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0.5rem;
   display: flex;
 }
