@@ -64,6 +64,9 @@
   border-radius: 5%;
   transition: var(--mainTransition);
 }
+.active {
+  color: var(--mainBLlack);
+}
 
 .link:hover,
 .link:focus {

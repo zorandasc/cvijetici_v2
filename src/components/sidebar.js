@@ -30,6 +30,7 @@ const Sidebar = () => {
                   key={index}
                   to={item.path}
                   className={styles.link}
+                  activeClassName={styles.active}
                   onClick={handleCloseSidebar}
                 >
                   <i className={styles.linksIcon}>{item.icon}</i>
