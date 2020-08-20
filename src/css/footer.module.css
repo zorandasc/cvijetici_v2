@@ -28,16 +28,24 @@
   text-transform: capitalize;
 }
 
-.icons a {
+.socialIcon {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  font-size: 16px;
+  flex-shrink: 0;
   transition: var(--mainTransition);
-  display: inline-block;
-  color: var(--primaryColor);
-  margin: 1rem;
-  font-size: 1.9rem;
 }
 
-.icons a:hover {
-  color: var(--mainWhite);
+.socialIcon:hover,
+.socialIcon:focus {
+  transform: scale(1.2);
 }
 
 .copyright {

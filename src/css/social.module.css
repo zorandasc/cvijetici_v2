@@ -1,35 +1,8 @@
 .icon {
-  transition: var(--mainTransition);
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  display: block;
-}
-.icon:hover {
-  color: #d2aa5c;
-}
-
-.bigIcon {
   display: inline-block;
   width: 1.2em;
   height: 1.2em;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-}
-
-.facebook-icon {
-  color: #3b579d;
-}
-
-.instagram-icon {
-  color: #833ab4;
-}
-
-.pinterest-icon {
-  color: #e60023;
-}
-.youtube-icon {
-  color: #ff0000;
 }

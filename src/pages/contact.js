@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import socialIkons from "../constants/bigSocialIcons"
+import socialIkons from "../constants/socialIcons"
 import styles from "../css/contact.module.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -23,7 +23,7 @@ const contact = ({ data }) => {
                 <a
                   key={index}
                   href={item.url}
-                  //item.label odnosi se na globalni style
+                  //item.label odnosi se na globalni style za primjenu box-shadowa za svaku ikonu posebno na a link
                   className={`${styles.socialItem} ${item.label}`}
                   target="_blank"
                   rel="noopener noreferrer"

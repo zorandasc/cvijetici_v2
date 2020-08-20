@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "../css/footer.module.css"
 import links from "../constants/links"
-import socialLinks from "../constants/socialLinks"
+import socialLinks from "../constants/socialIcons"
 import policyLinks from "../constants/policyLinks"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
@@ -32,6 +32,7 @@ const footer = () => {
             <a
               key={index}
               href={item.url}
+              className={`${styles.socialIcon} ${item.label}`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="social link"

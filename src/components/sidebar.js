@@ -3,7 +3,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { AppContext } from "../context/context"
 import styles from "../css/sidebar.module.css"
 import links from "../constants/links"
-import socialLinks from "../constants/socialLinks"
+import socialLinks from "../constants/socialIcons"
 
 const Sidebar = () => {
   const { width, isSidebarOpen, handleCloseSidebar } = React.useContext(
@@ -39,24 +39,24 @@ const Sidebar = () => {
               </li>
             )
           })}
-          <li className={styles.socialLinks}>
-            {socialLinks.map((item, index) => {
-              return (
-                <a
-                  key={index}
-                  href={item.url}
-                  className={styles.socialIcon}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="socials links"
-                >
-                  {item.icon}
-                </a>
-              )
-            })}
-          </li>
         </ul>
       </nav>
+      <div className={styles.socialLinks}>
+        {socialLinks.map((item, index) => {
+          return (
+            <a
+              key={index}
+              href={item.url}
+              className={`${styles.socialIcon} ${item.label}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="socials links"
+            >
+              {item.icon}
+            </a>
+          )
+        })}
+      </div>
     </div>
   )
 }

@@ -4,7 +4,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../css/navbar.module.css"
 import { AppContext } from "../context"
 import links from "../constants/links"
-import socialLinks from "../constants/socialLinks"
+import socialLinks from "../constants/socialIcons"
 import logo from "../images/logo.svg"
 import ToggleButton from "./ToggleButtonCss"
 //import ToggleButtonIcon from "./ToggleButtonIcon"
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <a
                   key={index}
                   href={item.url}
-                  className={styles.socialIcon}
+                  className={`${styles.socialIcon} ${item.label}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="socials links"
