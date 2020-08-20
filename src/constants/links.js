@@ -2,7 +2,7 @@ import React from "react"
 
 import {
   FaHome,
-  FaInfoCircle,
+  FaSmileWink,
   FaMagic,
   FaPenNib,
   FaEnvelope,
@@ -17,7 +17,7 @@ export default [
   {
     path: "/about",
     label: "o nama",
-    icon: <FaInfoCircle></FaInfoCircle>,
+    icon: <FaSmileWink></FaSmileWink>,
   },
   {
     path: "/gallery",
