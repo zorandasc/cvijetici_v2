@@ -15,13 +15,13 @@
   width: 90%;
   will-change: transform;
   transform: translateX(0%);
-  transition: transform 300ms linear;
+  transition: var(--mainTransition);
   box-shadow: var(--darkShadow);
 }
 
 .closeSidebar {
   transform: translateX(-100%);
-  transition: transform 300ms linear;
+  transition: var(--mainTransition);
   /*  
   clip-path: circle(0px at top left);
   transition: clip-path ease-in-out 300ms;
@@ -35,31 +35,41 @@
 .linksContainer ul {
   padding-top: 0.5rem;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  grid-row-gap: 5px;
 }
 
 .link {
-  text-align: left;
+  width: 95%;
+  margin: 0 auto;
+  height: calc((100vh - 6rem) / 4);
+  text-align: center;
   color: var(--mainBlack);
-  padding: 1em 1em;
+  /*padding: 1em 1em;*/
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
-  border-bottom: 1px solid var(--darkGrey);
+  box-shadow: var(--lightShadow);
+  border-radius: 5%;
   transition: var(--mainTransition);
 }
 
 .link:hover,
 .link:focus {
+  /*
   color: var(--mainBlack);
   background: var(--primaryColor);
+  */
+  box-shadow: var(--darkShadow);
 }
 
 .linksIcon {
-  display: inline-block;
   font-size: 1.4em;
-  margin-right: 1em;
-  text-align: right;
   width: 1em;
 }
 
