@@ -80,17 +80,20 @@
 }
 
 .socialLinks {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
+  height: calc((100vh - 6rem) / 4);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
 .socialIcon {
   display: inline-flex;
-  width: 40px;
-  height: 40px;
-
+  width: 45px;
+  height: 45px;
+  margin: 0.5rem;
   border-radius: 50%;
   align-items: center;
   justify-content: center;

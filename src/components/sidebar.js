@@ -39,24 +39,24 @@ const Sidebar = () => {
               </li>
             )
           })}
+          <li className={styles.socialLinks}>
+            {socialLinks.map((item, index) => {
+              return (
+                <a
+                  key={index}
+                  href={item.url}
+                  className={`${styles.socialIcon} ${item.label}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="socials links"
+                >
+                  {item.icon}
+                </a>
+              )
+            })}
+          </li>
         </ul>
       </nav>
-      <div className={styles.socialLinks}>
-        {socialLinks.map((item, index) => {
-          return (
-            <a
-              key={index}
-              href={item.url}
-              className={`${styles.socialIcon} ${item.label}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="socials links"
-            >
-              {item.icon}
-            </a>
-          )
-        })}
-      </div>
     </div>
   )
 }
