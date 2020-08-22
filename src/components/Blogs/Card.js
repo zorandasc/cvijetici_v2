@@ -77,10 +77,11 @@ const Card = ({ item }) => {
     navigate(`/blog/${slug}`)
   }
 
+  //detektuj touch screan capacity
   function isTouchScreendevice() {
     return "ontouchstart" in window || navigator.maxTouchPoints
   }
-  console.log(isTouchScreendevice())
+
   return (
     <div
       className={styles.cardWrap}
