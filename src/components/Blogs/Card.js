@@ -77,13 +77,17 @@ const Card = ({ item }) => {
     navigate(`/blog/${slug}`)
   }
 
+  function isTouchScreendevice() {
+    return "ontouchstart" in window || navigator.maxTouchPoints
+  }
+  console.log(isTouchScreendevice())
   return (
     <div
       className={styles.cardWrap}
-      onMouseMove={handleMouseMove}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onMouseUp={handleCardClick}
+      onMouseMove={isTouchScreendevice() ? null : handleMouseMove}
+      onMouseEnter={isTouchScreendevice() ? null : handleMouseEnter}
+      onMouseLeave={isTouchScreendevice() ? null : handleMouseLeave}
+      onMouseUp={isTouchScreendevice() ? null : handleCardClick}
       ref={card}
       role="button"
       tabIndex="0"
