@@ -2,18 +2,25 @@ import React, { useState, useEffect, useRef } from "react"
 import GatbyImage from "gatsby-image"
 import { navigate } from "gatsby"
 
-import { AppContext } from "../../context"
 import styles from "../../css/card.module.css"
 import { FaAngleDoubleRight } from "react-icons/fa"
 
 const Card = ({ item }) => {
-  const { width: pageWidth } = React.useContext(AppContext)
   const [width, setWidth] = useState(0)
   const [height, setHieght] = useState(0)
+
+  //za pracenje misa
   const [mouseX, setMouseX] = useState(0)
   const [mouseY, setMouseY] = useState(0)
+
+  //da se karta vrati u pocetni polozaj nakon mouseleave
   const [mouseLeaveDelay, setMuseLeaveDelay] = useState(0)
 
+  //problem je sto se mouseleave aktivira nakon clicka, pa imamomo
+  //memory leak, zato provjeravamo isClicked
+  const [isClicked, setIsClicked] = useState(false)
+
+  //transformaicja karte i bg on mousemuve
   const [cardTransform, setCardTransform] = useState(null)
   const [bgTransform, setBgTransform] = useState(null)
 
@@ -49,30 +56,34 @@ const Card = ({ item }) => {
     setMouseY(e.pageY - card.current.offsetTop - height / 2)
   }
   const handleMouseEnter = () => {
+    if (isClicked) {
+      setIsClicked(false)
+    }
     setMuseLeaveDelay(clearTimeout(mouseLeaveDelay))
   }
   const handleMouseLeave = () => {
-    setMuseLeaveDelay(
-      setTimeout(() => {
-        setMouseX(0)
-        setMouseY(0)
-      }, 1000)
-    )
+    if (!isClicked) {
+      setMuseLeaveDelay(
+        setTimeout(() => {
+          setMouseX(0)
+          setMouseY(0)
+        }, 1000)
+      )
+    }
   }
 
   const handleCardClick = () => {
+    setIsClicked(true)
     navigate(`/blog/${slug}`)
   }
 
-  const onDesktop = pageWidth > 1100
   return (
     <div
       className={styles.cardWrap}
-      onMouseMove={onDesktop ? handleMouseMove : null}
-      onMouseEnter={onDesktop ? handleMouseEnter : null}
-      onMouseLeave={onDesktop ? handleMouseLeave : null}
-      onClick={onDesktop ? handleCardClick : null}
-      onKeyDown={onDesktop ? handleCardClick : null}
+      onMouseMove={handleMouseMove}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onMouseUp={handleCardClick}
       ref={card}
       role="button"
       tabIndex="0"
@@ -87,11 +98,7 @@ const Card = ({ item }) => {
         <div className={styles.cardInfo}>
           <h1 className={styles.title}>{title}</h1>
 
-          <p
-            className={styles.content}
-            onClick={onDesktop ? null : handleCardClick}
-            onKeyDown={onDesktop ? null : handleCardClick}
-          >
+          <p className={styles.content} onTouchStart={handleCardClick}>
             {snipet}
             <FaAngleDoubleRight className={styles.arrow}></FaAngleDoubleRight>
           </p>

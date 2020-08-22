@@ -50,6 +50,7 @@
   padding: 1em;
 }
 
+.active,
 .navLink:hover,
 .navLink:focus {
   color: var(--primaryColor);

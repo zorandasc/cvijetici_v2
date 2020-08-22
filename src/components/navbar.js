@@ -23,7 +23,12 @@ const Navbar = () => {
             {links.map((item, index) => {
               return (
                 <li key={index}>
-                  <AniLink fade to={item.path} className={styles.navLink}>
+                  <AniLink
+                    fade
+                    to={item.path}
+                    className={styles.navLink}
+                    activeClassName={styles.active}
+                  >
                     {item.label}
                   </AniLink>
                 </li>
