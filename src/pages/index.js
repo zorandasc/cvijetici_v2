@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -7,8 +8,8 @@ import About from "../components/Home/aboutHome"
 import WorkCategory from "../components/Home/workCategory"
 import Banner from "../components/banner"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { graphql } from "gatsby"
 import SectionBcg from "../components/sectionBcg"
+import Wave from "../components/Wave"
 
 export default ({ data }) => (
   <Layout>
@@ -22,6 +23,7 @@ export default ({ data }) => (
           galerija
         </AniLink>
       </Banner>
+      <Wave></Wave>
     </StayledHero>
 
     <About></About>
