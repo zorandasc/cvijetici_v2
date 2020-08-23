@@ -1,4 +1,6 @@
 import React from "react"
+import AdSense from "react-adsense"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
@@ -24,9 +26,25 @@ export default ({ data }) => (
     </StayledHero>
 
     <About></About>
+    <AdSense.Google
+      client="ca-pub-3724050527592480"
+      slot="5026428023"
+      style={{ display: "block" }}
+      format="auto"
+      responsive="true"
+      layoutKey="-gw-1+2a-9x+5c"
+    />
     <SectionBcg home="true" img={data.aboutBcg.childImageSharp.fluid}>
       <WorkCategory></WorkCategory>
     </SectionBcg>
+    <AdSense.Google
+      client="ca-pub-3724050527592480"
+      slot="5026428023"
+      style={{ display: "block" }}
+      format="auto"
+      responsive="true"
+      layoutKey="-gw-1+2a-9x+5c"
+    />
   </Layout>
 )
 

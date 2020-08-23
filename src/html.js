@@ -17,13 +17,6 @@ export default function HTML(props) {
           content="5dfec0d2e21f6834fc7ea6747003a61b"
         />
         {props.headComponents}
-
-        {/* GOOGLE ADS */}
-        <script
-          data-ad-client="ca-pub-3724050527592480"
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        ></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
@@ -49,6 +42,11 @@ export default function HTML(props) {
                       d.parentNode.insertBefore(e,d);
                       })(document,window,cpm);`,
           }}
+        ></script>
+        {/* GOOGLE ADS */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         ></script>
       </body>
     </html>
