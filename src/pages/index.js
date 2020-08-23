@@ -1,5 +1,4 @@
 import React from "react"
-import AdSense from "react-adsense"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
