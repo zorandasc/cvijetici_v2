@@ -18,7 +18,7 @@ const stayledHero = ({ home, img, children, className }) => {
 
 export default styled(stayledHero)`
   padding-top: 110px;
-  min-height: ${props => (props.home ? `calc((100vh - 6rem))` : "60vh")};
+  min-height: ${props => (props.home ? "100vh" : "60vh")};
   background: ${props =>
     props.home ? "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7 ))" : "none"};
   background-position: center;
