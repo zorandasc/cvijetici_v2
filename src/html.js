@@ -45,6 +45,7 @@ export default function HTML(props) {
         ></script>
         {/* GOOGLE ADS */}
         <script
+          data-ad-client="ca-pub-3724050527592480"
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         ></script>
