@@ -26,9 +26,7 @@ const Sidebar = () => {
             return (
               <li className={styles.topLink}>
                 <AniLink
-                  swipe
-                  direction="left"
-                  duration={1.5}
+                  fade
                   key={index}
                   to={item.path}
                   className={styles.link}
