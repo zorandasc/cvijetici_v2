@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 import { Dialog } from "@reach/dialog"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-import Layout from "../components/layout"
+//import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
 import styles from "../css/template.module.css"
@@ -42,7 +42,7 @@ const WorkTemplate = ({ data }) => {
   const [mainImage, ...workImages] = images
 
   return (
-    <Layout>
+    <>
       <SEO title={`${prefiks} ${category}`}></SEO>
 
       <StayledHero img={mainImage.fluid}></StayledHero>
@@ -110,7 +110,7 @@ const WorkTemplate = ({ data }) => {
           )}
         </div>
       </section>
-    </Layout>
+    </>
   )
 }
 
