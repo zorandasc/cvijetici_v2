@@ -1,7 +1,7 @@
 .blogs {
   padding: 1rem 0 4rem 0;
   text-align: center;
-  background: transparent;
+  background-color: var(--mainWhite);
 }
 
 .center {

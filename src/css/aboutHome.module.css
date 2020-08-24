@@ -1,6 +1,7 @@
 .about {
   padding: 1rem 0 4rem 0;
   z-index: 2;
+  background-color: var(--mainWhite);
 }
 
 .about-center {

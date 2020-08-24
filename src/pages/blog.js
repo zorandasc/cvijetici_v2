@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+//import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import StayledHero from "../components/stayledHero"
@@ -7,12 +7,12 @@ import Blogs from "../components/Blogs/blogs"
 
 const blog = ({ data }) => {
   return (
-    <Layout>
+    <>
       <SEO title="Blog"></SEO>
       <StayledHero img={data.blog.childImageSharp.fluid}></StayledHero>
 
       <Blogs></Blogs>
-    </Layout>
+    </>
   )
 }
 

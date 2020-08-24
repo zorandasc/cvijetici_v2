@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+//import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
 import About from "../components/Home/aboutHome"
@@ -12,7 +12,7 @@ import SectionBcg from "../components/sectionBcg"
 import Wave from "../components/Wave"
 
 export default ({ data }) => (
-  <Layout>
+  <>
     <SEO title="Home" />
     <StayledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Banner
@@ -31,7 +31,7 @@ export default ({ data }) => (
     <SectionBcg home="true" img={data.aboutBcg.childImageSharp.fluid}>
       <WorkCategory></WorkCategory>
     </SectionBcg>
-  </Layout>
+  </>
 )
 
 export const query = graphql`

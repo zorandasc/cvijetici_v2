@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import socialIkons from "../constants/socialIcons"
 import styles from "../css/contact.module.css"
-import Layout from "../components/layout"
+//import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
 import Title from "../components/title"
@@ -11,7 +11,7 @@ import ContactForm from "../components/ContacForm"
 
 const contact = ({ data }) => {
   return (
-    <Layout>
+    <>
       <SEO title="Kontakt"></SEO>
       <StayledHero img={data.connectBcg.childImageSharp.fluid}></StayledHero>
       <section className={styles.contact}>
@@ -37,7 +37,7 @@ const contact = ({ data }) => {
           <ContactForm></ContactForm>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }
 

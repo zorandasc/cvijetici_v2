@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+//import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
 import Title from "../components/title"
@@ -9,7 +9,7 @@ import Img from "gatsby-image"
 
 const about = ({ data }) => {
   return (
-    <Layout>
+    <>
       <SEO title="O nama"></SEO>
       <StayledHero img={data.aboutBcg.childImageSharp.fluid}></StayledHero>
       <section className={styles.about}>
@@ -73,7 +73,7 @@ const about = ({ data }) => {
           </article>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }
 

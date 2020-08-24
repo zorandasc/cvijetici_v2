@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+//import Layout from "../components/layout"
 import styles from "../css/templateBlog.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql } from "gatsby"
@@ -7,7 +7,7 @@ import StayledHero from "../components/stayledHero"
 
 const Privacypolicy = ({ data }) => {
   return (
-    <Layout>
+    <>
       <StayledHero img={data.blog.childImageSharp.fluid}></StayledHero>
       <section className={styles.template}>
         <div className={styles.center}>
@@ -126,7 +126,7 @@ const Privacypolicy = ({ data }) => {
           </article>
         </div>
       </section>
-    </Layout>
+    </>
   )
 }
 

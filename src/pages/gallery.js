@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+//import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
 import { graphql } from "gatsby"
@@ -8,13 +8,13 @@ import SectionBcg from "../components/sectionBcg"
 
 const gallery = ({ data }) => {
   return (
-    <Layout>
+    <>
       <SEO title="Svadbena Galerija"></SEO>
       <StayledHero img={data.roses.childImageSharp.fluid}></StayledHero>
       <SectionBcg img={data.paternBcg.childImageSharp.fluid}>
         <Gallerys></Gallerys>
       </SectionBcg>
-    </Layout>
+    </>
   )
 }
 
