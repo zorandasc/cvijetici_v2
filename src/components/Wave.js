@@ -9,6 +9,7 @@ const Wave = () => {
         left: "0",
         bottom: "-10px",
         width: "100%",
+        zIndex: "2",
       }}
     >
       <svg
