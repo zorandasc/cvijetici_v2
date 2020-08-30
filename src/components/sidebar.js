@@ -28,7 +28,7 @@ const Sidebar = () => {
                 <AniLink
                   swipe
                   direction="left"
-                  duration={1}
+                  duration={1.4}
                   key={index}
                   to={item.path}
                   className={styles.link}
