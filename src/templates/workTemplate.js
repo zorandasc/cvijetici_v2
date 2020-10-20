@@ -49,7 +49,7 @@ const WorkTemplate = ({ data }) => {
       <section className={styles.template}>
         <Title title={prefiks} subtitle={category}></Title>
 
-        <header id="header">
+        <header id="header" className={styles.header}>
           <ScrollButton></ScrollButton>
           <h2 className={styles.ribbon}>
             <span className={styles.ribbonContent}>{category}</span>

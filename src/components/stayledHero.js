@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import BacgroundImage from "gatsby-background-image"
 
-const stayledHero = ({ home, img, children, className }) => {
+const StayledHero = ({ home, img, children, className }) => {
   return (
     <BacgroundImage
       fadeIn={home ? false : true}
@@ -16,7 +16,7 @@ const stayledHero = ({ home, img, children, className }) => {
   )
 }
 
-export default styled(stayledHero)`
+export default styled(StayledHero)`
   padding-top: 110px;
   min-height: ${props => (props.home ? "100vh" : "60vh")};
   background: ${props =>

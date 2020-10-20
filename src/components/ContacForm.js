@@ -1,14 +1,14 @@
 import React from "react"
-import styles from "../css/contactForm.module.css"
+import styled from "styled-components"
 
-const ContacForm = () => {
+const ContacForm = ({ className }) => {
   return (
     <form
       name="contact"
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      className={styles.form}
+      className={className}
     >
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="contact" />
@@ -19,7 +19,7 @@ const ContacForm = () => {
           type="text"
           name="name"
           id="name"
-          className={styles.formControl}
+          className="formControl"
           placeholder="ime"
         ></input>
       </div>
@@ -30,7 +30,7 @@ const ContacForm = () => {
           type="email"
           name="email"
           id="email"
-          className={styles.formControl}
+          className="formControl"
           placeholder="email"
         ></input>
       </div>
@@ -42,7 +42,7 @@ const ContacForm = () => {
           name="message"
           id="message"
           rows="10"
-          className={styles.formControl}
+          className="formControl"
           placeholder="Pozdrav"
         ></textarea>
       </div>
@@ -53,4 +53,14 @@ const ContacForm = () => {
   )
 }
 
-export default ContacForm
+export default styled(ContacForm)`
+.formControl {
+  background-color: var(--primaryColor);
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.7rem;
+  border: none;
+  box-shadow: var(--box-shadow);
+}
+`

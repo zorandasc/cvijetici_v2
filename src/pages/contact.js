@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import socialIkons from "../constants/socialIcons"
 import styles from "../css/contact.module.css"
-//import Layout from "../components/layout"
+
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
 import Title from "../components/title"

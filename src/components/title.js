@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const title = ({ title, subtitle, className }) => {
+const Title = ({ title, subtitle, className }) => {
   return (
     <div className={className}>
       <h2>
@@ -12,7 +12,7 @@ const title = ({ title, subtitle, className }) => {
   )
 }
 
-export default styled(title)`
+export default styled(Title)`
   text-transform: capitalize;
   margin-top: 1.5rem;
   margin-bottom: 5rem;
