@@ -156,7 +156,7 @@ li {
   cursor      : pointer;
   position    : relative;
   height:3.3rem;
-  width:5rem;
+  width:4rem;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -253,9 +253,13 @@ li {
   border-bottom-right-radius:50%;
   box-shadow: -2px 8px 6px -6px rgba(0, 0, 0, 0.5);
 }
+@media screen and (min-width: 1250px) {
+.navLink{
+    width:5rem;
+  }
+}
 
-
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1450px) {
   .logo{
     left:30%;
     transform:scale(1.3);
@@ -267,7 +271,7 @@ li {
   
 }
 
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1550px) {
   .socialIcon{
     margin: 0 1rem;
     width: 40px;
