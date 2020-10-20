@@ -1,7 +1,7 @@
 import React from "react"
 
 import { AppContext } from "../context"
-//import Footer from "./Footer"
+import Footer from "./Footer"
 import NavBarDesk from "./NavBarDesk"
 import NavBarMob from "./NavBarMob"
 import Drawer from "./Drawer"
@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
         transition: `transform ${TRANSITION_LENGTH}s ease-out`,
       }}>
         <main>{children}</main>
-
+        <Footer></Footer>
       </div>
 
     </>
