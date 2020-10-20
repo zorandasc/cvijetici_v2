@@ -7,7 +7,7 @@ import socialLinks from "../constants/socialIcons"
 import policyLinks from "../constants/policyLinks"
 
 
-const Footer = ({ className }) => {
+const Footerr = ({ className }) => {
   return (
     <div className={className}>
       <div className="links">
@@ -52,7 +52,7 @@ const Footer = ({ className }) => {
   )
 }
 
-export default styled(Footer)`
+export default styled(Footerr)`
   margin-top: auto;
   background: var(--mainBlack);
   color: var(--primaryColor);
