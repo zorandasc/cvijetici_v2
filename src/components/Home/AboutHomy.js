@@ -21,7 +21,7 @@ const getAbout = graphql`
 `
 
 
-const AboutHome = () => {
+const AboutHomy = () => {
   const { aboutImage } = useStaticQuery(getAbout)
   return (
     <SectionWrapper>
@@ -121,6 +121,6 @@ const SectionWrapper = styled.section`
 `
 
 
-export default AboutHome
+export default AboutHomy
 
 

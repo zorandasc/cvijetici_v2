@@ -4,7 +4,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
-import AboutHome from "../components/Home/AboutHome"
+import AboutHomy from "../components/Home/AboutHomy"
 import FeaturedGalery from "../components/Home/FeaturedGalery"
 import Banner from "../components/banner"
 import SectionBcg from "../components/sectionBcg"
@@ -25,7 +25,7 @@ export default ({ data }) => (
       <Wave></Wave>
     </StayledHero>
 
-    <AboutHome></AboutHome>
+    <AboutHomy></AboutHomy>
     <SectionBcg home="true" img={data.aboutBcg.childImageSharp.fluid}>
       <FeaturedGalery></FeaturedGalery>
     </SectionBcg>
