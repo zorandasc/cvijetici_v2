@@ -9,7 +9,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 //import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
-import styles from "../css/template.module.css"
+import styles from "../css/templateWork.module.css"
 import Title from "../components/title"
 import ScrollButton from "../components/ScrollButton"
 

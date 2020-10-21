@@ -1,13 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-//import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
-import About from "../components/Home/aboutHome"
-import WorkCategory from "../components/Home/workCategory"
+import AboutHome from "../components/Home/AboutHome"
+import FeaturedGalery from "../components/Home/FeaturedGalery"
 import Banner from "../components/banner"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import SectionBcg from "../components/sectionBcg"
 import Wave from "../components/Wave"
 
@@ -26,10 +25,10 @@ export default ({ data }) => (
       <Wave></Wave>
     </StayledHero>
 
-    <About></About>
+    <AboutHome></AboutHome>
 
     <SectionBcg home="true" img={data.aboutBcg.childImageSharp.fluid}>
-      <WorkCategory></WorkCategory>
+      <FeaturedGalery></FeaturedGalery>
     </SectionBcg>
   </>
 )
