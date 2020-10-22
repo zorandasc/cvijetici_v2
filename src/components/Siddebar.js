@@ -8,7 +8,7 @@ import links from "../constants/links"
 import img from "../images/bloom.png"
 
 
-const Kurec = ({ visible, closeDrawer, transitionLength }) => {
+const Siddebar = ({ visible, closeDrawer, transitionLength }) => {
     return (
         <DrawerWrapper DrwVisible={visible}>
             <button onClick={closeDrawer} className="closeBtn">
@@ -150,5 +150,5 @@ const DrawerWrapper = styled.div`
 `
 
 
-export default Kurec;
+export default Siddebar;
 

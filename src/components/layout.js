@@ -4,7 +4,7 @@ import { AppContext } from "../context"
 import Footerr from "./Footerr"
 import NavBarDesk from "./NavBarDesk"
 import NavBarMob from "./NavBarMob"
-import Sidebar from "./Sidebar"
+import Siddebar from "./Siddebar"
 
 
 const Layout = ({ children }) => {
@@ -14,11 +14,11 @@ const Layout = ({ children }) => {
     <>
       {width > 1100 ? <NavBarDesk></NavBarDesk> : <NavBarMob openDrawer={handleOpenSidebar}></NavBarMob>}
 
-      <Sidebar
+      <Siddebar
         visible={isSidebarOpen}
         closeDrawer={handleCloseSidebar}
         transitionLength={TRANSITION_LENGTH}>
-      </Sidebar>
+      </Siddebar>
       <div style={{
         height: "100vh",
         overflow: isSidebarOpen ? "hidden" : "visible",
