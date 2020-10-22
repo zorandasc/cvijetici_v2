@@ -4,7 +4,8 @@ import { AppContext } from "../context"
 import Footerr from "./Footerr"
 import NavBarDesk from "./NavBarDesk"
 import NavBarMob from "./NavBarMob"
-import Drawer from "./Drawer"
+import Sidebar from "./Sidebar"
+
 
 const Layout = ({ children }) => {
   const { width, handleCloseSidebar, handleOpenSidebar, isSidebarOpen } = React.useContext(AppContext)
@@ -12,10 +13,15 @@ const Layout = ({ children }) => {
   return (
     <>
       {width > 1100 ? <NavBarDesk></NavBarDesk> : <NavBarMob openDrawer={handleOpenSidebar}></NavBarMob>}
-      <Drawer visible={isSidebarOpen} closeDrawer={handleCloseSidebar} transitionLength={TRANSITION_LENGTH}></Drawer>
+
+      <Sidebar
+        visible={isSidebarOpen}
+        closeDrawer={handleCloseSidebar}
+        transitionLength={TRANSITION_LENGTH}>
+      </Sidebar>
       <div style={{
         height: "100vh",
-        //overflow: isSidebarOpen ? "hidden" : "visible",
+        overflow: isSidebarOpen ? "hidden" : "visible",
         transform: isSidebarOpen
           ? "scale(0.9)"
           : "none",

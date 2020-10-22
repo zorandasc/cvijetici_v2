@@ -63,6 +63,7 @@ export default styled(Drawer)`
   right: 0;
   width: 8rem;
   height: 100%;
+  
   background-color: var(--mainWhite);
   //box-shadow: -4px 0 30px rgba(0,0,0,.5); 
   box-shadow:var(--box-shadow);     

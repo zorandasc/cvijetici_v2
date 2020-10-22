@@ -117,7 +117,7 @@ export default styled(NavBarMob)`
     border-bottom-right-radius: 50%;
     box-shadow: -2px 8px 6px -6px rgba(0, 0, 0, 0.5);
   }
-
+/*
   .openBtn{
     width: 40px;
     height: 40px;
@@ -131,6 +131,41 @@ export default styled(NavBarMob)`
     cursor: pointer;
     outline: none;
   }
+*/
+  .openBtn{
+    font-size:1.5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#f7f7f7;
+    background-image:linear-gradient(to bottom, #f7f7f7, #e7e7e7);
+    color: var(--mainBlack);
+    width: 45px;
+    height: 45px;
+    position:relative;
+    text-align:center;
+    line-height:45px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+    outline:none;
+    border:none;
+  }
+
+  .openBtn::before{
+    content:"";
+    display:block;
+    background:transparent;
+    border-top:2px solid #ddd;
+    position:absolute;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    z-index:-1;
+    border-radius: 50%;
+    box-shadow: inset 0px 8px 48px #ddd;
+}
 
   @media screen and (min-width: 400px) {
     top: 1.5rem;
