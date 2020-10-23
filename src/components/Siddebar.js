@@ -112,6 +112,8 @@ const DrawerWrapper = styled.div`
       inset 0px 2px 3px var(--primaryColor);
   }
 
+  //ovo je vertikalna linija koja prolazi
+  //posred dugmica iza njih
   .linkContainer::before {
     content: "";
     display: block;
@@ -124,6 +126,8 @@ const DrawerWrapper = styled.div`
     background: var(--mainWhite);
     z-index: -1;
   }
+
+  //ovo je bijeli krug iza dugmica u pozdini
   .closeBtn::before,
   .link::before {
     content: "";

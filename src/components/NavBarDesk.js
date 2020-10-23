@@ -213,12 +213,12 @@ export default styled(NavBarDesk)`
 
   .active:before,
   .navLink:hover:before {
-    transform: rotate(-30deg) skew(-30deg) translate(1.5px, 9px);
+    transform: rotate(-30deg) skew(-30deg) translate(1.5px, 8px);
   }
 
   .active:after,
   .navLink:hover:after {
-    transform: rotate(30deg) skew(30deg) translate(-1.5px, 9px);
+    transform: rotate(30deg) skew(30deg) translate(-1.5px, 8px);
   }
 
   .socialIcon {
@@ -257,20 +257,19 @@ export default styled(NavBarDesk)`
     box-shadow: 15px 8px 6px -6px rgba(0, 0, 0, 0.5);
   }
 
-.logo:before {
-      content: "";
-      position: absolute;
-}
+  .logo:before {
+    content: "";
+    position: absolute;
+  }
 
-.logo:before {
-  height: 0;
-  width: 0;
-  right: -8px;
-  top: -1.5px;
-  border-bottom: 14px solid var(--primaryColor);
-  border-right: 8px solid transparent;
-}
-
+  .logo:before {
+    height: 0;
+    width: 0;
+    right: -8px;
+    top: -1.5px;
+    border-bottom: 14px solid var(--primaryColor);
+    border-right: 8px solid transparent;
+  }
 
   @media screen and (min-width: 1250px) {
     .navLink {
@@ -283,9 +282,8 @@ export default styled(NavBarDesk)`
       left: 30%;
       transform: scale(1.3);
     }
-    .logo:before{
-        border-bottom: 16px solid var(--primaryColor);
-
+    .logo:before {
+      border-bottom: 16px solid var(--primaryColor);
     }
     .navLink {
       width: 7rem;
