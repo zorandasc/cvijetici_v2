@@ -19,15 +19,14 @@ const Layout = ({ children }) => {
       {width > 1100 ? (
         <NavBarDesk></NavBarDesk>
       ) : (
-        <NavBarMob openDrawer={handleOpenSidebar}></NavBarMob>
-      )}
+          <NavBarMob openDrawer={handleOpenSidebar}></NavBarMob>
+        )}
 
       <Siddebar
         visible={isSidebarOpen}
         closeDrawer={handleCloseSidebar}
         transitionLength={TRANSITION_LENGTH}
       ></Siddebar>
-
       <main
         style={{
           height: "100vh",

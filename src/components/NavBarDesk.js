@@ -57,7 +57,7 @@ const NavBarDesk = ({ className }) => {
 export default styled(NavBarDesk)`
   //fiksna podloga od pocetka do kraja
   position: fixed;
-  top: 1.4rem;
+  top: 1.6rem;
   left: 0;
   width: 100%;
   z-index: 10000;
@@ -253,8 +253,25 @@ export default styled(NavBarDesk)`
     border-bottom: 0.1rem solid var(--primaryColor);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    box-shadow: -2px 8px 6px -6px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 6px;
+    box-shadow: 15px 8px 6px -6px rgba(0, 0, 0, 0.5);
   }
+
+.logo:before {
+      content: "";
+      position: absolute;
+}
+
+.logo:before {
+  height: 0;
+  width: 0;
+  right: -8px;
+  top: -1.5px;
+  border-bottom: 14px solid var(--primaryColor);
+  border-right: 8px solid transparent;
+}
+
+
   @media screen and (min-width: 1250px) {
     .navLink {
       width: 5rem;
@@ -265,6 +282,10 @@ export default styled(NavBarDesk)`
     .logo {
       left: 30%;
       transform: scale(1.3);
+    }
+    .logo:before{
+        border-bottom: 16px solid var(--primaryColor);
+
     }
     .navLink {
       width: 7rem;

@@ -115,23 +115,24 @@ export default styled(NavBarMob)`
     border-bottom: 0.1rem solid var(--primaryColor);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    box-shadow: -2px 8px 6px -6px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 6px;
+    box-shadow: 15px 8px 6px -6px rgba(0, 0, 0, 0.5);
   }
-  /*
-  .openBtn{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--mainBlack);
-    background: none;
-    font-size: 2rem;
-    border: none;
-    cursor: pointer;
-    outline: none;
-  }
-*/
+
+  .logo:before {
+      content: "";
+      position: absolute;
+}
+
+.logo:before {
+    height: 0;
+    width: 0;
+    right: -8px;
+    top: -1px;
+    border-bottom: 13px solid var(--primaryColor);
+    border-right: 8px solid transparent;
+}
+
   .openBtn {
     font-size: 1.5rem;
     display: flex;
@@ -172,6 +173,10 @@ export default styled(NavBarMob)`
     .logo {
       transform: scale(1.2);
       top: -15%;
+    }
+    .logo:before{
+      top: -1px;
+      border-bottom: 18px solid var(--primaryColor);
     }
   }
 `
