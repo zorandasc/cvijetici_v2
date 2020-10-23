@@ -19,25 +19,25 @@ const Layout = ({ children }) => {
       {width > 1100 ? (
         <NavBarDesk></NavBarDesk>
       ) : (
-          <NavBarMob openDrawer={handleOpenSidebar}></NavBarMob>
-        )}
+        <NavBarMob openDrawer={handleOpenSidebar}></NavBarMob>
+      )}
 
       <Siddebar
         visible={isSidebarOpen}
         closeDrawer={handleCloseSidebar}
         transitionLength={TRANSITION_LENGTH}
       ></Siddebar>
-      <main
+      <div
         style={{
           height: "100vh",
-          overflow: isSidebarOpen ? "hidden" : "visible",
+          //overflow: isSidebarOpen ? "hidden" : "visible",
           transform: isSidebarOpen ? "scale(0.9)" : "none",
           transition: `transform ${TRANSITION_LENGTH}s ease-out`,
         }}
       >
-        {children}
-      </main>
-      <Footerr></Footerr>
+        <main>{children}</main>
+        <Footerr></Footerr>
+      </div>
     </>
   )
 }
