@@ -9,6 +9,7 @@ import FeaturedGalery from "../components/Home/FeaturedGalery"
 import Banner from "../components/banner"
 import SectionBcg from "../components/sectionBcg"
 import Wave from "../components/Wave"
+//import Particle from "../components/Particle"
 
 export default ({ data }) => (
   <>
