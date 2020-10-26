@@ -1,11 +1,14 @@
 import React from "react"
 //import ParticlesBg from "particles-bg"
 import { AppContext } from "../context"
-
 import loadable from "@loadable/component"
 
+// pPosto particles-bg koristi window objekat, nec projekat da se builduje (ssr)
+//zato koristimo  loadable
+//source https://www.gatsbyjs.com/docs/debugging-html-builds/#how-to-check-if-code-classlanguage-textwindowcode-is-defined
+//Another solution is to use a package like loadable-components. The module that ////tries to use window will be dynamically loaded only on the client side (and not //during SSR).
+
 const ParticlesBg = loadable(() => import("particles-bg"))
-//yarn add particles-bg
 //https://github.com/lindelof/particles-bg
 
 let config = {
