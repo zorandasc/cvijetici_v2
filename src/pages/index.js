@@ -9,7 +9,7 @@ import FeaturedGalery from "../components/Home/FeaturedGalery"
 import Banner from "../components/banner"
 import SectionBcg from "../components/sectionBcg"
 import Wave from "../components/Wave"
-//import Particle from "../components/Particle"
+import Particle from "../components/Particle"
 
 export default ({ data }) => (
   <>
@@ -24,6 +24,7 @@ export default ({ data }) => (
         </AniLink>
       </Banner>
       <Wave></Wave>
+      <Particle></Particle>
     </StayledHero>
 
     <AboutHomy></AboutHomy>

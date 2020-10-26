@@ -2,12 +2,15 @@ import React from "react"
 //import ParticlesBg from "particles-bg"
 import { AppContext } from "../context"
 
+import loadable from "@loadable/component"
+
+const ParticlesBg = loadable(() => import("particles-bg"))
 //yarn add particles-bg
 //https://github.com/lindelof/particles-bg
 
 let config = {
   num: [4, 7],
-  rps: 0.1,
+  rps: -0.1,
   radius: [0.4, 1.8],
   life: [1.5, 8],
   v: [-2, 3],
@@ -16,7 +19,7 @@ let config = {
   rotate: [0, 20],
   alpha: [0.9, 0],
   scale: [1, 0.1],
-  position: { x: 70, y: 5, width: 100, height: 100 }, // all or center or {x:1,y:1,width:100,height:100}
+  position: { x: 70, y: 5, width: 500, height: 100 }, // all or center or {x:1,y:1,width:100,height:100}
   color: ["#ececec", "#ff0000"],
   cross: "dead", // cross or bround
   random: 15, // or null,
@@ -50,11 +53,11 @@ const Particle = () => {
         right: "0",
       }}
     >
-      {/* width > 1100 ? (
+      {width > 1100 ? (
         <ParticlesBg color="#f7f7f7" type="cobweb" bg={false} />
       ) : (
         <ParticlesBg type="custom" config={config} bg={false} />
-      )*/}
+      )}
     </div>
   )
 }

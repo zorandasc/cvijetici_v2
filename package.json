@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^13.4.0",
+    "@loadable/component": "^5.14.1",
     "@reach/dialog": "^0.2.9",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.13.73",
@@ -28,6 +29,7 @@
     "gatsby-transformer-sharp": "^2.2.7",
     "gsap": "^3.4.0",
     "lodash": "^4.17.19",
+    "particles-bg": "^2.5.0",
     "preact": "^10.4.6",
     "preact-render-to-string": "^5.1.10",
     "prop-types": "^15.7.2",
