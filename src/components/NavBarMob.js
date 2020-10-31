@@ -120,18 +120,18 @@ export default styled(NavBarMob)`
   }
 
   .logo:before {
-      content: "";
-      position: absolute;
-}
+    content: "";
+    position: absolute;
+  }
 
-.logo:before {
+  .logo:before {
     height: 0;
     width: 0;
     right: -8px;
     top: -1px;
     border-bottom: 13px solid var(--primaryColor);
     border-right: 8px solid transparent;
-}
+  }
 
   .openBtn {
     font-size: 1.5rem;
@@ -140,7 +140,7 @@ export default styled(NavBarMob)`
     justify-content: center;
     align-items: center;
     background-color: #f7f7f7;
-    background-image: linear-gradient(to bottom, #f7f7f7, #e7e7e7);
+    background-image: linear-gradient(to bottom, #f7f7f7, var(--primaryColor));
     color: var(--mainBlack);
     width: 45px;
     height: 45px;
@@ -174,7 +174,7 @@ export default styled(NavBarMob)`
       transform: scale(1.2);
       top: -15%;
     }
-    .logo:before{
+    .logo:before {
       top: -1px;
       border-bottom: 18px solid var(--primaryColor);
     }

@@ -47,9 +47,9 @@ export default styled(Banner)`
   }
 
   @media screen and (min-width: 768px) {
-    h1 {
-      text-transform: uppercase;
-    }
+    //h1 {
+    //  text-transform: uppercase;
+    //}
     p {
       width: 70%;
       margin-bottom: 4rem;

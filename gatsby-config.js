@@ -11,6 +11,7 @@ module.exports = {
     siteUrl: `https://svadbenicvet.com`,
   },
   plugins: [
+    /*
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -18,6 +19,7 @@ module.exports = {
         trackingId: "UA-149097573-1",
       },
     },
+    */
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,

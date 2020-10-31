@@ -22,7 +22,7 @@ let config = {
   rotate: [0, 20],
   alpha: [0.9, 0],
   scale: [1, 0.1],
-  position: { x: 20, y: 5, width: 500, height: 100 }, // all or center or {x:1,y:1,width:100,height:100}
+  position: { x: 20, y: 5, width: 1000, height: 100 }, // all or center or {x:1,y:1,width:100,height:100}
   color: ["#ececec", "#ff0000"],
   cross: "dead", // cross or bround
   random: 15, // or null,

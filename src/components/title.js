@@ -32,7 +32,7 @@ export default styled(Title)`
   }
 
   @media screen and (min-width: 576px) {
-    text-transform: uppercase;
+    //text-transform: uppercase;
     span {
       padding-left: 1rem;
       display: inline-block;
