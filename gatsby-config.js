@@ -56,6 +56,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
+    `@wardpeet/gatsby-image-nextgen`,
     //`gatsby-plugin-transition-link`,
     {
       resolve: "gatsby-plugin-transition-link",
