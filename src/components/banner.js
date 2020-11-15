@@ -35,7 +35,7 @@ export default styled(Banner)`
     margin-bottom: 2rem;
   }
 
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 450px) {
     h1 {
       font-size: 4rem;
       letter-spacing: 16px;
@@ -47,9 +47,6 @@ export default styled(Banner)`
   }
 
   @media screen and (min-width: 768px) {
-    //h1 {
-    //  text-transform: uppercase;
-    //}
     p {
       width: 70%;
       margin-bottom: 4rem;

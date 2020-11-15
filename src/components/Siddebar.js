@@ -4,7 +4,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { FaTimes } from "react-icons/fa"
 
 import links from "../constants/links"
-//import img from "../images/moroccan.png"
+
 import img from "../images/bloom.png"
 
 const Siddebar = ({ visible, closeDrawer, transitionLength }) => {
@@ -55,8 +55,8 @@ const DrawerWrapper = styled.div`
   z-index: 500;
   top: 0;
   right: 0;
-  width: 8rem;
-  height: 100%;
+  width: 40vw;
+  height: 100vh;
   background: url(${img}) repeat center top;
   box-shadow: var(--box-shadow);
   transform: ${props =>
@@ -101,6 +101,10 @@ const DrawerWrapper = styled.div`
     margin: 10px;
     outline: none;
     border: none;
+  }
+
+  .linkContainer {
+    height: calc(100vh / 6);
   }
 
   .active,
