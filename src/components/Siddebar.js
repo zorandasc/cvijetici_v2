@@ -95,9 +95,9 @@ const DrawerWrapper = styled.div`
   }
   .closeBtn {
     font-size: 1rem;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
     margin: 10px;
     outline: none;
     border: none;
