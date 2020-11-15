@@ -11,7 +11,7 @@ const getAbout = graphql`
     aboutImage: file(relativePath: { eq: "band.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
