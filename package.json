@@ -28,7 +28,7 @@
     "gatsby-source-contentful": "^2.1.30",
     "gatsby-source-filesystem": "^2.1.11",
     "gatsby-transformer-sharp": "^2.2.7",
-    "gsap": "^3.4.0",
+    "gsap": "^3.6.0",
     "lodash": "^4.17.19",
     "particles-bg": "^2.5.0",
     "preact": "^10.4.6",
