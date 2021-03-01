@@ -18,6 +18,13 @@ const GalleryCard = ({ className, work }) => {
           alt="wedding category"
         ></GatsbyImage>
         <span className="link">istraži</span>
+        {prefiks === "Poklon" ? (
+          <div class="ribbon-wrapper-1">
+            <div class="ribbon-1">LIMITED</div>
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
       <h3 className="ribbon4">
         {prefiks} {category}
@@ -39,7 +46,6 @@ export default styled(GalleryCard)`
   }
 
   .imgContainer {
-    overflow: hidden;
     border-radius: 10px;
     flex: 1 1 auto;
     position: relative;
@@ -75,6 +81,58 @@ export default styled(GalleryCard)`
   .imgContainer:hover .link {
     opacity: 0.8;
   }
+
+  .ribbon-wrapper-1 {
+    width: 106px;
+    height: 108px;
+    overflow: hidden;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+  }
+
+  .ribbon-1 {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: var(--mainSpacing);
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -11px;
+    top: 26px;
+    width: 150px;
+    background-color: #c1445a;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.5px;
+  }
+
+  .ribbon-1:before,
+  .ribbon-1:after {
+    content: "";
+    border-top: 4px solid #843047;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: absolute;
+    bottom: -4px;
+  }
+
+  .ribbon-1:before {
+    left: 0;
+  }
+
+  .ribbon-1:after {
+    right: 0;
+  }
+
   .ribbon4 {
     font-size: 1.3rem;
     color: var(--mainBlack);
