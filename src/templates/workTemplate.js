@@ -15,6 +15,8 @@ import ScrollButton from "../components/ScrollButton"
 
 const CustomDialog = styled(Dialog)`
   button {
+    border: none;
+    outline: none;
     margin-top: 1rem;
     background: var(--primaryColor);
     color: var(--mainBlack);

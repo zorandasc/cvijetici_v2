@@ -141,7 +141,7 @@ export default styled(GalleryCard)`
     width: 13rem;
     height: 6rem;
     padding: 10px 10px;
-    background: var(--primaryColor);
+    background: linear-gradient(#dfbd69, #926f34);
     box-shadow: var(--darkShadow);
     border-bottom-right-radius: 3rem;
   }

@@ -9,7 +9,7 @@
   background-color: var(--mainWhite);
 }
 
-.header{
+.header {
   position: relative;
   z-index: 10;
 }
@@ -17,7 +17,6 @@
 .center {
   width: 70vw;
   margin: 0 auto;
- 
 }
 
 .images {
@@ -34,6 +33,7 @@
   position: relative;
   background: transparent;
   border: none;
+  outline: none;
   padding: 0;
   margin: 0;
 }
