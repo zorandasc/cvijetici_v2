@@ -18,14 +18,14 @@ const GalleryCard = ({ className, work }) => {
           alt="wedding category"
         ></GatsbyImage>
         <span className="link">istraži</span>
-        {prefiks === "Poklon" ? (
-          <div class="ribbon-wrapper-1">
-            <div class="ribbon-1">LIMITED</div>
-          </div>
-        ) : (
-          <></>
-        )}
       </div>
+      {prefiks === "Poklon" ? (
+        <div class="ribbon-wrapper-1">
+          <div class="ribbon-1">LIMITED</div>
+        </div>
+      ) : (
+        <></>
+      )}
       <h3 className="ribbon4">
         {prefiks} {category}
       </h3>
@@ -46,6 +46,7 @@ export default styled(GalleryCard)`
   }
 
   .imgContainer {
+    overflow: hidden;
     border-radius: 10px;
     flex: 1 1 auto;
     position: relative;
@@ -53,6 +54,7 @@ export default styled(GalleryCard)`
     background: var(--mainBlack);
   }
   .img {
+    width: 100%;
     height: 100%;
     transition: var(--mainTransition);
   }
