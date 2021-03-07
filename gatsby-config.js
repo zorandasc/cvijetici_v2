@@ -72,7 +72,7 @@ module.exports = {
         short_name: `Svadbeni Cvet`,
         start_url: `/`,
         background_color: `#262626`,
-        theme_color: `#d2aa5c`,
+        theme_color: `#f7f7f7`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },

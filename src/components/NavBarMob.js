@@ -10,10 +10,18 @@ const NavBarMob = ({ className, openDrawer }) => {
     <div className={className}>
       <div className="ribbon">
         <div className="prvi">
+          {/*
           <AniLink fade to="/" className="logo">
             <img src={logo} alt="svadbeni cvet"></img>
           </AniLink>
-
+           */}
+          <span class="ribbon2">
+            <span>
+              <AniLink fade to="/">
+                <img src={logo} alt=""></img>
+              </AniLink>
+            </span>
+          </span>
           <button
             onClick={openDrawer}
             className="openBtn"
@@ -70,7 +78,7 @@ export default styled(NavBarMob)`
     justify-content: flex-end;
     align-items: center;
     padding: 0.3rem 1rem;
-    border-bottom: 0.2rem solid var(--primaryColor);
+    border-bottom: 0.1rem solid var(--primaryColor);
     box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.5);
   }
   //lievi bijeli zmijski krak
@@ -100,7 +108,7 @@ export default styled(NavBarMob)`
     border-right-color: transparent;
     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.5);
   }
-
+  //kurtali sam logo
   .logo {
     position: absolute;
     z-index: 200;
@@ -178,5 +186,50 @@ export default styled(NavBarMob)`
       top: -1px;
       border-bottom: 18px solid var(--primaryColor);
     }
+  }
+  .ribbon2 {
+    position: absolute;
+    top: -1.8px;
+    left: 15%;
+  }
+
+  .ribbon2 span {
+    position: relative;
+    display: block;
+    text-align: center;
+    background: var(--mainWhite);
+    font-size: 14px;
+    line-height: 1;
+    padding: 0.6rem;
+    padding-left: 0.8rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 106px;
+    box-shadow: 13px 8px 6px -6px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
+  }
+
+  .ribbon2 span:before,
+  .ribbon2 span:after {
+    position: absolute;
+    content: "";
+  }
+
+  .ribbon2 span:before {
+    height: 6px;
+    width: 5px;
+    left: 106px;
+    top: 0;
+    background: var(--mainWhite);
+  }
+
+  .ribbon2 span:after {
+    height: 10px;
+    width: 8px;
+    left: 106px;
+    top: 0;
+    border-radius: 8px 8px 0 0;
+    background: var(--primaryColor);
   }
 `
