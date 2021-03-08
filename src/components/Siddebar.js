@@ -106,6 +106,9 @@ const DrawerWrapper = styled.div`
   .linkContainer {
     height: calc(100vh / 6);
   }
+  .linkContainer a {
+    outline: none;
+  }
 
   .active,
   .link:hover {

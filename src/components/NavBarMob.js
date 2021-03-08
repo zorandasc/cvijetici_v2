@@ -209,6 +209,9 @@ export default styled(NavBarMob)`
     box-shadow: 13px 8px 6px -6px rgba(0, 0, 0, 0.5);
     transform: scale(1.2);
   }
+  .ribbon2 span a {
+    outline: none;
+  }
 
   .ribbon2 span:before,
   .ribbon2 span:after {
@@ -225,7 +228,7 @@ export default styled(NavBarMob)`
   }
 
   .ribbon2 span:after {
-    height: 10px;
+    height: 11px;
     width: 8px;
     left: 106px;
     top: 0;

@@ -345,7 +345,7 @@ export default styled(NavBarDesk)`
   }
 
   .ribbon2 span:after {
-    height: 10px;
+    height: 11px;
     width: 8px;
     left: 106px;
     top: 0;
