@@ -18,8 +18,8 @@ export default styled(Banner)`
   text-align: center;
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
-  z-index: 2;
-
+  z-index: 3;
+  position: absolute;
   h1 {
     font-size: 3rem;
     text-transform: capitalize;

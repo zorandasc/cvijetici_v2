@@ -18,8 +18,8 @@ const NavBarDesk = ({ className }) => {
            */}
           <span class="ribbon2">
             <span>
-              <AniLink fade to="/">
-                <img src={logo} alt=""></img>
+              <AniLink fade to="/" ariaLabel="logo">
+                <img src={logo} alt="" width="85.899" height="83.776"></img>
               </AniLink>
             </span>
           </span>
