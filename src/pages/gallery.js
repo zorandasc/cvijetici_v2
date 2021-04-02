@@ -4,16 +4,23 @@ import SEO from "../components/seo"
 import StayledHero from "../components/stayledHero"
 import { graphql } from "gatsby"
 import Gallerys from "../components/Gallery/gallerys"
-import SectionBcg from "../components/sectionBcg"
+//import SectionBcg from "../components/sectionBcg"
+import retro from "../images/retro_rose.svg"
 
 const gallery = ({ data }) => {
   return (
     <>
       <SEO title="Svadbena Galerija"></SEO>
       <StayledHero img={data.roses.childImageSharp.fluid}></StayledHero>
-      <SectionBcg img={data.paternBcg.childImageSharp.fluid}>
+      <div
+        style={{
+          backgroundImage: `url(${retro})`,
+          backgroundAttachment: "fixed",
+          backgroundColor: `var(--mainWhite)`,
+        }}
+      >
         <Gallerys></Gallerys>
-      </SectionBcg>
+      </div>
     </>
   )
 }
@@ -21,13 +28,6 @@ const gallery = ({ data }) => {
 export const query = graphql`
   query {
     roses: file(relativePath: { eq: "contact.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    paternBcg: file(relativePath: { eq: "patern.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_withWebp

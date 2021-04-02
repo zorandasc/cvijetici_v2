@@ -7,9 +7,10 @@ import StayledHero from "../components/stayledHero"
 import AboutHomy from "../components/Home/AboutHomy"
 import FeaturedGalery from "../components/Home/FeaturedGalery"
 import Banner from "../components/banner"
-import SectionBcg from "../components/sectionBcg"
+//import SectionBcg from "../components/sectionBcg"
 import Wave from "../components/Wave"
 import Particle from "../components/Particle"
+import retro from "../images/retro_rose.svg"
 
 export default ({ data }) => (
   <>
@@ -28,9 +29,15 @@ export default ({ data }) => (
     </StayledHero>
 
     <AboutHomy></AboutHomy>
-    <SectionBcg home="true" img={data.aboutBcg.childImageSharp.fluid}>
+    <div
+      style={{
+        backgroundImage: `url(${retro})`,
+        backgroundAttachment: "fixed",
+        backgroundColor: `var(--mainWhite)`,
+      }}
+    >
       <FeaturedGalery></FeaturedGalery>
-    </SectionBcg>
+    </div>
   </>
 )
 
@@ -40,13 +47,6 @@ export const query = graphql`
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
-      }
-    }
-    aboutBcg: file(relativePath: { eq: "patern.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
