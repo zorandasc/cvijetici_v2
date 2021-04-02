@@ -17,7 +17,7 @@ const NavBarMob = ({ className, openDrawer }) => {
            */}
           <span class="ribbon2">
             <span>
-              <AniLink fade to="/">
+              <AniLink fade to="/" ariaLabel="logo">
                 <img src={logo} alt="" width="85.899" height="83.776"></img>
               </AniLink>
             </span>
